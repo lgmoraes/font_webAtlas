@@ -1,0 +1,56 @@
+.icon::first-letter{font-family:"WebAtlas";}                                                /* Pour les icones à gauche de l'element */
+.icon.div{font-family:"WebAtlas";display:inline-block}                                      /* Pour les icones à l'interieure d'un element */
+.icon.div-indent{width:28px;text-align:left;font-family:"WebAtlas";display:inline-block}    /* Pour les icones à gauche de l'element avec une indentation sur la droite */
+
+
+/* Right / Wrong */
+.icon.right::before{content:"\102  ";}
+.icon.wrong::before{content:"\103  ";}
+.icon.right-sharp::before{content:"\100  ";}
+.icon.wrong-sharp::before{content:"\101  ";}
+.icon.right-rounded::before{content:"\10a  ";}
+.icon.wrong-rounded::before{content:"\10b  ";}
+.icon.right-handwriting::before{content:"\108  ";}
+.icon.wrong-handwriting::before{content:"\109  ";}
+
+/* Admin */
+.icon.newFile::before{content:"\249  ";}
+.icon.open::before{content:"\250  ";}
+.icon.save::before{content:"\251  ";}
+.icon.warning::before{content:"\1d4  ";}
+.icon.warning2::before{content:"\1d5  ";}
+.icon.uploadFile::before{content:"\2e6  ";}
+.icon.file::before{content:"\24f  ";}
+.icon.user::before{content:"\2e6  ";}
+.icon.addUser::before{content:"\3a9  ";}
+.icon.users::before{content:"\3ac  ";}
+.icon.login::before{content:"\6f  ";}
+.icon.logout::before{content:"\2f6  ";}
+.icon.log::before{content:"\264  ";}
+.icon.wheel::before{content:"\222  ";}
+.icon.wheel2::before{content:"\223  ";}
+.icon.wheel3::before{content:"\223  ";}
+
+/* Geometric */
+.icon.hex::before{content:"\1a1  ";}
+.icon.hex-rounded::before{content:"\1a2  ";}
+.icon.hex-stroke::before{content:"\1a3  ";}
+
+/* Circle */
+.icon.circle-right::before{content:"\1ade  ";}
+.icon.circle-right2::before{content:"\1af  ";}
+.icon.circle-wrong2::before{content:"\1b0  ";}
+.icon.circle-info::before{content:"\1b6  ";}
+.icon.circle-warning::before{content:"\1b5  ";}
+
+/* Player */
+.icon.next::before{content:"\118  ";}
+.icon.pause::before{content:"\115  ";}
+.icon.play::before{content:"\114  ";}
+.icon.previous::before{content:"\119  ";}
+.icon.rewind::before{content:"\11b  ";}
+.icon.stop::before{content:"\116  ";}
+.icon.fastForward::before{content:"\11a  ";}
+
+/* Les autres */
+.icon.planete::before{content:"@  ";}
