@@ -1,9 +1,9 @@
 SplineFontDB: 3.0
-FontName: WebAtlas
-FullName: WebAtlas
+FontName: WebAtlas-Light
+FullName: WebAtlas-Light
 FamilyName: WebAtlas
-Weight: Book
-Copyright: Copyright (c) 2017, Louis MORAES.
+Weight: Light
+Copyright: Copyright (c) 2018, Louis MORAES.
 Version: 
 ItalicAngle: 0
 UnderlinePosition: -170
@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1375896762
-ModificationTime: 1521406016
+ModificationTime: 1521407597
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
@@ -2649,7 +2649,7 @@ ShortTable: maxp 16
   0
   0
 EndShort
-LangName: 1033 "Copyright +AKkA 2017, Louis MORAES." "" "Regular" "FontForge 2.0 : WebAtlas : 28-7-2017" "" "" "" "" "" "Louis MORAES"
+LangName: 1033 "Copyright +AKkA 2018, Louis MORAES." "" "" "FontForge 2.0 : WebAtlas : 18-3-2018" "" "" "" "" "" "Louis MORAES"
 GaspTable: 1 65535 15 1
 Encoding: UnicodeBmp
 UnicodeInterp: none
@@ -2658,6 +2658,8 @@ DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
 WinInfo: 0 39 14
+BeginPrivate: 0
+EndPrivate
 Grid
 -1000 700 m 0
  2000 700 l 1024
