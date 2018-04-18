@@ -25,12 +25,12 @@
 .icon.save::before{content:"\251  ";}
 .icon.warning::before{content:"\1d4  ";}
 .icon.warning2::before{content:"\1d5  ";}
-.icon.uploadFile::before{content:"\2e6  ";}
+.icon.uploadFile::before{content:"\2c7  ";}
 .icon.file::before{content:"\24f  ";}
-.icon.user::before{content:"\2e6  ";}
+.icon.user::before{content:"\3a8  ";}
 .icon.addUser::before{content:"\3a9  ";}
 .icon.users::before{content:"\3ac  ";}
-.icon.login::before{content:"\6f  ";}
+.icon.login::before{content:"\3a8  ";}
 .icon.logout::before{content:"\2f6  ";}
 .icon.log::before{content:"\264  ";}
 .icon.wheel::before{content:"\222  ";}
@@ -82,13 +82,13 @@
 .icon.circle-down::before{content:"\1ba  ";}
 
 /* Player */
-.icon.next::before{content:"\118  ";}
-.icon.pause::before{content:"\115  ";}
-.icon.play::before{content:"\114  ";}
-.icon.previous::before{content:"\119  ";}
-.icon.rewind::before{content:"\11b  ";}
-.icon.stop::before{content:"\116  ";}
-.icon.fastForward::before{content:"\11a  ";}
+.icon.play::before{content:"\531  ";}
+.icon.pause::before{content:"\532  ";}
+.icon.stop::before{content:"\533  ";}
+.icon.next::before{content:"\535  ";}
+.icon.previous::before{content:"\536  ";}
+.icon.fastForward::before{content:"\537  ";}
+.icon.rewind::before{content:"\538  ";}
 
 /* Les autres */
 .icon.planete::before{content:"\46b  ";}
