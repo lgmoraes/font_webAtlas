@@ -4,14 +4,20 @@
 
 
 /* Right / Wrong */
-.icon.right::before{content:"\102  ";}
-.icon.wrong::before{content:"\103  ";}
-.icon.right-sharp::before{content:"\100  ";}
-.icon.wrong-sharp::before{content:"\101  ";}
+.icon.right::before{content:"\100  ";}
+.icon.wrong::before{content:"\101  ";}
+.icon.right-medium::before{content:"\102  ";}
+.icon.wrong-medium::before{content:"\103  ";}
+.icon.right-bold::before{content:"\104  ";}
+.icon.wrong-bold::before{content:"\105  ";}
 .icon.right-rounded::before{content:"\10a  ";}
 .icon.wrong-rounded::before{content:"\10b  ";}
-.icon.right-handwriting::before{content:"\108  ";}
-.icon.wrong-handwriting::before{content:"\109  ";}
+.icon.right-rounded-bold::before{content:"\106  ";}
+.icon.wrong-rounded-bold::before{content:"\107  ";}
+.icon.right-handwriting::before{content:"\10c  ";}
+.icon.wrong-handwriting::before{content:"\10d  ";}
+.icon.right-handwriting2::before{content:"\108  ";}
+.icon.wrong-handwriting2::before{content:"\109  ";}
 
 /* Admin */
 .icon.newFile::before{content:"\249  ";}
