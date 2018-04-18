@@ -67,13 +67,19 @@
 .icon.pentagon-rounded::before{content:"\19c  ";}
 .icon.pentagon-stroke::before{content:"\19d  ";}
 
-
 /* Circle */
-.icon.circle-right::before{content:"\1ade  ";}
-.icon.circle-right2::before{content:"\1af  ";}
-.icon.circle-wrong2::before{content:"\1b0  ";}
+.icon.circle-right::before{content:"\1ad  ";}
+.icon.circle-wrong::before{content:"\1ae  ";}
+.icon.circle-right-handwriting::before{content:"\1af  ";}
+.icon.circle-wrong-handwriting::before{content:"\1b0  ";}
+.icon.circle-plus::before{content:"\1b1  ";}
+.icon.circle-minus::before{content:"\1b2  ";}
 .icon.circle-info::before{content:"\1b6  ";}
 .icon.circle-warning::before{content:"\1b5  ";}
+.icon.circle-left::before{content:"\1b7  ";}
+.icon.circle-up::before{content:"\1b8  ";}
+.icon.circle-right::before{content:"\1b9  ";}
+.icon.circle-down::before{content:"\1ba  ";}
 
 /* Player */
 .icon.next::before{content:"\118  ";}
