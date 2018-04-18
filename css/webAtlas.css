@@ -90,5 +90,13 @@
 .icon.fastForward::before{content:"\537  ";}
 .icon.rewind::before{content:"\538  ";}
 
-/* Les autres */
+/* Divers */
 .icon.planete::before{content:"\46b  ";}
+.icon.planete2::before{content:"\46c  ";}
+.icon.barcode::before{content:"\168  ";}
+.icon.circlecode::before{content:"\164  ";}
+.icon.text::before{content:"\492  ";}
+.icon.postIt::before{content:"\493  ";}
+.icon.formRadio::before{content:"\494  ";}
+.icon.formCheckbox::before{content:"\495  ";}
+.icon.clickableImage::before{content:"\496  ";}
