@@ -38,9 +38,35 @@
 .icon.wheel3::before{content:"\223  ";}
 
 /* Geometric */
+.icon.circle::before{content:"\186  ";}
+.icon.circle2::before{content:"\188  ";}
+.icon.circle3::before{content:"\189  ";}
+.icon.circle4::before{content:"\187  ";}
+.icon.circle-dashed::before{content:"\18a  ";}
+.icon.circle-dashed2::before{content:"\18b  ";}
+.icon.circle-dashed3::before{content:"\18c  ";}
+.icon.circle-hatched::before{content:"\18d  ";}
+.icon.circle-hatched2::before{content:"\18e  ";}
+.icon.square-dashed::before{content:"\18f  ";}
+.icon.square-dashed2::before{content:"\190  ";}
+.icon.square-dashed3::before{content:"\191  ";}
+.icon.square-dashed4::before{content:"\192  ";}
+.icon.square-dashed5::before{content:"\193  ";}
+.icon.square-hatched::before{content:"\194  ";}
+.icon.square-hatched2::before{content:"\195  ";}
 .icon.hex::before{content:"\1a1  ";}
 .icon.hex-rounded::before{content:"\1a2  ";}
 .icon.hex-stroke::before{content:"\1a3  ";}
+.icon.hex2::before{content:"\19e  ";}
+.icon.hex2-rounded::before{content:"\19f  ";}
+.icon.hex2-stroke::before{content:"\1a0  ";}
+.icon.triangle::before{content:"\196  ";}
+.icon.triangle-down::before{content:"\197  ";}
+.icon.diamond::before{content:"\198  ";}
+.icon.pentagon::before{content:"\19b  ";}
+.icon.pentagon-rounded::before{content:"\19c  ";}
+.icon.pentagon-stroke::before{content:"\19d  ";}
+
 
 /* Circle */
 .icon.circle-right::before{content:"\1ade  ";}
