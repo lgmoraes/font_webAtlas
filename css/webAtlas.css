@@ -18,8 +18,16 @@
 .icon.file::before{content:"\24f  ";}
 .icon.user::before{content:"\3a8  ";}
 .icon.addUser::before{content:"\3a9  ";}
+.icon.removeUser::before{content:"\3aa  ";}
+.icon.modifyUser::before{content:"\3ab  ";}
 .icon.users::before{content:"\3ac  ";}
 .icon.userGroup::before{content:"\3ad  ";}
+.icon.user2::before{content:"\3ae  ";}
+.icon.addUser2::before{content:"\3af  ";}
+.icon.removeUser2::before{content:"\3b0  ";}
+.icon.modifyUser2::before{content:"\3b1  ";}
+.icon.users2::before{content:"\3b2  ";}
+.icon.userGroup2::before{content:"\3b3  ";}
 .icon.login::before{content:"\413  ";}
 .icon.spreadsheet::before{content:"\261  ";}
 .icon.spreadsheet2::before{content:"\262  ";}
