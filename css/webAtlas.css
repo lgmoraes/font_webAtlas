@@ -14,7 +14,10 @@
 .icon.copy-sharp::before{content:"\24c  ";}
 .icon.warning::before{content:"\1d4  ";}
 .icon.warning2::before{content:"\1d5  ";}
-.icon.uploadFile::before{content:"\2c7  ";}
+.icon.uploadFile::before{content:"\212  ";}
+.icon.downloadFile::before{content:"\211  ";}
+.icon.downloadData::before{content:"\213  ";}
+.icon.downloadData2::before{content:"\214  ";}
 .icon.file::before{content:"\24f  ";}
 .icon.user::before{content:"\3a8  ";}
 .icon.addUser::before{content:"\3a9  ";}
@@ -48,6 +51,7 @@
 .icon.pen4::before{content:"\406  ";}
 .icon.reload::before{content:"\1fb  ";}
 .icon.reload2::before{content:"\1fc  ";}
+.icon.reload3::before{content:"\1ff  ";}
 .icon.menu::before{content:"\26a  ";}
 .icon.menu2::before{content:"\26b  ";}
 .icon.menu3::before{content:"\26c  ";}
@@ -56,6 +60,12 @@
 .icon.menu6::before{content:"\26f  ";}
 .icon.image::before{content:"\25f  ";}
 .icon.image2::before{content:"\260  ";}
+.icon.home::before{content:"\2cc  ";}
+.icon.home-stroke::before{content:"\2ce  ";}
+.icon.home2::before{content:"\2cd  ";}
+.icon.home2-stroke::before{content:"\2cf  ";}
+.icon.zoom::before{content:"\454  ";}
+.icon.zoom2::before{content:"\455  ";}
 
 /* Right / Wrong */
 .icon.right::before{content:"\100  ";}
@@ -194,12 +204,48 @@
 .icon.arrow2-up-right::before{content:"\4ce  ";}
 .icon.arrow2-down-right::before{content:"\4cf  ";}
 .icon.arrow2-down-left::before{content:"\4d0  ";}
-.icon.padlock::before{content:"\444  ";}
-.icon.padlock-unlock::before{content:"\445  ";}
+.icon.arrow3-left::before{content:"\4d1  ";}
+.icon.arrow3-up::before{content:"\4d2  ";}
+.icon.arrow3-right::before{content:"\4d3  ";}
+.icon.arrow3-down::before{content:"\4d4  ";}
+.icon.arrow3-up-left::before{content:"\4d5  ";}
+.icon.arrow3-up-right::before{content:"\4d6  ";}
+.icon.arrow3-down-right::before{content:"\4d7  ";}
+.icon.arrow3-down-left::before{content:"\4d8  ";}
+.icon.arrow4-left::before{content:"\4b9  ";}
+.icon.arrow4-up::before{content:"\4ba  ";}
+.icon.arrow4-right::before{content:"\4bb  ";}
+.icon.arrow4-down::before{content:"\4bc  ";}
+.icon.arrow4-up-left::before{content:"\4bd  ";}
+.icon.arrow4-up-right::before{content:"\4be  ";}
+.icon.arrow4-down-right::before{content:"\4bf  ";}
+.icon.arrow4-down-left::before{content:"\4c0  ";}
 
 /* Divers */
 .icon.planete::before{content:"\46b  ";}
 .icon.planete2::before{content:"\46c  ";}
+.icon.eye::before{content:"\238  ";}
+.icon.eye-closed::before{content:"\239  ";}
+.icon.eye-half::before{content:"\23a  ";}
+.icon.eye2::before{content:"\23b  ";}
+.icon.time::before{content:"\14e  ";}
+.icon.time2::before{content:"\14f  ";}
+.icon.time3::before{content:"\150  ";}
+.icon.time4::before{content:"\151  ";}
+.icon.timer::before{content:"\14d  ";}
+.icon.bold::before{content:"\170  ";}
+.icon.italic::before{content:"\171  ";}
+.icon.underline::before{content:"\172  ";}
+.icon.align-left::before{content:"\174  ";}
+.icon.align-center::before{content:"\175  ";}
+.icon.align-right::before{content:"\176  ";}
+.icon.align-justify::before{content:"\177  ";}
+.icon.displace-left::before{content:"\204  ";}
+.icon.displace-right::before{content:"\205  ";}
+.icon.displace2-left::before{content:"\206  ";}
+.icon.displace2-right::before{content:"\207  ";}
+.icon.padlock::before{content:"\444  ";}
+.icon.padlock-unlock::before{content:"\445  ";}
 .icon.barcode::before{content:"\168  ";}
 .icon.qrcode::before{content:"\169  ";}
 .icon.circlecode::before{content:"\164  ";}
