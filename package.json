@@ -1,6 +1,6 @@
 {
   "name": "font_webatlas",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Font specially designed for the creation of interfaces / web applications.",
   "directories": {
     "assets": {
