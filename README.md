@@ -1,7 +1,7 @@
 # README
 
 <p align="center">
-    <img alt="font webatlas" src="http://lmoraes.fr/assets/git/font_webatlas.png" width="600">
+    <img alt="font webatlas" src="https://lmoraes.fr/assets/git/font_webatlas.png" width="600">
 </p>
 
 ## Introduction
@@ -13,7 +13,7 @@ Elle contiens les icones les plus courantes pour la création facile et rapide d
 ## Package managers
 
 ```console
-yarn add https://github.com/lgmoraes/Font_webatlas.git
+npm install font_webatlas
 ```
 
 ## Liste des icones
@@ -32,7 +32,7 @@ Bien sûr, si vous utilisez le nom de class de l'icone vous pouvez faire abstrac
 
 Importer le fichier webAtlas.css :
 ```html
-<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/css/webAtlas.css">
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/webAtlas.css">
 ```
 
 Puis ajouter la class 'icon' et la class correspondante a l'icon :
