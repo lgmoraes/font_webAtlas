@@ -2,9 +2,10 @@
   "name": "font_webatlas",
   "version": "0.4.0",
   "description": "Font specially designed for the creation of interfaces / web applications.",
+  "main": "dist/css/webAtlas-fontface.css",
   "directories": {
     "assets": {
-       "css": ["dist/css/webAtlas.css"],
+       "css": ["dist/css/webAtlas.css","dist/css/webAtlas-fontface.css"],
        "font":["dist/font/WebAtlas.ttf","dist/font/WebAtlas.woff","dist/font/WebAtlas.woff2","dist/font/WebAtlas-Light.ttf","dist/font/WebAtlas-Light.woff","dist/font/WebAtlas-Light.woff2"]
     }
   },
