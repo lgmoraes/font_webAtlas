@@ -134,10 +134,10 @@
 .icon.circle-minus::before{content:"\1b2  ";}
 .icon.circle-info::before{content:"\1b6  ";}
 .icon.circle-warning::before{content:"\1b5  ";}
-.icon.circle-left::before{content:"\1b7  ";}
-.icon.circle-up::before{content:"\1b8  ";}
-.icon.circle-right::before{content:"\1b9  ";}
-.icon.circle-down::before{content:"\1ba  ";}
+.icon.circle-leftArrow::before{content:"\1b7  ";}
+.icon.circle-upArrow::before{content:"\1b8  ";}
+.icon.circle-rightArrow::before{content:"\1b9  ";}
+.icon.circle-downArrow::before{content:"\1ba  ";}
 
 /* FORM */
 .icon.radio::before{content:"\271  ";}
@@ -145,13 +145,13 @@
 .icon.checkbox::before{content:"\273  ";}
 .icon.checkbox-checked::before{content:"\272  ";}
 .icon.radio2::before{content:"\275  ";}
-.icon.radio-checked2::before{content:"\274  ";}
+.icon.radio2-checked::before{content:"\274  ";}
 .icon.checkbox2::before{content:"\277  ";}
-.icon.checkbox-checked2::before{content:"\276  ";}
+.icon.checkbox2-checked::before{content:"\276  ";}
 .icon.radio3::before{content:"\279  ";}
-.icon.radio-checked3::before{content:"\278  ";}
+.icon.radio3-checked::before{content:"\278  ";}
 .icon.checkbox3::before{content:"\27B  ";}
-.icon.checkbox-checked3::before{content:"\27A  ";}
+.icon.checkbox3-checked::before{content:"\27A  ";}
 
 /* Player */
 .icon.play::before{content:"\531  ";}
@@ -250,7 +250,7 @@
 .icon.qrcode::before{content:"\169  ";}
 .icon.circlecode::before{content:"\164  ";}
 .icon.link::before{content:"\16c  ";}
-.icon.link2::before{content:"\16d  ";}
+.icon.link2::before{content:"\16b  ";}
 .icon.text::before{content:"\492  ";}
 .icon.postIt::before{content:"\493  ";}
 .icon.formRadio::before{content:"\494  ";}
