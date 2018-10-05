@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Atlas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="dist/css/webAtlas-fontface.css" />
+    <link rel="stylesheet" type="text/css" href="dist/css/webAtlas.css" />
+    
+    <style>
+        html {
+            height: 100%;
+            background-image: radial-gradient(ellipse farthest-corner at 50% 150%, #8d8d8d 0%, #313138 100%);
+            background-attachment: fixed;
+        }
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 8px;
+            padding-top: 0;
+            box-sizing: border-box;
+            font-family: "WebAtlas";
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        h2 {
+            font-family: 'WebAtlas-Light';
+            font-size: 25px;
+            margin: 10px;
+            color: #41c3ff;
+            animation: flipInX .5s;
+        }
+        #main-col {
+            width: 400px;
+            margin: auto;
+            margin-bottom: 50px;
+            color: #ffffff;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, .4);
+            background-color: rgba(28, 28, 28, .8);
+            border-radius: 4px;
+            box-shadow: 0px 0px 3px black, inset 0px 1px 0px rgba(255, 255, 255, .2);
+        }
+        #gianteIcon {
+            font-family: 'WebAtlas';
+            font-size: 80px;
+            color: #ddd;
+            text-shadow: 3px 3px 0 black;
+            position: fixed;
+            top: 150px;
+            left: 100px;
+
+        }
+        .info {
+            font-family: 'WebAtlas-Light';
+            font-size: 19px;
+            text-align:center;
+            color: transparent;
+            color: #16b5ff;
+            background-clip: text;
+        }
+        .item {
+            line-height: 13px;
+            padding: 4px 10px;
+            margin-bottom: 4px;
+            font-size: 13px;
+            color: #ddd;
+            text-shadow: 0 1px rgba(0,0,0,0.8);
+            background: #464a4f;
+                background-image: none;
+                background-clip: border-box;
+            background-clip: padding-box;
+            border: 1px solid #111;
+                border-bottom-color: rgb(17, 17, 17);
+            border-bottom-color: black;
+            border-radius: 3px;
+            cursor: pointer;
+            box-shadow: inset 0 1px rgba(255,255,255,0.1),inset 0 -1px 3px rgba(0,0,0,0.3),inset 0 0 0 1px rgba(255,255,255,0.1),0 1px 2px rgba(0,0,0,0.15);
+            background-image: linear-gradient(to bottom, rgba(255,255,255,0.08),rgba(255,255,255,0) 50%,rgba(0,0,0,0) 51%,rgba(0,0,0,0.25));
+            animation: flipInX .5s;
+        }
+        .item:active {
+            background: #393d40;
+            background-image: none;
+            box-shadow: inset 0 -1px 18px rgba(0,0,0,0.8),inset 0 0 0 1px rgba(255,255,255,0.1);
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.1),transparent 50%,rgba(255,255,255,0.07));
+        }
+
+        @keyframes flipInX {
+            0%   {transform: rotateX(90deg);}
+            100% {transform: rotateX(0deg);}
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="inputClipboard" style="display:none" />
+    <div align="center">
+        <img alt="font webatlas" src="font_webatlas_header.png" width="600">
+    </div>
+
+    <div id="gianteIcon"></div>
+
+    <div id="main-col">
+        <h2>List of icons:</h2>
+
+        <div class="icon info circle-info"> Clic on an item to copy the className on clipboard.</div>
+
+        <div id="divIcons"></div>
+
+
+        
+
+    </div>
+
+<script>
+    var divIcons = document.getElementById('divIcons');
+    var main_col = document.getElementById('main-col');
+    var gianteIcon = document.getElementById('gianteIcon');
+    var inputClipboard = document.getElementById('inputClipboard');
+
+    var TIME_INTERVAL = 10;
+    var iconsCursor;
+    var categoryCursor;
+    var categories = [];
+
+    var icons = {
+        General: [
+            'newFile',
+            'open',
+            'save',
+            'copy',
+            'newFile-sharp',
+            'open-sharp',
+            'save-sharp',
+            'copy-sharp',
+            'warning',
+            'warning2',
+            'uploadFile',
+            'downloadFile',
+            'downloadData',
+            'downloadData2',
+            'file',
+            'user',
+            'addUser',
+            'removeUser',
+            'modifyUser',
+            'users',
+            'userGroup',
+            'user2',
+            'addUser2',
+            'removeUser2',
+            'modifyUser2',
+            'users2',
+            'userGroup2',
+            'login',
+            'spreadsheet',
+            'spreadsheet2',
+            'spreadsheet3',
+            'spreadsheet4',
+            'wheel',
+            'wheel2',
+            'wheel3',
+            'wheel4',
+            'wheel5',
+            'wheel6',
+            'wheel7',
+            'dustbin',
+            'dustbin2',
+            'pen',
+            'pen2',
+            'pen3',
+            'pen4',
+            'reload',
+            'reload2',
+            'reload3',
+            'menu',
+            'menu2',
+            'menu3',
+            'menu4',
+            'menu5',
+            'menu6',
+            'image',
+            'image2',
+            'home',
+            'home-stroke',
+            'home2',
+            'home2-stroke',
+            'zoom',
+            'zoom2'
+        ],
+        Divers: [
+            'planete',
+            'planete2',
+            'eye',
+            'eye-closed',
+            'eye-half',
+            'eye2',
+            'time',
+            'time2',
+            'time3',
+            'time4',
+            'timer',
+            'bold',
+            'italic',
+            'underline',
+            'align-left',
+            'align-center',
+            'align-right',
+            'align-justify',
+            'displace-left',
+            'displace-right',
+            'displace2-left',
+            'displace2-right',
+            'padlock',
+            'padlock-unlock',
+            'barcode',
+            'qrcode',
+            'circlecode',
+            'link',
+            'link2',
+            'text',
+            'postIt',
+            'formRadio',
+            'formCheckbox',
+            'clickableImage'
+        ],
+        Right_Wrong: [
+            'right',
+            'wrong',
+            'right-medium',
+            'wrong-medium',
+            'right-bold',
+            'wrong-bold',
+            'right-rounded',
+            'wrong-rounded',
+            'right-rounded-bold',
+            'wrong-rounded-bold',
+            'right-handwriting',
+            'wrong-handwriting',
+            'right-handwriting2',
+            'wrong-handwriting2'
+        ],
+        Plus_Minus: [
+            'plus',
+            'minus',
+            'plus2',
+            'minus2',
+            'plus3',
+            'minus3',
+            'plus4',
+            'minus4',
+            'plus5',
+            'minus5'
+        ],
+        Geometric: [
+            'circle',
+            'circle2',
+            'circle3',
+            'circle4',
+            'circle-dashed',
+            'circle-dashed2',
+            'circle-dashed3',
+            'circle-hatched',
+            'circle-hatched2',
+            'square-dashed',
+            'square-dashed2',
+            'square-dashed3',
+            'square-dashed4',
+            'square-dashed5',
+            'square-hatched',
+            'square-hatched2',
+            'hex',
+            'hex-rounded',
+            'hex-stroke',
+            'hex-rounded',
+            'hex2',
+            'hex2-rounded',
+            'hex2-stroke',
+            'hex2-rounded',
+            'triangle',
+            'triangle-down',
+            'diamond',
+            'pentagon',
+            'pentagon-rounded',
+            'pentagon-stroke'
+        ],
+        Circles: [
+            'circle-right',
+            'circle-wrong',
+            'circle-right-handwriting',
+            'circle-wrong-handwriting',
+            'circle-plus',
+            'circle-minus',
+            'circle-info',
+            'circle-warning',
+            'circle-leftArrow',
+            'circle-upArrow',
+            'circle-rightArrow',
+            'circle-downArrow',
+        ],
+        Formular: [
+            'radio',
+            'radio-checked',
+            'checkbox',
+            'checkbox-checked',
+            'radio2',
+            'radio2-checked',
+            'checkbox2',
+            'checkbox2-checked',
+            'radio3',
+            'radio3-checked',
+            'checkbox3',
+            'checkbox3-checked'
+        ],
+        Player: [
+            'play',
+            'pause',
+            'stop',
+            'slow',
+            'next',
+            'previous',
+            'fastForward',
+            'rewind',
+            'eject',
+            'speaker-high',
+            'speaker-medium',
+            'speaker-low',
+            'speaker-mute',
+            'loop',
+            'loopUnique',
+            'random',
+            'play-sharp',
+            'pause-sharp',
+            'stop-sharp',
+            'slow-sharp',
+            'next-sharp',
+            'previous-sharp',
+            'fastForward-sharp',
+            'rewind-sharp',
+            'eject-sharp',
+            'speaker-high-sharp',
+            'speaker-medium-sharp',
+            'speaker-low-sharp',
+            'speaker-mute-sharp',
+            'loop-sharp',
+            'loopUnique-sharp',
+            'random-sharp'
+        ],
+        Arrows: [
+            'arrow-left',
+            'arrow-up',
+            'arrow-right',
+            'arrow-down',
+            'arrow-up-left',
+            'arrow-up-right',
+            'arrow-down-right',
+            'arrow-down-left',
+            'arrow2-left',
+            'arrow2-up',
+            'arrow2-right',
+            'arrow2-down',
+            'arrow2-up-left',
+            'arrow2-up-right',
+            'arrow2-down-right',
+            'arrow2-down-left',
+            'arrow3-left',
+            'arrow3-up',
+            'arrow3-right',
+            'arrow3-down',
+            'arrow3-up-left',
+            'arrow3-up-right',
+            'arrow3-down-right',
+            'arrow3-down-left',
+            'arrow4-left',
+            'arrow4-up',
+            'arrow4-right',
+            'arrow4-down',
+            'arrow4-up-left',
+            'arrow4-up-right',
+            'arrow4-down-right',
+            'arrow4-down-left'
+        ]
+    };
+
+
+    displayNextItem = function() {
+        var end = false;
+
+        // Display Title
+        if (iconsCursor === -1) {
+            var newH2 = document.createElement('h2');
+            newH2.innerHTML = categories[categoryCursor];
+            divIcons.appendChild(newH2);
+
+            iconsCursor++;
+        }
+        // Display Icon
+        else if (iconsCursor < icons[categories[categoryCursor]].length) {
+            var category = categories[categoryCursor];
+            var icon = icons[category][iconsCursor];
+            var newDiv = document.createElement('div');
+            var newDivIcon = document.createElement('div');
+            
+            newDivIcon.className = "icon div-indent-center " + icon;
+            newDiv.appendChild(newDivIcon);
+            newDiv.className = "item";
+            newDiv.codeIcon = icon;
+            newDiv.appendChild( document.createTextNode(icon) );
+            
+            divIcons.appendChild(newDiv);
+
+            iconsCursor++;
+        }
+        // Next Category
+        else {
+            if (categoryCursor < categories.length-1) {
+                categoryCursor++;
+                iconsCursor = -1;
+            }
+            else {
+                end = true;
+            } 
+        }
+        
+        if(!end)
+            setTimeout(displayNextItem, TIME_INTERVAL);
+    }
+
+    onload = function() {
+        for (category in icons) {
+            categories.push(category);
+        }
+        
+        iconsCursor = -1;
+        categoryCursor = 0;
+
+        displayNextItem();
+    };
+
+    main_col.onclick = function(e) {
+        if (e.target.className === "item") {
+            inputClipboard.style.display = 'block';
+            inputClipboard.value = e.target.codeIcon;
+            inputClipboard.select();
+            document.execCommand('copy');
+            inputClipboard.blur();
+            inputClipboard.style.display = 'none';
+            
+            gianteIcon.className = "icon " + e.target.codeIcon;
+        }
+    };
+
+</script>
+</body>
+</html>
