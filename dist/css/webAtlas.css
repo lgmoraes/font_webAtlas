@@ -1,6 +1,7 @@
 .icon::first-letter{font-family:"WebAtlas";}                                                /* Pour les icones à gauche de l'element */
 .icon.div{font-family:"WebAtlas";display:inline-block}                                      /* Pour les icones à l'interieure d'un element */
 .icon.div-indent{width:28px;text-align:left;font-family:"WebAtlas";display:inline-block}    /* Pour les icones à gauche de l'element avec une indentation sur la droite */
+.icon.div-indent-center{width:28px;text-align:center;font-family:"WebAtlas";display:inline-block}    /* Pour les icones à gauche de l'element avec une indentation au centre */
 
 
 /* General */
