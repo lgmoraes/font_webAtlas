@@ -485,15 +485,21 @@
     }
 
     main_col.onclick = function(e) {
-        if (e.target.className === "item") {
+        var ele = e.target;
+
+        if (hasClass("icon", ele)) {
+            ele = ele.parentElement;
+        }
+
+        if (ele.className === "item") {
             inputClipboard.style.display = 'block';
-            inputClipboard.value = e.target.codeIcon;
+            inputClipboard.value = ele.codeIcon;
             inputClipboard.select();
             document.execCommand('copy');
             inputClipboard.blur();
             inputClipboard.style.display = 'none';
             
-            gianteIcon.className = "icon " + e.target.codeIcon;
+            gianteIcon.className = "icon " + ele.codeIcon;
         }
     };
 
