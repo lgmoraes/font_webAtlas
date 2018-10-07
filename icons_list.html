@@ -51,20 +51,18 @@
             background-color: rgba(28, 28, 28, .8);
             border-radius: 4px;
             box-shadow: 0px 0px 3px black, inset 0px 1px 0px rgba(255, 255, 255, .2);
+            transition: width .3s;
+        }
+        #main-col.block {
+            width: 550px;
         }
         #arrowUp {
             width: 40px;
             height: 40px;
             line-height: 40px;
             text-align: center;
-            text-shadow: 1px 1px 0 black;
             font-size: 22px;
             border-radius: 100%;
-            background-color: rgba(0, 0, 0, .5);
-            border: 1px solid #111;
-            border-bottom-color: rgb(17, 17, 17);
-            border-bottom-color: black;
-            box-shadow: inset 0 1px rgba(255,255,255,0.1),inset 0 -1px 3px rgba(0,0,0,0.3),inset 0 0 0 1px rgba(255,255,255,0.1),0 1px 2px rgba(0,0,0,0.15);
             opacity: .0;
             cursor: default;
             transition: .5s;
@@ -72,8 +70,29 @@
             right: 30px;
             bottom: 30px;
         }
-        #arrowUp:hover {
+        #switchDisplayMode {
+            width: 33px;
+            height: 33px;
+            line-height: 33px;
+            text-align: center;
+            font-size: 19px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: .5s;
+            position: fixed;
+            top: 30px;
+            right: 30px;
+        }
+        #arrowUp:hover, #switchDisplayMode:hover {
             background-color: rgba(50, 132, 255, 0.5);
+        }
+        .glass {
+            text-shadow: 1px 1px 0 black;
+            background-color: rgba(0, 0, 0, .5);
+            border: 1px solid #111;
+            border-bottom-color: rgb(17, 17, 17);
+            border-bottom-color: black;
+            box-shadow: inset 0 1px rgba(255,255,255,0.1),inset 0 -1px 3px rgba(0,0,0,0.3),inset 0 0 0 1px rgba(255,255,255,0.1),0 1px 2px rgba(0,0,0,0.15);
         }
         #gianteIcon {
             font-family: 'WebAtlas';
@@ -93,7 +112,21 @@
             color: #16b5ff;
             background-clip: text;
         }
+        .block .item {
+            width: 33%;
+            line-height: 20px;
+            padding: 10px;
+            margin-bottom: 0px;
+            vertical-align: top;
+            display: inline-block;
+        }
+        .block .div-indent-center {
+            width: 40px;
+            font-size: 22px;
+            vertical-align: top;
+        }
         .item {
+            box-sizing: border-box;
             line-height: 13px;
             padding: 4px 10px;
             margin-bottom: 4px;
@@ -134,14 +167,15 @@
 
     <div id="gianteIcon"></div>
 
-    <div id="main-col">
+    <div id="main-col" class="block">
         <h1>List of icons:</h1>
 
         <div class="icon info circle-info"> Clic on an item to copy the className on clipboard.</div>
 
         <div id="divIcons"></div>
 
-        <div id="arrowUp" class="icon arrow-up"></div>
+        <div id="switchDisplayMode" class="glass icon menu"></div>
+        <div id="arrowUp" class="glass icon arrow-up"></div>
 
     </div>
 
@@ -150,6 +184,7 @@
     var main_col = document.getElementById('main-col');
     var gianteIcon = document.getElementById('gianteIcon');
     var arrowUp = document.getElementById('arrowUp');
+    var switchDisplayMode = document.getElementById('switchDisplayMode');
     var inputClipboard = document.getElementById('inputClipboard');
 
     var TIME_INTERVAL = 10;
@@ -467,8 +502,72 @@
         }
     }
 
+    switchDisplayMode.onclick = function() {
+        if (hasClass("menu", this)) {
+            removeClass("menu", this);
+            addClass("menu3", this);
+        }
+        else {
+            removeClass("menu3", this);
+            addClass("menu", this);
+        }
+
+        toggleClass("block", main_col)
+    }
+
     function getScrollY() {
         return window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0; // position du scrolling MultiSupport.
+    }
+
+
+    // MANIPULATION DE CLASS
+    // Utile pour IE < 10 (classList n'étant pas compatible avant Internet Explorer 10)
+
+    function hasClass(c, element) {
+        if(element.className == '')
+            return false;
+
+        var classes = element.className.split(' ');
+        return classes.indexOf(c) !== -1;
+    }
+
+    function addClass(c, element) {
+        if(hasClass(c, element))
+            return false;
+        
+        element.className += " " + c;
+        return true;
+    }
+
+    function removeClass(c, element) {
+        if(!hasClass(c, element))
+            return false;
+        
+        var classes = element.className.split(' ');
+        var newClass = "";
+        var indexToRemove = classes.indexOf(c);
+        
+        classes.splice(indexToRemove, 1);
+        
+        if(classes.length > 0)
+            newClass = classes[0];
+
+        for(var i=1; i < classes.length ;i++) {
+            newClass += " " + classes[i];
+        }
+        
+        element.className = newClass;
+
+        return true;
+    }
+
+    function toggleClass(c, element) {	/* Ajoute la class si elle n'existe pas ou Supprime la class si elle existe */
+        if(!removeClass(c, element)) {
+            addClass(c, element);
+            return true;
+        }
+
+        return false;
     }
 </script>
 </body>
