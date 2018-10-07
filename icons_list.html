@@ -43,6 +43,29 @@
             border-radius: 4px;
             box-shadow: 0px 0px 3px black, inset 0px 1px 0px rgba(255, 255, 255, .2);
         }
+        #arrowUp {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            text-shadow: 1px 1px 0 black;
+            font-size: 22px;
+            border-radius: 100%;
+            background-color: rgba(0, 0, 0, .5);
+            border: 1px solid #111;
+            border-bottom-color: rgb(17, 17, 17);
+            border-bottom-color: black;
+            box-shadow: inset 0 1px rgba(255,255,255,0.1),inset 0 -1px 3px rgba(0,0,0,0.3),inset 0 0 0 1px rgba(255,255,255,0.1),0 1px 2px rgba(0,0,0,0.15);
+            opacity: .0;
+            cursor: default;
+            transition: .5s;
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+        }
+        #arrowUp:hover {
+            background-color: rgba(50, 132, 255, 0.5);
+        }
         #gianteIcon {
             font-family: 'WebAtlas';
             font-size: 80px;
@@ -109,8 +132,7 @@
 
         <div id="divIcons"></div>
 
-
-        
+        <div id="arrowUp" class="icon arrow-up"></div>
 
     </div>
 
@@ -118,6 +140,7 @@
     var divIcons = document.getElementById('divIcons');
     var main_col = document.getElementById('main-col');
     var gianteIcon = document.getElementById('gianteIcon');
+    var arrowUp = document.getElementById('arrowUp');
     var inputClipboard = document.getElementById('inputClipboard');
 
     var TIME_INTERVAL = 10;
@@ -391,21 +414,30 @@
 
             for (var i=0 ; i < list.length ; i++) {
                 var icon = list[i];
-            var newDiv = document.createElement('div');
-            var newDivIcon = document.createElement('div');
-            
-            newDivIcon.className = "icon div-indent-center " + icon;
-            newDiv.appendChild(newDivIcon);
-            newDiv.className = "item";
-            newDiv.codeIcon = icon;
-            newDiv.appendChild( document.createTextNode(icon) );
-            
-            divIcons.appendChild(newDiv);
+                var newDiv = document.createElement('div');
+                var newDivIcon = document.createElement('div');
+                
+                newDivIcon.className = "icon div-indent-center " + icon;
+                newDiv.appendChild(newDivIcon);
+                newDiv.className = "item";
+                newDiv.codeIcon = icon;
+                newDiv.appendChild( document.createTextNode(icon) );
+                
+                divIcons.appendChild(newDiv);
             }
         }
     };
 
-        
+    onscroll = function(e) {
+        if (e.pageY === 0) {
+            arrowUp.style.opacity = "0";
+            arrowUp.style.cursor = "default";
+        }
+        else {
+            arrowUp.style.opacity = "1";
+            arrowUp.style.cursor = "pointer";
+        }
+    }
 
     main_col.onclick = function(e) {
         if (e.target.className === "item") {
@@ -420,6 +452,15 @@
         }
     };
 
+    arrowUp.onclick = function() {
+        if(getScrollY !== 0) {
+            window.scroll(0, 0);
+        }
+    }
+
+    function getScrollY() {
+        return window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0; // position du scrolling MultiSupport.
+    }
 </script>
 </body>
 </html>
