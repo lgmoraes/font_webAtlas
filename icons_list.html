@@ -121,10 +121,6 @@
     var inputClipboard = document.getElementById('inputClipboard');
 
     var TIME_INTERVAL = 10;
-    var iconsCursor;
-    var categoryCursor;
-    var categories = [];
-
     var icons = {
         General: [
             'newFile',
@@ -385,21 +381,16 @@
     };
 
 
-    displayNextItem = function() {
-        var end = false;
+    onload = function() {
+        for (category in icons) {
+            var list = icons[category];
 
-        // Display Title
-        if (iconsCursor === -1) {
             var newH2 = document.createElement('h2');
-            newH2.innerHTML = categories[categoryCursor];
+            newH2.innerHTML = category;
             divIcons.appendChild(newH2);
 
-            iconsCursor++;
-        }
-        // Display Icon
-        else if (iconsCursor < icons[categories[categoryCursor]].length) {
-            var category = categories[categoryCursor];
-            var icon = icons[category][iconsCursor];
+            for (var i=0 ; i < list.length ; i++) {
+                var icon = list[i];
             var newDiv = document.createElement('div');
             var newDivIcon = document.createElement('div');
             
@@ -410,34 +401,11 @@
             newDiv.appendChild( document.createTextNode(icon) );
             
             divIcons.appendChild(newDiv);
-
-            iconsCursor++;
-        }
-        // Next Category
-        else {
-            if (categoryCursor < categories.length-1) {
-                categoryCursor++;
-                iconsCursor = -1;
             }
-            else {
-                end = true;
-            } 
         }
-        
-        if(!end)
-            setTimeout(displayNextItem, TIME_INTERVAL);
-    }
-
-    onload = function() {
-        for (category in icons) {
-            categories.push(category);
-        }
-        
-        iconsCursor = -1;
-        categoryCursor = 0;
-
-        displayNextItem();
     };
+
+        
 
     main_col.onclick = function(e) {
         if (e.target.className === "item") {
