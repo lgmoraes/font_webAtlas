@@ -437,8 +437,8 @@
         }
     };
 
-    onscroll = function(e) {
-        if (e.pageY === 0) {
+    onscroll = function() {
+        if (getScrollY() === 0) {
             arrowUp.style.opacity = "0";
             arrowUp.style.cursor = "default";
         }
@@ -462,7 +462,7 @@
     };
 
     arrowUp.onclick = function() {
-        if(getScrollY !== 0) {
+        if(getScrollY() !== 0) {
             window.scroll(0, 0);
         }
     }
