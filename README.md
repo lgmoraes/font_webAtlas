@@ -6,11 +6,11 @@
 
 ## Introduction
 
-WebAtlas est une police de caractère concu spécialement pour la création d'interfaces/applications web.
+WebAtlas is a font specially designed for the creation of web interfaces / applications.
 
-Elle contiens les icones les plus courantes pour la création facile et rapide de menus, d'espaces d'administration, de lecteurs...
+It contains the most common icons for easy and fast creation of menus, administration spaces, players...
 
-Vous avez a disposition une micro application icons_list.html qui vous permet d'observer l'ensembles des icones disponibles et d'en copier le code css d'un simple clique.
+You have at your disposal a micro application icons_list.html which allows you to observe the set of available icons and to copy the css code with a simple click.
 
 ## Package managers
 
@@ -18,48 +18,48 @@ Vous avez a disposition une micro application icons_list.html qui vous permet d'
 npm install font_webatlas
 ```
 
-## Liste des icones
+## List of icons
 
-Ouvrez simplement le fichier icons_list.html pour voir la liste complète des icones disponibles.
-Vous pouvez cliquer sur l'icone que vous souhaitez importer, le code css sera copié dans le presse papier.
+Simply open the icons_list.html file to see the complete list of available icons.
+You can click on the icon you want to import, the css code will be copied to the clipboard.
 
-Vous pouvez aussi consulter le fichier webAtlas.css :
+You can also consult the webAtlas.css file:
 ```css
-/* Le nom de l'icone ici est warning et son code UTF-8 est 1d4 */
+/* The name of the icon here is warning and its UTF-8 code is 1d4 */
 .icon.warning::before{content:"\1d4  ";}
 ```
 
-Vous pouvez soit utiliser le code css de l'icone (warning) ou utiliser directement le code UTF-8 (1d4).
+You can either use the css code of the icon (warning) or use the UTF-8 code (1d4).
 
-## Utilisation
+## Use
 
-### Cette procédure vous indique comment utiliser les noms de class d'icones et faire abstraction des codes UTF-8
+### This procedure shows you how to use icon class names and disregards UTF-8 codes
 
-Importer les fichiers webAtlas.css et webAtlas-fontface.css :
+Import the webAtlas.css and webAtlas-fontface.css files :
 ```html
 <link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/webAtlas.css">
 <link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/webAtlas-fontface.css">
 ```
 
-Puis ajouter la class 'icon' et la class correspondante a l'icon :
+Then add the class 'icon' and the class corresponding to the icon :
 ```html
-<!-- Pour les icones à gauche de l'element -->
-<div class="icon login">Se connecter</div>
+<!-- For the icons to the left of the element -->
+<div class="icon login">Sign in</div>
 
-<!-- Pour les icones à l'interieure d'un element -->
+<!-- For icons inside an element -->
 <div>
-    <div class="icon div login"></div> Se connecter
+    <div class="icon div login"></div> Sign in
 </div>
 
-<!-- Pour les icones à gauche de l'element avec une indentation sur la droite -->
-<div class="icon div-indent login">Se connecter</div>
+<!-- For the icons to the left of the element with an indentation on the right -->
+<div class="icon div-indent login">Sign in</div>
 
-<!-- Pour les icones centrés avec indentation -->
-<div class="icon div-indent-center login">Se connecter</div>
+<!-- For icons centered with indentation -->
+<div class="icon div-indent-center login">Sign in</div>
 ```
 
-## Précisions
+## Precisions
 
-Cette fonte contient également les caractères alpha-numériques, les chiffres sont volontairement au format monospace (chaque chiffres utilisent la même largeur) afin de pouvoir facilement créer des interfaces de type timer.
+This font also contains alpha-numeric characters, the digits are deliberately in monospace format (each digits use the same width) in order to easily create timer type interfaces.
 
-La version Light ne contient pas d'icone, seulement les caractères alpha-numériques avec une graisse plus fine.
+The Light version does not contain an icon, only alpha-numeric characters with a finer grease.
