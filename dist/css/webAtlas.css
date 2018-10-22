@@ -15,6 +15,7 @@
 .icon.copy-sharp::before{content:"\24c  ";}
 .icon.email::before{content:"\138  ";}
 .icon.email-open::before{content:"\139  ";}
+.icon.attachment::before{content:"\13b  ";}
 .icon.warning::before{content:"\1d4  ";}
 .icon.warning2::before{content:"\1d5  ";}
 .icon.uploadFile::before{content:"\212  ";}
@@ -34,7 +35,10 @@
 .icon.modifyUser2::before{content:"\3b1  ";}
 .icon.users2::before{content:"\3b2  ";}
 .icon.userGroup2::before{content:"\3b3  ";}
-.icon.login::before{content:"\413  ";}
+.icon.login::before{content:"\410  ";}
+.icon.logout::before{content:"\411  ";}
+.icon.connexion::before{content:"\413  ";}
+.icon.connexion2::before{content:"\412  ";}
 .icon.spreadsheet::before{content:"\261  ";}
 .icon.spreadsheet2::before{content:"\262  ";}
 .icon.spreadsheet3::before{content:"\263  ";}
@@ -46,6 +50,7 @@
 .icon.wheel5::before{content:"\226  ";}
 .icon.wheel6::before{content:"\227  ";}
 .icon.wheel7::before{content:"\228  ";}
+.icon.wheel8::before{content:"\229  ";}
 .icon.settings::before{content:"\22f  ";}
 .icon.settings2::before{content:"\230  ";}
 .icon.settings3::before{content:"\231  ";}
@@ -55,23 +60,25 @@
 .icon.pen2::before{content:"\404  ";}
 .icon.pen3::before{content:"\405  ";}
 .icon.pen4::before{content:"\406  ";}
+.icon.revert::before{content:"\1fa  ";}
+.icon.revert2::before{content:"\1f9  ";}
 .icon.reload::before{content:"\1fb  ";}
 .icon.reload2::before{content:"\1fc  ";}
-.icon.reload3::before{content:"\1ff  ";}
-.icon.menu::before{content:"\26a  ";}
-.icon.menu2::before{content:"\26b  ";}
-.icon.menu3::before{content:"\26c  ";}
-.icon.menu4::before{content:"\26d  ";}
-.icon.menu5::before{content:"\26e  ";}
-.icon.menu6::before{content:"\26f  ";}
+.icon.reload3::before{content:"\1fd  ";}
+.icon.apps::before{content:"\268  ";}
+.icon.apps-sharp::before{content:"\267  ";}
+.icon.apps2::before{content:"\26a  ";}
+.icon.menu::before{content:"\26d  ";}
+.icon.menu-sharp::before{content:"\26c  ";}
+.icon.menu2::before{content:"\26e  ";}
+.icon.menu2-vertical::before{content:"\26f  ";}
 .icon.image::before{content:"\25f  ";}
 .icon.image2::before{content:"\260  ";}
 .icon.home::before{content:"\2cc  ";}
 .icon.home-stroke::before{content:"\2ce  ";}
 .icon.home2::before{content:"\2cd  ";}
 .icon.home2-stroke::before{content:"\2cf  ";}
-.icon.zoom::before{content:"\454  ";}
-.icon.zoom2::before{content:"\455  ";}
+.icon.magnify::before{content:"\454  ";}
 
 /* Right / Wrong */
 .icon.right::before{content:"\100  ";}
@@ -88,6 +95,8 @@
 .icon.wrong-handwriting::before{content:"\10d  ";}
 .icon.right-handwriting2::before{content:"\108  ";}
 .icon.wrong-handwriting2::before{content:"\109  ";}
+.icon.right2::before{content:"\10e  ";}
+.icon.wrong2::before{content:"\10f  ";}
 
 /* Plus / Minus */
 .icon.plus::before{content:"\297  ";}
@@ -124,8 +133,6 @@
 .icon.hex2::before{content:"\19e  ";}
 .icon.hex2-rounded::before{content:"\19f  ";}
 .icon.hex2-stroke::before{content:"\1a0  ";}
-.icon.triangle::before{content:"\196  ";}
-.icon.triangle-down::before{content:"\197  ";}
 .icon.diamond::before{content:"\198  ";}
 .icon.pentagon::before{content:"\19b  ";}
 .icon.pentagon-rounded::before{content:"\19c  ";}
@@ -144,6 +151,10 @@
 .icon.circle-upArrow::before{content:"\1b8  ";}
 .icon.circle-rightArrow::before{content:"\1b9  ";}
 .icon.circle-downArrow::before{content:"\1ba  ";}
+.icon.circle-play::before{content:"\1bb  ";}
+.icon.circle-pause::before{content:"\1bc  ";}
+.icon.circle-download::before{content:"\1bd  ";}
+.icon.circle-upload::before{content:"\1be  ";}
 
 /* FORM */
 .icon.radio::before{content:"\271  ";}
@@ -194,6 +205,24 @@
 .icon.random-sharp::before{content:"\550  ";}
 
 /* Arrow */
+.icon.arrow-undo::before{content:"\4e1  ";}
+.icon.arrow-redo::before{content:"\4e2  ";}
+.icon.arrow-swap::before{content:"\4e3  ";}
+.icon.arrow-loop::before{content:"\4f2  ";}
+.icon.arrow-move::before{content:"\4e4  ";}
+.icon.arrow-move-alt::before{content:"\4e5  ";}
+.icon.arrow-horizontal::before{content:"\4e6  ";}
+.icon.arrow-vertical::before{content:"\4e7  ";}
+.icon.arrow-diagonal::before{content:"\4e8  ";}
+.icon.arrow-diagonal2::before{content:"\4e9  ";}
+.icon.arrow-align-horizontal::before{content:"\4ea  ";}
+.icon.arrow-align-vertical::before{content:"\4eb  ";}
+.icon.arrow-align-left::before{content:"\4ec  ";}
+.icon.arrow-align-top::before{content:"\4ed  ";}
+.icon.arrow-align-right::before{content:"\4ee  ";}
+.icon.arrow-align-down::before{content:"\4ef  ";}
+.icon.arrow-resize-up::before{content:"\4f0  ";}
+.icon.arrow-resize-down::before{content:"\4f1  ";}
 .icon.arrow-left::before{content:"\4c1  ";}
 .icon.arrow-up::before{content:"\4c2  ";}
 .icon.arrow-right::before{content:"\4c3  ";}
@@ -228,11 +257,68 @@
 .icon.arrow4-down-left::before{content:"\4c0  ";}
 
 /* Divers */
+.icon.application::before{content:"\114  ";}
+.icon.application-right::before{content:"\115  ";}
+.icon.application-wrong::before{content:"\116  ";}
+.icon.application-warning::before{content:"\117  ";}
+.icon.application-wheel::before{content:"\118  ";}
+.icon.screen::before{content:"\119  ";}
+.icon.screen-play::before{content:"\11a  ";}
+.icon.screen-wheel::before{content:"\11b  ";}
+.icon.iphone::before{content:"\11e  ";}
+.icon.ipad::before{content:"\11d  ";}
+.icon.keyboard::before{content:"\11f  ";}
+.icon.mouse::before{content:"\120  ";}
+.icon.camera::before{content:"\121  ";}
+.icon.camera-sharp::before{content:"\122  ";}
+.icon.webcam::before{content:"\123  ";}
+.icon.micro::before{content:"\124  ";}
+.icon.speaker::before{content:"\125  ";}
+.icon.server::before{content:"\127  ";}
+.icon.server2::before{content:"\128  ";}
+.icon.database::before{content:"\129  ";}
+.icon.cloud::before{content:"\12a  ";}
+.icon.cloud-download::before{content:"\12b  ";}
+.icon.cloud-upload::before{content:"\12c  ";}
+.icon.cloud-swap::before{content:"\12d  ";}
+.icon.cloud-sync::before{content:"\12e  ";}
+.icon.cloud-right::before{content:"\12f  ";}
+.icon.cloud-wrong::before{content:"\130  ";}
+.icon.cloud-warning::before{content:"\131  ";}
+.icon.cloud-warning2::before{content:"\132  ";}
+.icon.calendar::before{content:"\155  ";}
+.icon.calendar-days::before{content:"\156  ";}
+.icon.calendar-weeks::before{content:"\158  ";}
+.icon.calendar-months::before{content:"\157  ";}
+.icon.calendar-modify::before{content:"\159  ";}
+.icon.calendar-add::before{content:"\15a  ";}
+.icon.calendar-remove::before{content:"\15b  ";}
+.icon.calendar-valide::before{content:"\15c  ";}
+.icon.calendar-warning::before{content:"\15d  ";}
+.icon.calendar-lock::before{content:"\15e  ";}
+.icon.wifi::before{content:"\15f  ";}
+.icon.wifi-off::before{content:"\160  ";}
+.icon.wifi-rounded::before{content:"\161  ";}
+.icon.wifi-rounded-off::before{content:"\162  ";}
+.icon.signal::before{content:"\163  ";}
+.icon.signal-rounded::before{content:"\164  ";}
+.icon.rss::before{content:"\165  ";}
 .icon.planete::before{content:"\46b  ";}
 .icon.planete2::before{content:"\46c  ";}
 .icon.star::before{content:"\2be  ";}
 .icon.star2::before{content:"\2bf  ";}
 .icon.star2-empty::before{content:"\2c0  ";}
+.icon.heart::before{content:"\3e4  ";}
+.icon.infinite::before{content:"\3e3  ";}
+.icon.puzzle::before{content:"\3ea  ";}
+.icon.cube-stroke::before{content:"\3df  ";}
+.icon.checkerboard::before{content:"\3e5  ";}
+.icon.checkerboard2::before{content:"\3e6  ";}
+.icon.magnet::before{content:"\3ec  ";}
+.icon.thumbUp::before{content:"\3ee  ";}
+.icon.thumbDown::before{content:"\3ef  ";}
+.icon.badge::before{content:"\3f2  ";}
+.icon.experimental::before{content:"\3e9  ";}
 .icon.flame::before{content:"\42f  ";}
 .icon.flame2::before{content:"\430  ";}
 .icon.eye::before{content:"\238  ";}
@@ -242,7 +328,6 @@
 .icon.time::before{content:"\14e  ";}
 .icon.time2::before{content:"\14f  ";}
 .icon.time3::before{content:"\150  ";}
-.icon.time4::before{content:"\151  ";}
 .icon.timer::before{content:"\14d  ";}
 .icon.bold::before{content:"\170  ";}
 .icon.italic::before{content:"\171  ";}
@@ -264,7 +349,7 @@
 .icon.padlock-unlock::before{content:"\445  ";}
 .icon.barcode::before{content:"\168  ";}
 .icon.qrcode::before{content:"\169  ";}
-.icon.circlecode::before{content:"\164  ";}
+.icon.circlecode::before{content:"\166  ";}
 .icon.link::before{content:"\16c  ";}
 .icon.link2::before{content:"\16b  ";}
 .icon.text::before{content:"\492  ";}
