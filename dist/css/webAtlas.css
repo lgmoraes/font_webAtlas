@@ -321,6 +321,10 @@
 .icon.experimental::before{content:"\3e9";}
 .icon.flame::before{content:"\42f";}
 .icon.flame2::before{content:"\430";}
+.icon.speechBubble-left::before{content:"\3cf";}
+.icon.speechBubble-right::before{content:"\3d0";}
+.icon.speechBubble-sharp-left::before{content:"\3d1";}
+.icon.speechBubble-sharp-right::before{content:"\3d2";}
 .icon.eye::before{content:"\238";}
 .icon.eye-closed::before{content:"\239";}
 .icon.eye-half::before{content:"\23a";}
@@ -352,6 +356,8 @@
 .icon.circlecode::before{content:"\166";}
 .icon.link::before{content:"\16c";}
 .icon.link2::before{content:"\16b";}
+.icon.forbidden::before{content:"\42d";}
+.icon.forbidden2::before{content:"\42e";}
 .icon.text::before{content:"\492";}
 .icon.postIt::before{content:"\493";}
 .icon.formRadio::before{content:"\494";}
