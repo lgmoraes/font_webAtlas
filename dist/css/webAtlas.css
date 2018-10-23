@@ -221,8 +221,8 @@
 .icon.arrow-align-top::before{content:"\4ed";}
 .icon.arrow-align-right::before{content:"\4ee";}
 .icon.arrow-align-down::before{content:"\4ef";}
-.icon.arrow-resize-up::before{content:"\4f0";}
-.icon.arrow-resize-down::before{content:"\4f1";}
+.icon.arrow-resize-up::before{content:"\4f1";}
+.icon.arrow-resize-down::before{content:"\4f0";}
 .icon.arrow-left::before{content:"\4c1";}
 .icon.arrow-up::before{content:"\4c2";}
 .icon.arrow-right::before{content:"\4c3";}
