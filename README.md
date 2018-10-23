@@ -44,7 +44,7 @@ Import the webAtlas.css and webAtlas-fontface.css files :
 Then add the class 'icon' and the class corresponding to the icon :
 ```html
 <!-- For the icons to the left of the element -->
-<div class="icon login">Sign in</div>
+<div class="icon login"> Sign in</div>
 
 <!-- For icons inside an element -->
 <div>
