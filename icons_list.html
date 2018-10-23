@@ -175,7 +175,7 @@
 
         <div id="divIcons"></div>
 
-        <div id="switchDisplayMode" class="glass icon menu"></div>
+        <div id="switchDisplayMode" class="glass icon menu-sharp"></div>
         <div id="arrowUp" class="glass icon arrow-up"></div>
 
     </div>
@@ -612,13 +612,13 @@
     }
 
     switchDisplayMode.onclick = function() {
-        if (hasClass("menu", this)) {
-            removeClass("menu", this);
-            addClass("menu3", this);
+        if (hasClass("menu-sharp", this)) {
+            removeClass("menu-sharp", this);
+            addClass("apps-sharp", this);
         }
         else {
-            removeClass("menu3", this);
-            addClass("menu", this);
+            removeClass("apps-sharp", this);
+            addClass("menu-sharp", this);
         }
 
         toggleClass("block", main_col)
