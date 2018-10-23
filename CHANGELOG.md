@@ -1,5 +1,15 @@
 # CHANGELOG #
 
+Version 0.6.0
+
+* Ajout de 89 icones
+* Largeur des .div et .div-indent relative au font-size
+* Correction d'un bug d'affichage sous Firefox
+* Incompatibilitées avec les versions antérieures :
+    - Certaines icones ont été supprimées, ont changées de nom de class ou ont changées de code UTF-8 (Reportez vous a icons_list.html pour consulter la liste a jour des icones)
+    - L'espace qui suivait les .icon a été retiré
+    - Les .div et .div-indent ont maintenant une largeur relative au font-size
+
 Version 0.5.0
 
 * Ajout de 14 icones
