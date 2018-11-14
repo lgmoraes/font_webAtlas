@@ -263,8 +263,8 @@
 .icon.application-warning::before{content:"\117";}
 .icon.application-wheel::before{content:"\118";}
 .icon.screen::before{content:"\119";}
-.icon.screen-play::before{content:"\11a";}
-.icon.screen-wheel::before{content:"\11b";}
+.icon.screen-play::before{content:"\11b";}
+.icon.screen-wheel::before{content:"\11a";}
 .icon.iphone::before{content:"\11e";}
 .icon.ipad::before{content:"\11d";}
 .icon.keyboard::before{content:"\11f";}
