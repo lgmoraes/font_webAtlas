@@ -9,10 +9,6 @@
 .icon.open::before{content:"\250";}
 .icon.save::before{content:"\251";}
 .icon.copy::before{content:"\252";}
-.icon.newFile-sharp::before{content:"\249";}
-.icon.open-sharp::before{content:"\24a";}
-.icon.save-sharp::before{content:"\24b";}
-.icon.copy-sharp::before{content:"\24c";}
 .icon.email::before{content:"\138";}
 .icon.email-open::before{content:"\139";}
 .icon.attachment::before{content:"\13b";}
@@ -66,10 +62,8 @@
 .icon.reload2::before{content:"\1fc";}
 .icon.reload3::before{content:"\1fd";}
 .icon.apps::before{content:"\268";}
-.icon.apps-sharp::before{content:"\267";}
 .icon.apps2::before{content:"\26a";}
 .icon.menu::before{content:"\26d";}
-.icon.menu-sharp::before{content:"\26c";}
 .icon.menu2::before{content:"\26e";}
 .icon.menu2-vertical::before{content:"\26f";}
 .icon.image::before{content:"\25f";}
@@ -187,22 +181,6 @@
 .icon.loop::before{content:"\53e";}
 .icon.loopUnique::before{content:"\53f";}
 .icon.random::before{content:"\540";}
-.icon.play-sharp::before{content:"\541";}
-.icon.pause-sharp::before{content:"\542";}
-.icon.stop-sharp::before{content:"\543";}
-.icon.slow-sharp::before{content:"\544";}
-.icon.next-sharp::before{content:"\545";}
-.icon.previous-sharp::before{content:"\546";}
-.icon.fastForward-sharp::before{content:"\547";}
-.icon.rewind-sharp::before{content:"\548";}
-.icon.eject-sharp::before{content:"\549";}
-.icon.speaker-high-sharp::before{content:"\54a";}
-.icon.speaker-medium-sharp::before{content:"\54b";}
-.icon.speaker-low-sharp::before{content:"\54c";}
-.icon.speaker-mute-sharp::before{content:"\54d";}
-.icon.loop-sharp::before{content:"\54e";}
-.icon.loopUnique-sharp::before{content:"\54f";}
-.icon.random-sharp::before{content:"\550";}
 
 /* Arrow */
 .icon.arrow-undo::before{content:"\4e1";}
@@ -270,7 +248,6 @@
 .icon.keyboard::before{content:"\11f";}
 .icon.mouse::before{content:"\120";}
 .icon.camera::before{content:"\121";}
-.icon.camera-sharp::before{content:"\122";}
 .icon.webcam::before{content:"\123";}
 .icon.micro::before{content:"\124";}
 .icon.speaker::before{content:"\125";}
@@ -296,12 +273,9 @@
 .icon.calendar-valide::before{content:"\15c";}
 .icon.calendar-warning::before{content:"\15d";}
 .icon.calendar-lock::before{content:"\15e";}
-.icon.wifi::before{content:"\15f";}
-.icon.wifi-off::before{content:"\160";}
-.icon.wifi-rounded::before{content:"\161";}
-.icon.wifi-rounded-off::before{content:"\162";}
-.icon.signal::before{content:"\163";}
-.icon.signal-rounded::before{content:"\164";}
+.icon.wifi::before{content:"\161";}
+.icon.wifi-off::before{content:"\162";}
+.icon.signal::before{content:"\164";}
 .icon.rss::before{content:"\165";}
 .icon.planete::before{content:"\46b";}
 .icon.planete2::before{content:"\46c";}
@@ -323,8 +297,8 @@
 .icon.flame2::before{content:"\430";}
 .icon.speechBubble-left::before{content:"\3cf";}
 .icon.speechBubble-right::before{content:"\3d0";}
-.icon.speechBubble-sharp-left::before{content:"\3d1";}
-.icon.speechBubble-sharp-right::before{content:"\3d2";}
+.icon.speechBubble2-left::before{content:"\3d1";}
+.icon.speechBubble2-right::before{content:"\3d2";}
 .icon.eye::before{content:"\238";}
 .icon.eye-closed::before{content:"\239";}
 .icon.eye-half::before{content:"\23a";}

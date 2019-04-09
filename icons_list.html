@@ -6,7 +6,7 @@
     <title>Web Atlas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="dist/css/webAtlas-fontface.css" />
-    <link rel="stylesheet" type="text/css" href="dist/css/webAtlas.css" />
+    <link rel="stylesheet" type="text/css" href="dist/css/webAtlas-icons.css" />
     
     <style>
         html {
@@ -175,7 +175,7 @@
 
         <div id="divIcons"></div>
 
-        <div id="switchDisplayMode" class="glass icon menu-sharp"></div>
+        <div id="switchDisplayMode" class="glass icon menu"></div>
         <div id="arrowUp" class="glass icon arrow-up"></div>
 
     </div>
@@ -195,10 +195,6 @@
             'open',
             'save',
             'copy',
-            'newFile-sharp',
-            'open-sharp',
-            'save-sharp',
-            'copy-sharp',
             'email',
             'email-open',
             'attachment',
@@ -250,10 +246,8 @@
             'reload2',
             'reload3',
             'apps',
-            'apps-sharp',
             'apps2',
             'menu',
-            'menu-sharp',
             'menu2',
             'menu2-vertical',
             'image',
@@ -278,7 +272,6 @@
             'keyboard',
             'mouse',
             'camera',
-            'camera-sharp',
             'webcam',
             'micro',
             'speaker',
@@ -306,10 +299,7 @@
             'calendar-lock',
             'wifi',
             'wifi-off',
-            'wifi-rounded',
-            'wifi-rounded-off',
             'signal',
-            'signal-rounded',
             'rss',
             'planete',
             'planete2',
@@ -331,8 +321,8 @@
             'flame2',
             'speechBubble-left',
             'speechBubble-right',
-            'speechBubble-sharp-left',
-            'speechBubble-sharp-right',
+            'speechBubble2-left',
+            'speechBubble2-right',
             'eye',
             'eye-closed',
             'eye-half',
@@ -478,23 +468,7 @@
             'speaker-mute',
             'loop',
             'loopUnique',
-            'random',
-            'play-sharp',
-            'pause-sharp',
-            'stop-sharp',
-            'slow-sharp',
-            'next-sharp',
-            'previous-sharp',
-            'fastForward-sharp',
-            'rewind-sharp',
-            'eject-sharp',
-            'speaker-high-sharp',
-            'speaker-medium-sharp',
-            'speaker-low-sharp',
-            'speaker-mute-sharp',
-            'loop-sharp',
-            'loopUnique-sharp',
-            'random-sharp'
+            'random'
         ],
         Arrows: [
             'arrow-undo',
@@ -612,13 +586,13 @@
     }
 
     switchDisplayMode.onclick = function() {
-        if (hasClass("menu-sharp", this)) {
-            removeClass("menu-sharp", this);
-            addClass("apps-sharp", this);
+        if (hasClass("menu", this)) {
+            removeClass("menu", this);
+            addClass("apps", this);
         }
         else {
-            removeClass("apps-sharp", this);
-            addClass("menu-sharp", this);
+            removeClass("apps", this);
+            addClass("menu", this);
         }
 
         toggleClass("block", main_col)

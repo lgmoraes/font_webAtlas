@@ -8,6 +8,15 @@
 }
 
 @font-face {
+    font-family: 'WebAtlas-icons-sharp';
+    src: url('../font/WebAtlas-icons-sharp.woff2') format('woff2'),
+         url('../font/WebAtlas-icons-sharp.woff') format('woff'),
+         url('../font/WebAtlas-icons-sharp.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'WebAtlas';
     src: url('../font/WebAtlas.woff2') format('woff2'),
          url('../font/WebAtlas.woff') format('woff'),
