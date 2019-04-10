@@ -1,0 +1,32 @@
+.icon-geometric::first-letter{font-family:"WebAtlas-geometric";}					    /* Pour les icones à gauche de l'element */
+.icon-geometric.div{display:inline-block}												/* Pour les icones à l'interieure d'un element */
+.icon-geometric.div-indent{width:2em;text-align:left;display:inline-block}				/* Pour les icones à gauche de l'element avec une indentation sur la droite */
+.icon-geometric.div-indent-center{width:2em;text-align:center;display:inline-block}	    /* Pour les icones à gauche de l'element avec une indentation au centre */
+
+/* Forms */
+.icon-geometric.circle::before{content:"\186";}
+.icon-geometric.circle2::before{content:"\188";}
+.icon-geometric.circle3::before{content:"\189";}
+.icon-geometric.circle4::before{content:"\187";}
+.icon-geometric.circle-dashed::before{content:"\18a";}
+.icon-geometric.circle-dashed2::before{content:"\18b";}
+.icon-geometric.circle-dashed3::before{content:"\18c";}
+.icon-geometric.circle-hatched::before{content:"\18d";}
+.icon-geometric.circle-hatched2::before{content:"\18e";}
+.icon-geometric.square-dashed::before{content:"\18f";}
+.icon-geometric.square-dashed2::before{content:"\190";}
+.icon-geometric.square-dashed3::before{content:"\191";}
+.icon-geometric.square-dashed4::before{content:"\192";}
+.icon-geometric.square-dashed5::before{content:"\193";}
+.icon-geometric.square-hatched::before{content:"\194";}
+.icon-geometric.square-hatched2::before{content:"\195";}
+.icon-geometric.hex::before{content:"\1a1";}
+.icon-geometric.hex-rounded::before{content:"\1a2";}
+.icon-geometric.hex-stroke::before{content:"\1a3";}
+.icon-geometric.hex2::before{content:"\19e";}
+.icon-geometric.hex2-rounded::before{content:"\19f";}
+.icon-geometric.hex2-stroke::before{content:"\1a0";}
+.icon-geometric.diamond::before{content:"\198";}
+.icon-geometric.pentagon::before{content:"\19b";}
+.icon-geometric.pentagon-rounded::before{content:"\19c";}
+.icon-geometric.pentagon-stroke::before{content:"\19d";}
