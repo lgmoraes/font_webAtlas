@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1375896762
-ModificationTime: 1554942721
+ModificationTime: 1554974029
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
@@ -2989,7 +2989,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 544 32 11
+WinInfo: 273 39 14
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -3625,7 +3625,7 @@ EndChar
 
 StartChar: uni01D4
 Encoding: 468 468 20
-Width: 1000
+Width: 1302
 VWidth: 1200
 Flags: W
 LayerCount: 2
