@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="dist/css/font-face/webAtlas-all.css" />
     <link rel="stylesheet" type="text/css" href="dist/css/webAtlas-icons.css" />
+    <link rel="stylesheet" type="text/css" href="dist/css/webAtlas-geometric.css" />
     
     <style>
         html {
@@ -40,6 +41,23 @@
         }
         img {
             max-width: 100%;
+        }
+        select {
+            width: 180px;
+            padding: 3px 10px;
+            border-radius: 10px;
+            color: white;
+            font-family: webAtlas;
+            font-size: 1.2em;
+            background: none;
+            border: 2px solid white;
+            margin: 20px auto;
+            display: block;
+            outline: none;
+        }
+        select option {
+            color: white;
+            background-color: rgb(60, 60, 60);
         }
         #main-col {
             width: 400px;
@@ -173,6 +191,12 @@
 
         <div class="icon info circle-info"> Clic on an item to copy the className on clipboard.</div>
 
+        <select id="select_font">
+            <option value="original" selected="">Original</option>
+            <option value="sharp">Sharp</option>
+            <option value="geometric">Geometric</option>
+        </select>
+
         <div id="divIcons"></div>
 
         <div id="switchDisplayMode" class="glass icon menu"></div>
@@ -187,6 +211,7 @@
     var arrowUp = document.getElementById('arrowUp');
     var switchDisplayMode = document.getElementById('switchDisplayMode');
     var inputClipboard = document.getElementById('inputClipboard');
+    var select_font = document.getElementById('select_font');
 
     var TIME_INTERVAL = 10;
     
@@ -530,27 +555,7 @@
 
 
     onload = function() {
-        for (category in icons) {
-            var list = icons[category];
-
-            var newH2 = document.createElement('h2');
-            newH2.innerHTML = category;
-            divIcons.appendChild(newH2);
-
-            for (var i=0 ; i < list.length ; i++) {
-                var icon = list[i];
-                var newDiv = document.createElement('div');
-                var newDivIcon = document.createElement('div');
-                
-                newDivIcon.className = "icon div-indent-center " + icon;
-                newDiv.appendChild(newDivIcon);
-                newDiv.className = "item";
-                newDiv.codeIcon = icon;
-                newDiv.appendChild( document.createTextNode(icon) );
-                
-                divIcons.appendChild(newDiv);
-            }
-        }
+        loadList(icons);
     };
 
     onscroll = function() {
@@ -580,12 +585,59 @@
             inputClipboard.style.display = 'none';
             
             gianteIcon.className = "icon " + ele.codeIcon;
+
+            if(select_font.value === "sharp")
+                addClass("sharp", gianteIcon);
+        }
+    };
+
+    select_font.onchange = function() {
+        switch (this.value) {
+            case "original":
+                loadList(icons);
+                break;
+            case "sharp":
+                loadList(icons, "sharp");
+                break;
+            case "geometric":
+                loadList(geometric);
+                break;
         }
     };
 
     arrowUp.onclick = function() {
         if(getScrollY() !== 0) {
             window.scroll(0, 0);
+        }
+    }
+
+
+    // Functions
+
+    function loadList(icons, style) {
+        divIcons.innerHTML = "";
+
+        for (category in icons) {
+            var list = icons[category];
+
+            var newH2 = document.createElement('h2');
+            newH2.innerHTML = category;
+            divIcons.appendChild(newH2);
+
+            for (var i=0 ; i < list.length ; i++) {
+                var icon = list[i];
+                var newDiv = document.createElement('div');
+                var newDivIcon = document.createElement('div');
+                
+                newDivIcon.className = "icon div-indent-center " + icon;
+                if (style) addClass(style, newDivIcon);
+                newDiv.appendChild(newDivIcon);
+                newDiv.className = "item";
+                newDiv.codeIcon = icon;
+                newDiv.appendChild( document.createTextNode(icon) );
+                
+                divIcons.appendChild(newDiv);
+            }
         }
     }
 
