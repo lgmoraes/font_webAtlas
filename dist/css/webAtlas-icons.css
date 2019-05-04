@@ -20,7 +20,6 @@
 .icon.downloadFile::before{content:"\211";}
 .icon.downloadData::before{content:"\213";}
 .icon.downloadData2::before{content:"\214";}
-.icon.file::before{content:"\24f";}
 .icon.user::before{content:"\3a8";}
 .icon.addUser::before{content:"\3a9";}
 .icon.removeUser::before{content:"\3aa";}
@@ -71,9 +70,7 @@
 .icon.image::before{content:"\25f";}
 .icon.image2::before{content:"\260";}
 .icon.home::before{content:"\2cc";}
-.icon.home-stroke::before{content:"\2ce";}
 .icon.home2::before{content:"\2cd";}
-.icon.home2-stroke::before{content:"\2cf";}
 .icon.magnify::before{content:"\454";}
 
 /* Right / Wrong */
