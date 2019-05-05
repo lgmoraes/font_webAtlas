@@ -11,9 +11,12 @@
 .icon.open::before{content:"\250";}
 .icon.save::before{content:"\251";}
 .icon.copy::before{content:"\252";}
+.icon.cut::before{content:"\254";}
+.icon.paste::before{content:"\253";}
 .icon.email::before{content:"\138";}
 .icon.email-open::before{content:"\139";}
 .icon.attachment::before{content:"\13b";}
+.icon.notification::before{content:"\f1";}
 .icon.warning::before{content:"\1d4";}
 .icon.warning2::before{content:"\1d5";}
 .icon.uploadFile::before{content:"\212";}
@@ -60,8 +63,10 @@
 .icon.revert::before{content:"\1fa";}
 .icon.revert2::before{content:"\1f9";}
 .icon.reload::before{content:"\1fb";}
+.icon.reload-left::before{content:"\1fa";}
 .icon.reload2::before{content:"\1fc";}
 .icon.reload3::before{content:"\1fd";}
+.icon.reload4::before{content:"\1f9";}
 .icon.apps::before{content:"\268";}
 .icon.apps2::before{content:"\26a";}
 .icon.menu::before{content:"\26d";}
@@ -206,11 +211,18 @@
 .icon.arrow4-down-left::before{content:"\4c0";}
 
 /* Divers */
+.icon.bulb::before{content:"\ef";}
+.icon.lightning::before{content:"\f0";}
+.icon.bookmark::before{content:"\f2";}
+.icon.hierarchie::before{content:"\ea";}
+.icon.building::before{content:"\eb";}
+.icon.crown::before{content:"\ed";}
 .icon.application::before{content:"\114";}
 .icon.application-right::before{content:"\115";}
 .icon.application-wrong::before{content:"\116";}
 .icon.application-warning::before{content:"\117";}
 .icon.application-wheel::before{content:"\118";}
+.icon.application-multiple::before{content:"\113";}
 .icon.screen::before{content:"\119";}
 .icon.screen-play::before{content:"\11b";}
 .icon.screen-wheel::before{content:"\11a";}
@@ -278,6 +290,8 @@
 .icon.time2::before{content:"\14f";}
 .icon.time3::before{content:"\150";}
 .icon.timer::before{content:"\14d";}
+.icon.cursor::before{content:"\186";}
+.icon.layer::before{content:"\18e";}
 .icon.bold::before{content:"\170";}
 .icon.italic::before{content:"\171";}
 .icon.underline::before{content:"\172";}
@@ -294,6 +308,7 @@
 .icon.statistics2::before{content:"\13e";}
 .icon.statistics3::before{content:"\13f";}
 .icon.statistics4::before{content:"\140";}
+.icon.shield::before{content:"\443";}
 .icon.padlock::before{content:"\444";}
 .icon.padlock-unlock::before{content:"\445";}
 .icon.barcode::before{content:"\168";}
