@@ -251,8 +251,8 @@
 .icon.planete::before{content:"\46b";}
 .icon.planete2::before{content:"\46c";}
 .icon.star::before{content:"\2be";}
-.icon.star2::before{content:"\2bf";}
-.icon.star2-empty::before{content:"\2c0";}
+.icon.star-half::before{content:"\2bf";}
+.icon.star-empty::before{content:"\2c0";}
 .icon.heart::before{content:"\3e4";}
 .icon.infinite::before{content:"\3e3";}
 .icon.puzzle::before{content:"\3ea";}
