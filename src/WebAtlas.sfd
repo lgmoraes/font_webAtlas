@@ -4,7 +4,7 @@ FullName: WebAtlas
 FamilyName: WebAtlas
 Weight: Regular
 Copyright: MIT License 2018, Louis MORAES.
-Version: 0.6.0
+Version: 0.7.0
 ItalicAngle: 0
 UnderlinePosition: -170
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1375896762
-ModificationTime: 1556976391
+ModificationTime: 1557097095
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5

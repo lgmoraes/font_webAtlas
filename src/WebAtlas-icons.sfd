@@ -1,10 +1,10 @@
 SplineFontDB: 3.0
-FontName: WebAtlas
-FullName: WebAtlas
+FontName: WebAtlas-icons
+FullName: WebAtlas-icons
 FamilyName: WebAtlas
 Weight: Regular
 Copyright: MIT License 2018, Louis MORAES.
-Version: 0.6.0
+Version: 0.7.0
 ItalicAngle: 0
 UnderlinePosition: -170
 UnderlineWidth: 50
@@ -15,14 +15,14 @@ sfntRevision: 0x00010000
 LayerCount: 2
 Layer: 0 1 "Arri+AOgA-re" 1
 Layer: 1 1 "Avant" 0
-XUID: [1021 206 1625637039 14079]
+XUID: [1021 206 1625637039 27996]
 StyleMap: 0x0040
 FSType: 8
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1375896762
-ModificationTime: 1557093667
+ModificationTime: 1557096951
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
@@ -2981,7 +2981,7 @@ ShortTable: maxp 16
   0
   0
 EndShort
-LangName: 1033 "Copyright +AKkA 2018, Louis MORAES." "" "" "FontForge 2.0 : WebAtlas : 18-3-2018" "" "" "" "" "" "Louis MORAES"
+LangName: 1033 "Copyright +AKkA 2018, Louis MORAES." "" "" "" "" "" "" "" "" "Louis MORAES"
 GaspTable: 1 65535 15 1
 Encoding: UnicodeBmp
 UnicodeInterp: none
@@ -2989,7 +2989,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 663 39 14
+WinInfo: 624 39 14
 BeginPrivate: 0
 EndPrivate
 Grid
