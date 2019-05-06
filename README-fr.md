@@ -6,11 +6,9 @@
 
 ## Introduction
 
-WebAtlas est une police de caractère concu spécialement pour la création d'interfaces/applications web.
+Font_WebAtlas c'est des polices d'icones conçus spécialement pour la création d'interfaces/applications web.
 
-Elle contiens les icones les plus courantes pour la création facile et rapide de menus, d'espaces d'administration, de lecteurs...
-
-Vous avez a disposition une micro application icons_list.html qui vous permet d'observer l'ensembles des icones disponibles et d'en copier le code css d'un simple clique.
+Elles contiennent les icones les plus courantes pour la création facile et rapide de menus, d'espaces d'administration, de lecteurs...
 
 ## Package managers
 
@@ -18,48 +16,56 @@ Vous avez a disposition une micro application icons_list.html qui vous permet d'
 npm install font_webatlas
 ```
 
-## Liste des icones
+## Démmarage rapide
 
-Ouvrez simplement le fichier icons_list.html pour voir la liste complète des icones disponibles.
-Vous pouvez cliquer sur l'icone que vous souhaitez importer, le code css sera copié dans le presse papier.
-
-Vous pouvez aussi consulter le fichier webAtlas.css :
-```css
-/* Le nom de l'icone ici est warning et son code UTF-8 est 1d4 */
-.icon.warning::before{content:"\1d4  ";}
+Importez les fichiers css comme indiqué ci-dessous :
+```html
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/webAtlas-icons.css">
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons.css">
 ```
-
-Vous pouvez soit utiliser le code css de l'icone (warning) ou utiliser directement le code UTF-8 (1d4).
 
 ## Utilisation
 
-### Cette procédure vous indique comment utiliser les noms de class d'icones et faire abstraction des codes UTF-8
-
-Importer les fichiers webAtlas.css et webAtlas-fontface.css :
+Ajoutez 'icon nomIcone' dans l'attribut class d'un élément.
 ```html
-<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/webAtlas.css">
-<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/webAtlas-fontface.css">
+<!-- Affiche l'icone à gauche de l'élément -->
+<div class="icon login"> Se connecter</div>
 ```
 
-Puis ajouter la class 'icon' et la class correspondante a l'icon :
-```html
-<!-- Pour les icones à gauche de l'element -->
-<div class="icon login"> Se connecter</div>
+Vous pouvez ajuster le rendu en ajoutant une des class suivantes :
+* div
+* div-indent
+* div-indent-center
 
-<!-- Pour les icones à l'interieure d'un element -->
-<div>
+```html
+<!-- Affiche l'icone en tant que block -->
+<div class="bouton_d_exemple">
     <div class="icon div login"></div> Se connecter
 </div>
 
-<!-- Pour les icones à gauche de l'element avec une indentation sur la droite -->
-<div class="icon div-indent login">Se connecter</div>
+<!-- Affiche l'icone en tant que block suivi d'une marge -->
+<div class="bouton_d_exemple">
+    <div class="icon div-indent login"></div>Se connecter
+</div>
 
-<!-- Pour les icones centrés avec indentation -->
-<div class="icon div-indent-center login">Se connecter</div>
+<!-- Affiche l'icone en tant que block avec une marge à gauche et à droite -->
+<div class="bouton_d_exemple">
+    <div class="icon div-indent-center login"></div>Se connecter
+</div>
 ```
 
-## Précisions
+## Liste des icones
 
-Cette fonte contient également les caractères alpha-numériques, les chiffres sont volontairement au format monospace (chaque chiffres utilisent la même largeur) afin de pouvoir facilement créer des interfaces de type timer.
+Ouvrez simplement le fichier `icons_list.html` pour voir la liste complète des icones disponibles.
+Vous pouvez cliquer sur l'icone que vous souhaitez importer, le code css sera copié dans le presse papier.
 
-La version Light ne contient pas d'icone, seulement les caractères alpha-numériques avec une graisse plus fine.
+## Style alternatif
+
+Si le style `Sharp` convient mieux au visuel de votre site que le style par défaut, remplacez le lien :
+```html
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons.css">
+```
+par celui-ci :
+```html
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons-sharp.css">
+```

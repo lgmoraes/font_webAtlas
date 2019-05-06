@@ -6,11 +6,9 @@
 
 ## Introduction
 
-WebAtlas is a font specially designed for the creation of web interfaces / applications.
+Font_WebAtlas is fonts of icons designed especially for the creation of interfaces/web applications.
 
-It contains the most common icons for easy and fast creation of menus, administration spaces, players...
-
-You have at your disposal a micro application icons_list.html which allows you to observe the set of available icons and to copy the css code with a simple click.
+They contain the most common icons for quick and easy creation of menus, administration spaces, players...
 
 ## Package managers
 
@@ -18,48 +16,56 @@ You have at your disposal a micro application icons_list.html which allows you t
 npm install font_webatlas
 ```
 
-## List of icons
+## Quick Start
 
-Simply open the icons_list.html file to see the complete list of available icons.
-You can click on the icon you want to import, the css code will be copied to the clipboard.
-
-You can also consult the webAtlas.css file:
-```css
-/* The name of the icon here is warning and its UTF-8 code is 1d4 */
-.icon.warning::before{content:"\1d4  ";}
+Import the css files as shown below:
+```html
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/webAtlas-icons.css">
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons.css">
 ```
-
-You can either use the css code of the icon (warning) or use the UTF-8 code (1d4).
 
 ## Use
 
-### This procedure shows you how to use icon class names and disregards UTF-8 codes
-
-Import the webAtlas.css and webAtlas-fontface.css files :
+Add 'icon icon_name' in the class attribute of an element.
 ```html
-<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/webAtlas.css">
-<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/webAtlas-fontface.css">
+<!-- Displays the icon to the left of the element -->
+<div class="icon login"> Sign in</div>
 ```
 
-Then add the class 'icon' and the class corresponding to the icon :
-```html
-<!-- For the icons to the left of the element -->
-<div class="icon login"> Sign in</div>
+You can adjust the rendering by adding one of the following class :
+* div
+* div-indent
+* div-indent-center
 
-<!-- For icons inside an element -->
-<div>
+```html
+<!-- Display the icon as a block -->
+<div class="example_button">
     <div class="icon div login"></div> Sign in
 </div>
 
-<!-- For the icons to the left of the element with an indentation on the right -->
-<div class="icon div-indent login">Sign in</div>
+<!-- Displays the icon as a block with a margin to the right -->
+<div class="example_button">
+    <div class="icon div-indent login"></div>Sign in
+</div>
 
-<!-- For icons centered with indentation -->
-<div class="icon div-indent-center login">Sign in</div>
+<!-- Displays the icon as a block with left and right margins -->
+<div class="example_button">
+    <div class="icon div-indent-center login"></div>Sign in
+</div>
 ```
 
-## Precisions
+## List of icons
 
-This font also contains alpha-numeric characters, the digits are deliberately in monospace format (each digits use the same width) in order to easily create timer type interfaces.
+Just open the `icons_list.html` file to see the complete list of available icons.
+You can click on the icon you want to import, the css code will be copied to the clipboard.
 
-The Light version does not contain an icon, only alpha-numeric characters with a finer grease.
+## Alternative style
+
+If the `Sharp` style suits better to your site's visual than the default style, replace the link :
+```html
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons.css">
+```
+by this one :
+```html
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons-sharp.css">
+```
