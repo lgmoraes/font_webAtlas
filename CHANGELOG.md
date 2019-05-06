@@ -1,5 +1,16 @@
 # CHANGELOG #
 
+Version 0.7.0
+
+* De nouvelles icones ont été ajoutés
+* Les caractères alphabétiques ont été améliorés
+* Les caractères []{}$#& ont été ajoutés
+* Les caractères alphabétiques et les icones sont maintenant séparés dans des fichiers différents
+* Certaines icones ont été déplacés dans le set geometric
+* Ajout du style d'icone Sharp
+* Possibilité de charger des sets d'icones optionnels
+* Corrections apportés a certaines icones
+
 Version 0.6.0
 
 * Ajout de 89 icones
