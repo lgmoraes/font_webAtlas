@@ -1,7 +1,7 @@
 SplineFontDB: 3.0
 FontName: WebAtlas-geometric
 FullName: WebAtlas-geometric
-FamilyName: WebAtlas
+FamilyName: WebAtlas-geometric
 Weight: Regular
 Copyright: MIT License 2018, Louis MORAES.
 Version: 0.7.0
@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1375896762
-ModificationTime: 1557097050
+ModificationTime: 1557915852
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
@@ -2989,7 +2989,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 39 14
+WinInfo: 39 39 14
 BeginPrivate: 0
 EndPrivate
 Grid

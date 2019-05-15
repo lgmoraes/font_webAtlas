@@ -1,8 +1,8 @@
 SplineFontDB: 3.0
-FontName: WebAtlas-Light
-FullName: WebAtlas-Light
-FamilyName: WebAtlas
-Weight: Lighter
+FontName: WebAtlas-light
+FullName: WebAtlas-light
+FamilyName: WebAtlas-light
+Weight: light
 Copyright: MIT License 2018, Louis MORAES.
 Version: 0.7.0
 ItalicAngle: 0
@@ -15,14 +15,14 @@ sfntRevision: 0x00010000
 LayerCount: 2
 Layer: 0 1 "Arri+AOgA-re" 1
 Layer: 1 1 "Avant" 0
-XUID: [1021 206 1625637039 14079]
+XUID: [1021 206 1625637039 13492]
 StyleMap: 0x0040
 FSType: 8
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1375896762
-ModificationTime: 1557097148
+ModificationTime: 1557915888
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
@@ -2649,7 +2649,7 @@ ShortTable: maxp 16
   0
   0
 EndShort
-LangName: 1033 "Copyright +AKkA 2018, Louis MORAES." "" "" "FontForge 2.0 : WebAtlas : 18-3-2018" "" "" "" "" "" "Louis MORAES"
+LangName: 1033 "Copyright +AKkA 2018, Louis MORAES." "" "" "" "" "" "" "" "" "Louis MORAES"
 GaspTable: 1 65535 15 1
 Encoding: ISO8859-1
 UnicodeInterp: none
@@ -6030,7 +6030,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 124 261 S 1 0 0 1 116.239 38.8631 2
-Refer: 14 111 N 1 0 0 1 -2.95612e-005 0 3
+Refer: 14 111 N 1 0 0 1 -2.95612e-05 0 3
 EndChar
 
 StartChar: oacute
@@ -6040,7 +6040,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 125 262 S 1 0 0 1 112.381 38.8631 2
-Refer: 14 111 N 1 0 0 1 -2.95612e-005 0 3
+Refer: 14 111 N 1 0 0 1 -2.95612e-05 0 3
 EndChar
 
 StartChar: ocircumflex
@@ -6050,7 +6050,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 126 263 S 1 0 0 1 32.842 7.51445 2
-Refer: 14 111 N 1 0 0 1 -2.95612e-005 0 3
+Refer: 14 111 N 1 0 0 1 -2.95612e-05 0 3
 EndChar
 
 StartChar: odieresis
@@ -6060,7 +6060,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 123 168 N 1 0 0 1 65.047 -66.1789 2
-Refer: 14 111 N 1 0 0 1 -2.95612e-005 0 3
+Refer: 14 111 N 1 0 0 1 -2.95612e-05 0 3
 EndChar
 
 StartChar: ugrave
@@ -6071,7 +6071,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 124 261 S 1 0 0 1 87.42 39.335 2
-Refer: 49 117 N 1 0 0 1 1.76733e-006 0 3
+Refer: 49 117 N 1 0 0 1 1.76733e-06 0 3
 EndChar
 
 StartChar: uacute
@@ -6082,7 +6082,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 125 262 S 1 0 0 1 89.562 39.335 2
-Refer: 49 117 N 1 0 0 1 1.76733e-006 0 3
+Refer: 49 117 N 1 0 0 1 1.76733e-06 0 3
 EndChar
 
 StartChar: ucircumflex
@@ -6093,7 +6093,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 126 263 S 1 0 0 1 27.0225 7.98633 2
-Refer: 49 117 N 1 0 0 1 1.76733e-006 0 3
+Refer: 49 117 N 1 0 0 1 1.76733e-06 0 3
 EndChar
 
 StartChar: udieresis
@@ -6104,7 +6104,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 123 168 S 1 0 0 1 57.2275 -65.707 2
-Refer: 49 117 N 1 0 0 1 1.76733e-006 0 3
+Refer: 49 117 N 1 0 0 1 1.76733e-06 0 3
 EndChar
 
 StartChar: ydieresis
@@ -6137,7 +6137,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 124 261 S 1 0 0 1 159.792 239.251 2
-Refer: 60 69 N 1 0 0 1 4.23192e-006 0 3
+Refer: 60 69 N 1 0 0 1 4.23192e-06 0 3
 EndChar
 
 StartChar: Eacute
@@ -6148,7 +6148,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 125 262 S 1 0 0 1 160.934 239.251 2
-Refer: 60 69 N 1 0 0 1 4.23192e-006 0 3
+Refer: 60 69 N 1 0 0 1 4.23192e-06 0 3
 EndChar
 
 StartChar: Ecircumflex
@@ -6159,7 +6159,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 126 263 S 1 0 0 1 101.395 207.902 2
-Refer: 60 69 N 1 0 0 1 4.23192e-006 0 3
+Refer: 60 69 N 1 0 0 1 4.23192e-06 0 3
 EndChar
 
 StartChar: Edieresis
@@ -6170,7 +6170,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 123 168 S 1 0 0 1 127.6 134.209 2
-Refer: 60 69 N 1 0 0 1 4.23192e-006 0 3
+Refer: 60 69 N 1 0 0 1 4.23192e-06 0 3
 EndChar
 
 StartChar: Adieresis
@@ -6225,7 +6225,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 124 261 S 1 0 0 1 176.394 239.251 2
-Refer: 9 79 N 1 0 0 1 9.75e-005 0 3
+Refer: 9 79 N 1 0 0 1 9.75e-05 0 3
 EndChar
 
 StartChar: Oacute
@@ -6236,7 +6236,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 125 262 S 1 0 0 1 181.535 239.251 2
-Refer: 9 79 N 1 0 0 1 9.75e-005 0 3
+Refer: 9 79 N 1 0 0 1 9.75e-05 0 3
 EndChar
 
 StartChar: Ocircumflex
@@ -6247,7 +6247,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 126 263 S 1 0 0 1 100.996 207.902 2
-Refer: 9 79 N 1 0 0 1 9.75e-005 0 3
+Refer: 9 79 N 1 0 0 1 9.75e-05 0 3
 EndChar
 
 StartChar: Odieresis
@@ -6258,7 +6258,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 123 168 S 1 0 0 1 130.201 134.209 2
-Refer: 9 79 N 1 0 0 1 9.75e-005 0 3
+Refer: 9 79 N 1 0 0 1 9.75e-05 0 3
 EndChar
 
 StartChar: Igrave

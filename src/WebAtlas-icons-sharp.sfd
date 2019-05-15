@@ -1,7 +1,7 @@
 SplineFontDB: 3.0
 FontName: WebAtlas-icons-sharp
 FullName: WebAtlas-icons-sharp
-FamilyName: WebAtlas
+FamilyName: WebAtlas-icons-sharp
 Weight: Regular
 Copyright: MIT License 2018, Louis MORAES.
 Version: 0.7.0
@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1375896762
-ModificationTime: 1557097008
+ModificationTime: 1557915837
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
