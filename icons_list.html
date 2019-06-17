@@ -105,6 +105,27 @@
         #arrowUp:hover, #switchDisplayMode:hover {
             background-color: rgba(50, 132, 255, 0.5);
         }
+        #search {
+            color: white;
+            position: fixed;
+            right: 96px;
+            top: 38px;
+        }
+        #search .icon {
+            line-height: 20px;
+            font-size: 25px;
+            vertical-align: bottom;
+            margin-right: 5px;
+        }
+        #search_input {
+            color: white;
+            width: 100px;
+            font-size: 16px;
+            border: none;
+            border-bottom: 2px solid white;
+            background: none;
+            outline: none;
+        }
         .glass {
             text-shadow: 1px 1px 0 black;
             background-color: rgba(0, 0, 0, .5);
@@ -185,6 +206,11 @@
     </div>
 
     <div id="gianteIcon"></div>
+    <label id="search" for="search_input">
+        <div class="icon div magnify"></div>
+        <input type="text" id="search_input">
+    </label>
+    
 
     <div id="main-col" class="block">
         <h1>List of icons:</h1>
@@ -212,8 +238,11 @@
     var switchDisplayMode = document.getElementById('switchDisplayMode');
     var inputClipboard = document.getElementById('inputClipboard');
     var select_font = document.getElementById('select_font');
+    var search_input = document.getElementById('search_input');
 
     var TIME_INTERVAL = 10;
+
+    var iconsElements = [];
     
     var icons = {
         General: [
@@ -623,6 +652,37 @@
         }
     }
 
+    search_input.onkeydown = function() {
+        setTimeout(function() {
+            search();
+        }, 1);
+    }
+
+    function search() {
+        const s = search_input.value;
+
+        if (s === "") {
+            showAllIcones();
+            return false;
+        }
+
+        for (let i = 0; i < iconsElements.length; i++) {
+            const e = iconsElements[i];
+            const iconName = e.childNodes[1].nodeValue;
+            
+            if (iconName.indexOf(s) !== -1)
+                e.style.display = "";
+            else
+                e.style.display = "none";
+        }
+    }
+
+    function showAllIcones() {
+        for (let i = 0; i < iconsElements.length; i++) {
+            iconsElements[i].style.display = "";
+        }
+    }
+
 
     // Functions
 
@@ -648,6 +708,7 @@
                 newDiv.codeIcon = icon;
                 newDiv.appendChild( document.createTextNode(icon) );
                 
+                iconsElements.push(newDiv);
                 divIcons.appendChild(newDiv);
             }
         }
