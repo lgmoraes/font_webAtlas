@@ -4,7 +4,7 @@ FullName: WebAtlas
 FamilyName: WebAtlas
 Weight: Regular
 Copyright: MIT License 2018, Louis MORAES.
-Version: 0.7.0
+Version: 1.0.0
 ItalicAngle: 0
 UnderlinePosition: -170
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1375896762
-ModificationTime: 1557097095
+ModificationTime: 1562163194
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
@@ -2989,7 +2989,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 39 14
+WinInfo: 39 39 14
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -6381,7 +6381,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 38 715 S 1 0 0 1 120.472 49.333 2
-Refer: 53 117 N 1 0 0 1 2.04559e-006 0 3
+Refer: 53 117 N 1 0 0 1 2.04559e-06 0 3
 Validated: 32769
 EndChar
 
@@ -6393,7 +6393,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 104 714 S 1 0 0 1 116.619 49.333 2
-Refer: 53 117 N 1 0 0 1 2.04559e-006 0 3
+Refer: 53 117 N 1 0 0 1 2.04559e-06 0 3
 Validated: 32769
 EndChar
 
@@ -6405,7 +6405,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 107 710 N 1 0 0 1 78.0784 17.9863 2
-Refer: 53 117 N 1 0 0 1 2.04559e-006 0 3
+Refer: 53 117 N 1 0 0 1 2.04559e-06 0 3
 Validated: 32769
 EndChar
 
@@ -6417,7 +6417,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 105 168 S 1 0 0 1 74.7785 -55.707 2
-Refer: 53 117 N 1 0 0 1 2.04559e-006 0 3
+Refer: 53 117 N 1 0 0 1 2.04559e-06 0 3
 EndChar
 
 StartChar: exclam
@@ -6868,7 +6868,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 38 715 S 1 0 0 1 199.653 249.249 2
-Refer: 64 69 N 1 0 0 1 -2.422e-005 0 3
+Refer: 64 69 N 1 0 0 1 -2.422e-05 0 3
 EndChar
 
 StartChar: Eacute
@@ -6879,7 +6879,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 104 714 N 1 0 0 1 225.801 249.249 2
-Refer: 64 69 N 1 0 0 1 -2.422e-005 0 3
+Refer: 64 69 N 1 0 0 1 -2.422e-05 0 3
 EndChar
 
 StartChar: Ecircumflex
@@ -6890,7 +6890,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 107 710 S 1 0 0 1 159.26 217.902 2
-Refer: 64 69 N 1 0 0 1 -2.422e-005 0 3
+Refer: 64 69 N 1 0 0 1 -2.422e-05 0 3
 EndChar
 
 StartChar: Edieresis
@@ -6901,7 +6901,7 @@ Flags: W
 LayerCount: 2
 Fore
 Refer: 105 168 S 1 0 0 1 163.96 144.209 2
-Refer: 64 69 N 1 0 0 1 -2.422e-005 0 3
+Refer: 64 69 N 1 0 0 1 -2.422e-05 0 3
 EndChar
 
 StartChar: Igrave
