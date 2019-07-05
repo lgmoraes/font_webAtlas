@@ -17,6 +17,15 @@
 }
 
 @font-face {
+    font-family: 'WebAtlas-icons-outline';
+    src: url('../../font/WebAtlas-icons-outline.woff2') format('woff2'),
+         url('../../font/WebAtlas-icons-outline.woff') format('woff'),
+         url('../../font/WebAtlas-icons-outline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'WebAtlas-geometric';
     src: url('../../font/WebAtlas-geometric.woff2') format('woff2'),
          url('../../font/WebAtlas-geometric.woff') format('woff'),

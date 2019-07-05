@@ -220,6 +220,7 @@
         <select id="select_font" autocomplete="off">
             <option value="original" selected="">Original</option>
             <option value="sharp">Sharp</option>
+            <option value="outline">Outline</option>
             <option value="geometric">Geometric</option>
         </select>
 
@@ -667,8 +668,7 @@
             
             gianteIcon.className = "icon " + ele.codeIcon;
 
-            if(select_font.value === "sharp")
-                addClass("sharp", gianteIcon);
+            addClass(select_font.value, gianteIcon);
         }
     };
 
@@ -679,6 +679,9 @@
                 break;
             case "sharp":
                 loadList(icons, "sharp");
+                break;
+            case "outline":
+                loadList(icons, "outline");
                 break;
             case "geometric":
                 loadList(geometric);

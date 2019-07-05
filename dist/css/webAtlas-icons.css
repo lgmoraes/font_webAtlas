@@ -5,6 +5,7 @@
 
 /* Multiple sets management */
 .icon.sharp::first-letter{font-family:"WebAtlas-icons-sharp","WebAtlas-icons";}
+.icon.outline::first-letter{font-family:"WebAtlas-icons-outline","WebAtlas-icons";}
 
 /* General */
 .icon.newFile::before{content:"\24f";}
