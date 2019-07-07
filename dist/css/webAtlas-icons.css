@@ -4,6 +4,7 @@
 .icon.div-indent-center{width:2em;text-align:center;display:inline-block}	    /* Pour les icones à gauche de l'element avec une indentation au centre */
 
 /* Multiple sets management */
+.icon.original::first-letter{font-family:"WebAtlas-icons-original","WebAtlas-icons";}
 .icon.sharp::first-letter{font-family:"WebAtlas-icons-sharp","WebAtlas-icons";}
 .icon.outline::first-letter{font-family:"WebAtlas-icons-outline","WebAtlas-icons";}
 
