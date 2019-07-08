@@ -14,7 +14,14 @@
     <style>
         html {
             height: 100%;
-            background-image: radial-gradient(ellipse farthest-corner at 50% 150%, #8d8d8d 0%, #313138 100%);
+            background:
+                radial-gradient(ellipse farthest-corner at 50% 150%, rgba(0, 0, 0, 0) 0%, #313138 100%),
+                center url(icons_list_background.png),
+                #8d8d8d;
+            background-size:
+                auto,
+                400px,
+                auto;
             background-attachment: fixed;
         }
         body {
@@ -61,6 +68,9 @@
             color: white;
             background-color: rgb(60, 60, 60);
         }
+        #header_image {
+            margin-bottom: 15px;
+        }
         #main-col {
             width: 400px;
             max-width: 92%;
@@ -76,6 +86,16 @@
         }
         #main-col.block {
             width: 590px;
+        }
+        #topRightCorner {
+            width: 230px;
+            height: 60px;
+            background: rgba(0, 0, 0, 0.5);
+            border-bottom-left-radius: 6px;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+            position: fixed;
+            top: 0;
+            right: 0;
         }
         #arrowUp {
             width: 40px;
@@ -101,8 +121,8 @@
             cursor: pointer;
             transition: .5s;
             position: fixed;
-            top: 30px;
-            right: 30px;
+            top: 13px;
+            right: 18px;
         }
         #arrowUp:hover, #switchDisplayMode:hover {
             background-color: rgba(50, 132, 255, 0.5);
@@ -110,11 +130,11 @@
         #search {
             color: white;
             position: fixed;
-            right: 96px;
-            top: 38px;
+            right: 76px;
+            top: 18px;
         }
         #search .icon {
-            line-height: 20px;
+            line-height: 26px;
             font-size: 25px;
             vertical-align: bottom;
             margin-right: 5px;
@@ -139,20 +159,11 @@
         #gianteIcon {
             font-family: 'WebAtlas';
             font-size: 150px;
-            color: #ddd;
-            text-shadow: 3px 3px 0 black;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
             z-index: -1;
             position: fixed;
             top: 150px;
             left: 100px;
-        }
-        .info {
-            font-family: 'WebAtlas-Light';
-            font-size: 19px;
-            text-align:center;
-            color: transparent;
-            color: #16b5ff;
-            background-clip: text;
         }
         .block .item {
             width: 33%;
@@ -167,13 +178,23 @@
             font-size: 22px;
             vertical-align: top;
         }
+        .icon {
+            color: #ddd;
+        }
+        .info {
+            font-family: 'WebAtlas-Light';
+            font-size: 19px;
+            text-align:center;
+            color: transparent;
+            color: #16b5ff;
+            background-clip: text;
+        }
         .item {
             box-sizing: border-box;
             line-height: 13px;
             padding: 4px 10px;
             margin-bottom: 4px;
             font-size: 13px;
-            color: #ddd;
             text-shadow: 0 1px rgba(0,0,0,0.8);
             background: #464a4f;
                 background-image: none;
@@ -203,17 +224,21 @@
 </head>
 <body>
     <input type="text" id="inputClipboard" style="display:none" />
+
     <div align="center">
-        <img alt="font webatlas" src="font_webatlas_header.png" width="600">
+        <img id="header_image" alt="font webatlas" src="font_webatlas_header.png" width="374">
     </div>
 
     <div id="gianteIcon"></div>
+
+    <div id="topRightCorner"></div>
     <label id="search" for="search_input">
         <div class="icon div magnify"></div>
         <input type="text" id="search_input">
     </label>
+    <div id="switchDisplayMode" class="glass icon menu"></div>
+    <div id="arrowUp" class="glass icon arrow-up"></div>
     
-
     <div id="main-col" class="block">
         <h1>List of icons:</h1>
 
@@ -227,10 +252,6 @@
         </select>
 
         <div id="divIcons"></div>
-
-        <div id="switchDisplayMode" class="glass icon menu"></div>
-        <div id="arrowUp" class="glass icon arrow-up"></div>
-
     </div>
 
 <script>
