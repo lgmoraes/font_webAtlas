@@ -1,5 +1,16 @@
 # CHANGELOG #
 
+Version 1.0.0
+
+* Nouvelles icones ajoutés
+* Ajout du style d'icone Outline
+* Nouveau système multi-theme
+* Ajout d'une barre de recherche dans icons_list
+* Amélioration visuelle de icons_list
+* Certaines icones ont été améliorés
+* Les caractères alphabétiques ont été améliorés
+* Correction de bugs
+
 Version 0.7.0
 
 * De nouvelles icones ont été ajoutés
