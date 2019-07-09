@@ -24,9 +24,11 @@ Importez les fichiers css comme indiqué ci-dessous :
 <link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons.css">
 ```
 
+Dans cet exemple, les icones s'affichent dans le thème original. Consultez la partie "Choix du thème" pour modifier le thème.
+
 ## Utilisation
 
-Ajoutez 'icon nomIcone' dans l'attribut class d'un élément.
+Ajoutez "icon nomIcone" dans l'attribut class d'un élément.
 ```html
 <!-- Affiche l'icone à gauche de l'élément -->
 <div class="icon login"> Se connecter</div>
@@ -56,16 +58,58 @@ Vous pouvez ajuster le rendu en ajoutant une des class suivantes :
 
 ## Liste des icones
 
-Ouvrez simplement le fichier `icons_list.html` pour voir la liste complète des icones disponibles.
+Voir la liste sur ce lien : lmoraes.fr/font_webatlas
+
 Vous pouvez cliquer sur l'icone que vous souhaitez importer, le code css sera copié dans le presse papier.
 
-## Style alternatif
+## Choix du thème
 
-Si le style `Sharp` convient mieux au visuel de votre site que le style par défaut, remplacez le lien :
+3 thèmes sont disponibles :
+- Original
+- Sharp
+- Outline
+
+Incorporez le lien correspondant au style désiré :
+
 ```html
+<!-- Thème Original -->
 <link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons.css">
-```
-par celui-ci :
-```html
+
+<!-- Thème Sharp -->
 <link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons-sharp.css">
+
+<!-- Thème Outline -->
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons-outline.css">
+```
+
+Cela vous permet de proposer plusieurs thèmes dans votre page ou application, simplement en interchangeant ces liens.
+
+## Utiliser plusieurs thèmes en même temps
+
+Le thème choisi définit le style "par défaut", mais vous pouvez "forcer" l'affichage d'un style différent sur une icone en particulier en ajoutant la class `original`, `sharp` ou `outline` :
+
+```html
+<!-- Affiche l'icone login dans le style par défaut -->
+<div class="icon login"> Se connecter</div>
+
+<!-- L'icone s'affiche en original -->
+<div class="icon login original"> Se connecter</div>
+
+<!-- L'icone s'affiche en sharp -->
+<div class="icon login sharp"> Se connecter</div>
+
+<!-- L'icone s'affiche en outline -->
+<div class="icon login outline"> Se connecter</div>
+```
+
+## Contenu optionnels
+
+Ajoutez ces liens optionnels pour plus de contenu :
+```html
+<!-- Ajoute les fontes WebAtlas et WebAtlas-Light (lettres et chiffres) -->
+<link rel="stylesheet" type="text/css" href="dist/css/font-face/webAtlas-alphanumeric.css" />
+
+<!-- Ajoute les icones geometric -->
+<link rel="stylesheet" type="text/css" href="dist/css/webAtlas-geometric.css" />
+<link rel="stylesheet" type="text/css" href="dist/css/font-face/webAtlas-geometric.css" />
 ```
