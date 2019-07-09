@@ -1,16 +1,17 @@
 {
   "name": "font_webatlas",
-  "version": "0.7.0",
+  "version": "1.0.0",
   "description": "Font specially designed for the creation of interfaces / web applications.",
   "main": "dist/css/webAtlas-icons.css",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": ["font", "ttf", "icon", "interface", "css", "front-end", "vector"],
+  "homepage": "https://lmoraes.fr/font_webatlas/",
   "author": {
     "name": "Louis Moraes",
-    "url": "https://www.lmoraes.fr/"
+    "url": "https://lmoraes.fr/"
   },
   "repository": "https://github.com/lgmoraes/Font_webatlas.git",
-  "license": "MIT"
+  "keywords": ["font", "ttf", "icon", "interface", "css", "front-end", "vector"],
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
