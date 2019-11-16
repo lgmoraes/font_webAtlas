@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1375896762
-ModificationTime: 1573749118
+ModificationTime: 1573926814
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
@@ -57,8 +57,17 @@ OS2XHeight: 487
 OS2Vendor: 'UKWN'
 OS2CodePages: 20000097.00000000
 OS2UnicodeRanges: 00000207.00000000.00000000.00000000
+Lookup: 258 0 0 "'kern' Cr+AOkA-nage horizontal dans Latin lookup 0" { "'kern' Cr+AOkA-nage horizontal dans Latin lookup 0-1" [150,15,0] } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+KernClass2: 4 4 "'kern' Cr+AOkA-nage horizontal dans Latin lookup 0-1"
+ 3 T Y
+ 3 V F
+ 196 a c d e g m n o p q r s u v w x y z agrave aacute acircumflex adieresis egrave eacute ecircumflex edieresis ograve oacute ocircumflex odieresis ugrave uacute ucircumflex udieresis yacute ydieresis
+ 3 T Y
+ 1 V
+ 196 a c d e g m n o p q r s u v w x y z agrave aacute acircumflex adieresis egrave eacute ecircumflex edieresis ograve oacute ocircumflex odieresis ugrave uacute ucircumflex udieresis yacute ydieresis
+ 0 {} 0 {} 0 {} 0 {} 0 {} 70 {} 50 {} -80 {} 0 {} 50 {} 30 {} -40 {} 0 {} -80 {} -40 {} 0 {}
 TtTable: prep
 MPPEM
 PUSHW_1
@@ -2657,7 +2666,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 47 14
+WinInfo: 0 39 14
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -4317,7 +4326,7 @@ EndChar
 
 StartChar: f
 Encoding: 102 102 40
-Width: 330
+Width: 307
 VWidth: 0
 Flags: W
 HStem: -1.3252 21G<116.639 128.905> 440.336 59.252<24.2169 93.1485 152.4 244.71> 642.966 59.252<174.517 333.047>
@@ -5919,7 +5928,7 @@ VWidth: 0
 Flags: W
 LayerCount: 2
 Fore
-Refer: 123 168 S 1 0 0 1 68.6226 -66.2305 2
+Refer: 123 168 S 1 0 0 1 73.6226 -66.2305 2
 Refer: 39 101 N 1 0 0 1 -0.000320395 0 3
 EndChar
 
@@ -6069,7 +6078,7 @@ VWidth: 0
 Flags: W
 LayerCount: 2
 Fore
-Refer: 123 168 N 1 0 0 1 55.9935 -66.2305 2
+Refer: 123 168 S 1 0 0 1 68.9935 -66.2305 2
 Refer: 53 121 N 1 0 0 1 -0.000246367 0 3
 EndChar
 
