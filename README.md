@@ -58,7 +58,8 @@ You can adjust the rendering by adding one of the following class :
 
 ## List of icons
 
-See the list on this link : lmoraes.fr/font_webatlas
+See the list on this link :
+<a href="https://lmoraes.fr/font_webatlas/">lmoraes.fr/font_webatlas</a>
 
 You can click on the icon you want to import, the css code will be copied to the clipboard.
 

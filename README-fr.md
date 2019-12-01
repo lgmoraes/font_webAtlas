@@ -58,7 +58,8 @@ Vous pouvez ajuster le rendu en ajoutant une des class suivantes :
 
 ## Liste des icones
 
-Voir la liste sur ce lien : lmoraes.fr/font_webatlas
+Voir la liste sur ce lien :
+<a href="https://lmoraes.fr/font_webatlas/">lmoraes.fr/font_webatlas</a>
 
 Vous pouvez cliquer sur l'icone que vous souhaitez importer, le code css sera copié dans le presse papier.
 
