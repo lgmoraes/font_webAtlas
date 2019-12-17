@@ -1,5 +1,11 @@
 # CHANGELOG #
 
+Version 1.0.1
+
+* Amélioration de certaines icones
+* Amélioration des caractères alphanumériques
+* Ajustement des marges des caractères alphabétiques
+
 Version 1.0.0
 
 * Nouvelles icones ajoutés
