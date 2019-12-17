@@ -4,7 +4,7 @@ FullName: WebAtlas-light
 FamilyName: WebAtlas-light
 Weight: light
 Copyright: MIT License 2018, Louis MORAES.
-Version: 1.0.0
+Version: 1.0.1
 ItalicAngle: 0
 UnderlinePosition: -170
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1375896762
-ModificationTime: 1575153815
+ModificationTime: 1576622882
 PfmFamily: 81
 TTFWeight: 400
 TTFWidth: 5
