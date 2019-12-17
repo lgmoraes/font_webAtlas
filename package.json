@@ -1,6 +1,6 @@
 {
   "name": "font_webatlas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Font specially designed for the creation of interfaces / web applications.",
   "main": "dist/css/webAtlas-icons.css",
   "homepage": "https://lmoraes.fr/font_webatlas/",
