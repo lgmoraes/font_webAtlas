@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'WebAtlas-geometric';
-    src: url('../../font/WebAtlas-geometric.woff2') format('woff2'),
-         url('../../font/WebAtlas-geometric.woff') format('woff'),
-         url('../../font/WebAtlas-geometric.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}

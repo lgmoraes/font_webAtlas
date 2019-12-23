@@ -6,9 +6,7 @@
     <title>Web Atlas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="dist/css/webAtlas-icons.css" />
-    <link rel="stylesheet" type="text/css" href="dist/css/webAtlas-geometric.css" />
     <link rel="stylesheet" type="text/css" href="dist/css/font-face/webAtlas-icons.css" />
-    <link rel="stylesheet" type="text/css" href="dist/css/font-face/webAtlas-geometric.css" />
     <link rel="stylesheet" type="text/css" href="dist/css/font-face/webAtlas-alphanumeric.css" />
     
     <style>
@@ -248,7 +246,6 @@
             <option value="original" selected="">Original</option>
             <option value="sharp">Sharp</option>
             <option value="outline">Outline</option>
-            <option value="geometric">Geometric</option>
         </select>
 
         <div id="divIcons"></div>
@@ -627,37 +624,6 @@
         ]
     };
 
-    var geometric = {
-        Form: [
-            'circle',
-            'circle2',
-            'circle3',
-            'circle4',
-            'circle-dashed',
-            'circle-dashed2',
-            'circle-dashed3',
-            'circle-hatched',
-            'circle-hatched2',
-            'square-dashed',
-            'square-dashed2',
-            'square-dashed3',
-            'square-dashed4',
-            'square-dashed5',
-            'square-hatched',
-            'square-hatched2',
-            'hex',
-            'hex-rounded',
-            'hex-stroke',
-            'hex2',
-            'hex2-rounded',
-            'hex2-stroke',
-            'diamond',
-            'pentagon',
-            'pentagon-rounded',
-            'pentagon-stroke'
-        ]
-    };
-
 
     onload = function() {
         loadList(icons);
@@ -705,9 +671,6 @@
                 break;
             case "outline":
                 loadList(icons, "outline");
-                break;
-            case "geometric":
-                loadList(geometric);
                 break;
         }
     };
