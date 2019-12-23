@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'WebAtlas';
     src: url('../../font/WebAtlas.woff2') format('woff2'),
-         url('../../font/WebAtlas.woff') format('woff'),
-         url('../../font/WebAtlas.ttf') format('truetype');
+         url('../../font/WebAtlas.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,8 +9,7 @@
 @font-face {
     font-family: 'WebAtlas-Light';
     src: url('../../font/WebAtlas-Light.woff2') format('woff2'),
-         url('../../font/WebAtlas-Light.woff') format('woff'),
-         url('../../font/WebAtlas-Light.ttf') format('truetype');
+         url('../../font/WebAtlas-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

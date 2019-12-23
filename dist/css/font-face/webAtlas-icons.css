@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'WebAtlas-icons';
     src: url('../../font/WebAtlas-icons.woff2') format('woff2'),
-         url('../../font/WebAtlas-icons.woff') format('woff'),
-         url('../../font/WebAtlas-icons.ttf') format('truetype');
+         url('../../font/WebAtlas-icons.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,8 +9,7 @@
 @font-face {
     font-family: 'WebAtlas-icons-sharp';
     src: url('../../font/WebAtlas-icons-sharp.woff2') format('woff2'),
-         url('../../font/WebAtlas-icons-sharp.woff') format('woff'),
-         url('../../font/WebAtlas-icons-sharp.ttf') format('truetype');
+         url('../../font/WebAtlas-icons-sharp.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,8 +17,7 @@
 @font-face {
     font-family: 'WebAtlas-icons-outline';
     src: url('../../font/WebAtlas-icons-outline.woff2') format('woff2'),
-         url('../../font/WebAtlas-icons-outline.woff') format('woff'),
-         url('../../font/WebAtlas-icons-outline.ttf') format('truetype');
+         url('../../font/WebAtlas-icons-outline.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

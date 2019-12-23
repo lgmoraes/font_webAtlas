@@ -9,7 +9,7 @@
     "url": "https://lmoraes.fr/"
   },
   "repository": "https://github.com/lgmoraes/Font_webatlas.git",
-  "keywords": ["font", "ttf", "icon", "interface", "css", "front-end", "vector"],
+  "keywords": ["font", "woff", "icon", "interface", "css", "front-end", "vector"],
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
