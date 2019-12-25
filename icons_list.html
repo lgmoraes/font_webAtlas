@@ -135,7 +135,6 @@
             line-height: 26px;
             font-size: 25px;
             vertical-align: bottom;
-            margin-right: 5px;
         }
         #search_input {
             color: white;
@@ -166,13 +165,12 @@
         .block .item {
             width: 33%;
             line-height: 20px;
-            padding: 10px;
+            padding: 10px 5px;
             margin-bottom: 0px;
             vertical-align: top;
             display: inline-block;
         }
-        .block .div-indent-center {
-            width: 40px;
+        .block .item .icon {
             font-size: 22px;
             vertical-align: top;
         }
@@ -240,7 +238,7 @@
     <div id="main-col" class="block">
         <h1>List of icons:</h1>
 
-        <div class="icon info circle-info"> Clic on an item to copy the className on clipboard.</div>
+        <div class="info icon-first circle-info">Clic on an item to copy the className on clipboard.</div>
 
         <select id="select_font" autocomplete="off">
             <option value="original" selected="">Original</option>
@@ -730,7 +728,7 @@
                 var newDiv = document.createElement('div');
                 var newDivIcon = document.createElement('div');
                 
-                newDivIcon.className = "icon div-indent-center " + icon;
+                newDivIcon.className = "icon " + icon;
                 if (style) addClass(style, newDivIcon);
                 newDiv.appendChild(newDivIcon);
                 newDiv.className = "item";
