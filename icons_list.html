@@ -240,11 +240,7 @@
 
         <div class="info icon-first circle-info">Clic on an item to copy the className on clipboard.</div>
 
-        <select id="select_font" autocomplete="off">
-            <option value="original" selected="">Original</option>
-            <option value="sharp">Sharp</option>
-            <option value="outline">Outline</option>
-        </select>
+        <select id="select_font" autocomplete="off"></select>
 
         <div id="divIcons"></div>
     </div>
@@ -263,369 +259,38 @@
 
     var iconsElements = [];
     
-    var icons = {
-        General: [
-            'newFile',
-            'open',
-            'save',
-            'copy',
-            'paste',
-            'cut',
-            'copy2',
-            'paste2',
-            'notification',
-            'email',
-            'email-open',
-            'attachment',
-            'warning',
-            'warning2',
-            'uploadFile',
-            'downloadFile',
-            'downloadData',
-            'downloadData2',
-            'user',
-            'addUser',
-            'removeUser',
-            'modifyUser',
-            'users',
-            'userGroup',
-            'user2',
-            'addUser2',
-            'removeUser2',
-            'modifyUser2',
-            'users2',
-            'userGroup2',
-            'login',
-            'logout',
-            'connexion',
-            'connexion2',
-            'spreadsheet',
-            'spreadsheet2',
-            'spreadsheet3',
-            'spreadsheet4',
-            'wheel',
-            'wheel2',
-            'wheel3',
-            'wheel4',
-            'wheel5',
-            'wheel6',
-            'wheel7',
-            'wheel8',
-            'settings',
-            'settings2',
-            'settings3',
-            'dustbin',
-            'dustbin2',
-            'pen',
-            'pen2',
-            'pen3',
-            'pen4',
-            'reload',
-            'reload-left',
-            'reload2',
-            'reload3',
-            'reload4',
-            'apps',
-            'apps2',
-            'menu',
-            'menu2',
-            'menu2-vertical',
-            'image',
-            'image2',
-            'home',
-            'home2',
-            'magnify'
-        ],
-        Divers: [
-            'bulb',
-            'lightning',
-            'bookmark',
-            'hierarchie',
-            'building',
-            'crown',
-            'tutorial',
-            'map',
-            'archive',
-            'bug',
-            'idCard',
-            'weight',
-            'application',
-            'application-right',
-            'application-wrong',
-            'application-warning',
-            'application-wheel',
-            'application-multiple',
-            'screen',
-            'screen-play',
-            'screen-wheel',
-            'iphone',
-            'ipad',
-            'keyboard',
-            'mouse',
-            'camera',
-            'webcam',
-            'micro',
-            'speaker',
-            'chip',
-            'server',
-            'server2',
-            'database',
-            'cloud',
-            'cloud-download',
-            'cloud-upload',
-            'cloud-swap',
-            'cloud-sync',
-            'cloud-right',
-            'cloud-wrong',
-            'cloud-warning',
-            'cloud-warning2',
-            'calendar',
-            'calendar-days',
-            'calendar-weeks',
-            'calendar-months',
-            'calendar-modify',
-            'calendar-add',
-            'calendar-remove',
-            'calendar-valide',
-            'calendar-warning',
-            'calendar-lock',
-            'planete',
-            'planete2',
-            'network',
-            'plug',
-            'plug-off',
-            'star',
-            'star-half',
-            'star-empty',
-            'heart',
-            'infinite',
-            'puzzle',
-            'thumbUp',
-            'thumbDown',
-            'badge',
-            'checkerboard',
-            'checkerboard2',
-            'experimental',
-            'wifi',
-            'wifi-off',
-            'signal',
-            'rss',
-            'magnet',
-            'flame',
-            'flame2',
-            'speechBubble-left',
-            'speechBubble-right',
-            'speechBubble2-left',
-            'speechBubble2-right',
-            'eye',
-            'eye-closed',
-            'eye-half',
-            'eye2',
-            'time',
-            'time2',
-            'time3',
-            'timer',
-            'cursor',
-            'layer',
-            'bold',
-            'italic',
-            'underline',
-            'align-left',
-            'align-center',
-            'align-right',
-            'align-justify',
-            'textHeight',
-            'element',
-            'element-add',
-            'element-add2',
-            'element-remove',
-            'element2',
-            'element2-add',
-            'element2-add2',
-            'element2-remove',
-            'element-layer',
-            'element-up',
-            'element-down',
-            'element-first',
-            'element-last',
-            'select',
-            'select-add',
-            'select-group',
-            'edit',
-            'edit-triangle',
-            'edit-group',
-            'edit-line',
-            'displace-left',
-            'displace-right',
-            'displace2-left',
-            'displace2-right',
-            'statistics',
-            'statistics2',
-            'statistics3',
-            'statistics4',
-            'padlock',
-            'padlock-unlock',
-            'shield',
-            'barcode',
-            'qrcode',
-            'circlecode',
-            'link',
-            'link2',
-            'box',
-            'box2',
-            'cube',
-            'cube2',
-            'cube-stroke',
-            'forbidden',
-            'forbidden2',
-            'sun',
-            'moon',
-            'pin',
-            'pin2',
-            'text',
-            'postIt',
-            'formRadio',
-            'formCheckbox',
-            'clickableImage'
-        ],
-        Right_Wrong: [
-            'right',
-            'wrong',
-            'right-medium',
-            'wrong-medium',
-            'right-bold',
-            'wrong-bold',
-            'right-rounded',
-            'wrong-rounded',
-            'right-rounded-bold',
-            'wrong-rounded-bold',
-            'right-handwriting',
-            'wrong-handwriting',
-            'right-handwriting2',
-            'wrong-handwriting2',
-            'right2',
-            'wrong2'
-        ],
-        Plus_Minus: [
-            'plus',
-            'minus',
-            'plus2',
-            'minus2',
-            'plus3',
-            'minus3',
-            'plus4',
-            'minus4',
-            'plus5',
-            'minus5'
-        ],
-        Circles: [
-            'circle-right',
-            'circle-wrong',
-            'circle-right-handwriting',
-            'circle-wrong-handwriting',
-            'circle-plus',
-            'circle-minus',
-            'circle-info',
-            'circle-warning',
-            'circle-leftArrow',
-            'circle-upArrow',
-            'circle-rightArrow',
-            'circle-downArrow',
-            'circle-play',
-            'circle-pause',
-            'circle-download',
-            'circle-upload'
-        ],
-        Formular: [
-            'radio',
-            'radio-checked',
-            'checkbox',
-            'checkbox-checked',
-            'radio2',
-            'radio2-checked',
-            'checkbox2',
-            'checkbox2-checked',
-            'radio3',
-            'radio3-checked',
-            'checkbox3',
-            'checkbox3-checked'
-        ],
-        Player: [
-            'play',
-            'pause',
-            'stop',
-            'slow',
-            'next',
-            'previous',
-            'fastForward',
-            'rewind',
-            'eject',
-            'speaker-high',
-            'speaker-medium',
-            'speaker-low',
-            'speaker-mute',
-            'loop',
-            'loopUnique',
-            'random'
-        ],
-        Arrows: [
-            'arrow-undo',
-            'arrow-redo',
-            'arrow-swap',
-            'arrow-loop',
-            'arrow-move',
-            'arrow-move-alt',
-            'arrow-horizontal',
-            'arrow-vertical',
-            'arrow-diagonal',
-            'arrow-diagonal2',
-            'arrow-align-horizontal',
-            'arrow-align-vertical',
-            'arrow-align-left',
-            'arrow-align-top',
-            'arrow-align-right',
-            'arrow-align-down',
-            'arrow-resize-up',
-            'arrow-resize-down',
-            'arrow-left',
-            'arrow-up',
-            'arrow-right',
-            'arrow-down',
-            'arrow-up-left',
-            'arrow-up-right',
-            'arrow-down-right',
-            'arrow-down-left',
-            'arrow2-left',
-            'arrow2-up',
-            'arrow2-right',
-            'arrow2-down',
-            'arrow2-up-left',
-            'arrow2-up-right',
-            'arrow2-down-right',
-            'arrow2-down-left',
-            'arrow3-left',
-            'arrow3-up',
-            'arrow3-right',
-            'arrow3-down',
-            'arrow3-up-left',
-            'arrow3-up-right',
-            'arrow3-down-right',
-            'arrow3-down-left',
-            'arrow4-left',
-            'arrow4-up',
-            'arrow4-right',
-            'arrow4-down',
-            'arrow4-up-left',
-            'arrow4-up-right',
-            'arrow4-down-right',
-            'arrow4-down-left'
-        ]
-    };
+    var data = null;
 
 
-    onload = function() {
-        loadList(icons);
-    };
+    /* INIT */
+    var xhr_getIcones = new XMLHttpRequest();
+
+    xhr_getIcones.open("POST", "icons.json", true);
+    xhr_getIcones.setRequestHeader("Content-Type", "application/json");
+    xhr_getIcones.send();
+
+    xhr_getIcones.onreadystatechange = function() {
+        var xhr = this;
+        
+        if (xhr.readyState != xhr.DONE)
+            return false;
+        if (xhr.status == 200) {
+            data = JSON.parse(xhr.response);
+            init();
+        }
+    }
+
+    function init() {
+        loadList(data.icons);
+
+        for (let i = 0; i < data.styles.length; i++) {
+            const style = data.styles[i];
+            let e = document.createElement('option');
+            e.value = style;
+            e.innerHTML = ucfirst(style);
+            select_font.appendChild(e);
+        }
+    }
 
     onscroll = function() {
         if (getScrollY() === 0) {
@@ -660,17 +325,7 @@
     };
 
     select_font.onchange = function() {
-        switch (this.value) {
-            case "original":
-                loadList(icons);
-                break;
-            case "sharp":
-                loadList(icons, "sharp");
-                break;
-            case "outline":
-                loadList(icons, "outline");
-                break;
-        }
+        loadList(data.icons, this.value);
     };
 
     arrowUp.onclick = function() {
@@ -756,6 +411,10 @@
 
     function getScrollY() {
         return window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0; // position du scrolling MultiSupport.
+    }
+
+    function ucfirst(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
     }
 
 
