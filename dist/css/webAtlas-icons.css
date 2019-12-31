@@ -48,14 +48,14 @@ div.icon{display:inline-block}
 .icon.spreadsheet2::before,.icon-first.spreadsheet2::before{content:"\262";}
 .icon.spreadsheet3::before,.icon-first.spreadsheet3::before{content:"\263";}
 .icon.spreadsheet4::before,.icon-first.spreadsheet4::before{content:"\264";}
-.icon.wheel::before,.icon-first.wheel::before{content:"\222";}
-.icon.wheel2::before,.icon-first.wheel2::before{content:"\223";}
-.icon.wheel3::before,.icon-first.wheel3::before{content:"\224";}
-.icon.wheel4::before,.icon-first.wheel4::before{content:"\225";}
-.icon.wheel5::before,.icon-first.wheel5::before{content:"\226";}
-.icon.wheel6::before,.icon-first.wheel6::before{content:"\227";}
-.icon.wheel7::before,.icon-first.wheel7::before{content:"\228";}
-.icon.wheel8::before,.icon-first.wheel8::before{content:"\229";}
+.icon.gear::before,.icon-first.gear::before{content:"\222";}
+.icon.gear2::before,.icon-first.gear2::before{content:"\223";}
+.icon.gear3::before,.icon-first.gear3::before{content:"\224";}
+.icon.gear4::before,.icon-first.gear4::before{content:"\225";}
+.icon.gear5::before,.icon-first.gear5::before{content:"\226";}
+.icon.gear6::before,.icon-first.gear6::before{content:"\227";}
+.icon.gear7::before,.icon-first.gear7::before{content:"\229";}
+.icon.gear8::before,.icon-first.gear8::before{content:"\228";}
 .icon.settings::before,.icon-first.settings::before{content:"\22f";}
 .icon.settings2::before,.icon-first.settings2::before{content:"\230";}
 .icon.settings3::before,.icon-first.settings3::before{content:"\231";}
@@ -83,23 +83,23 @@ div.icon{display:inline-block}
 .icon.home2::before,.icon-first.home2::before{content:"\2cd";}
 .icon.magnify::before,.icon-first.magnify::before{content:"\454";}
 
-/* Right / Wrong */
-.icon.right::before,.icon-first.right::before{content:"\100";}
-.icon.wrong::before,.icon-first.wrong::before{content:"\101";}
-.icon.right-medium::before,.icon-first.right-medium::before{content:"\102";}
-.icon.wrong-medium::before,.icon-first.wrong-medium::before{content:"\103";}
-.icon.right-bold::before,.icon-first.right-bold::before{content:"\104";}
-.icon.wrong-bold::before,.icon-first.wrong-bold::before{content:"\105";}
-.icon.right-rounded::before,.icon-first.right-rounded::before{content:"\10a";}
-.icon.wrong-rounded::before,.icon-first.wrong-rounded::before{content:"\10b";}
-.icon.right-rounded-bold::before,.icon-first.right-rounded-bold::before{content:"\106";}
-.icon.wrong-rounded-bold::before,.icon-first.wrong-rounded-bold::before{content:"\107";}
-.icon.right-handwriting::before,.icon-first.right-handwriting::before{content:"\10c";}
-.icon.wrong-handwriting::before,.icon-first.wrong-handwriting::before{content:"\10d";}
-.icon.right-handwriting2::before,.icon-first.right-handwriting2::before{content:"\108";}
-.icon.wrong-handwriting2::before,.icon-first.wrong-handwriting2::before{content:"\109";}
-.icon.right2::before,.icon-first.right2::before{content:"\10e";}
-.icon.wrong2::before,.icon-first.wrong2::before{content:"\10f";}
+/* Ok / Ko */
+.icon.ok::before,.icon-first.ok::before{content:"\100";}
+.icon.ko::before,.icon-first.ko::before{content:"\101";}
+.icon.ok-medium::before,.icon-first.ok-medium::before{content:"\102";}
+.icon.ko-medium::before,.icon-first.ko-medium::before{content:"\103";}
+.icon.ok-bold::before,.icon-first.ok-bold::before{content:"\104";}
+.icon.ko-bold::before,.icon-first.ko-bold::before{content:"\105";}
+.icon.ok-rounded::before,.icon-first.ok-rounded::before{content:"\10a";}
+.icon.ko-rounded::before,.icon-first.ko-rounded::before{content:"\10b";}
+.icon.ok-rounded-bold::before,.icon-first.ok-rounded-bold::before{content:"\106";}
+.icon.ko-rounded-bold::before,.icon-first.ko-rounded-bold::before{content:"\107";}
+.icon.ok-handwriting::before,.icon-first.ok-handwriting::before{content:"\10c";}
+.icon.ko-handwriting::before,.icon-first.ko-handwriting::before{content:"\10d";}
+.icon.ok-handwriting2::before,.icon-first.ok-handwriting2::before{content:"\108";}
+.icon.ko-handwriting2::before,.icon-first.ko-handwriting2::before{content:"\109";}
+.icon.ok2::before,.icon-first.ok2::before{content:"\10e";}
+.icon.ko2::before,.icon-first.ko2::before{content:"\10f";}
 
 /* Plus / Minus */
 .icon.plus::before,.icon-first.plus::before{content:"\297";}
@@ -114,18 +114,18 @@ div.icon{display:inline-block}
 .icon.minus5::before,.icon-first.minus5::before{content:"\2a0";}
 
 /* Circle */
-.icon.circle-right::before,.icon-first.circle-right::before{content:"\1ad";}
-.icon.circle-wrong::before,.icon-first.circle-wrong::before{content:"\1ae";}
-.icon.circle-right-handwriting::before,.icon-first.circle-right-handwriting::before{content:"\1af";}
-.icon.circle-wrong-handwriting::before,.icon-first.circle-wrong-handwriting::before{content:"\1b0";}
+.icon.circle-ok::before,.icon-first.circle-ok::before{content:"\1ad";}
+.icon.circle-ko::before,.icon-first.circle-ko::before{content:"\1ae";}
+.icon.circle-ok-handwriting::before,.icon-first.circle-ok-handwriting::before{content:"\1af";}
+.icon.circle-ko-handwriting::before,.icon-first.circle-ko-handwriting::before{content:"\1b0";}
 .icon.circle-plus::before,.icon-first.circle-plus::before{content:"\1b1";}
 .icon.circle-minus::before,.icon-first.circle-minus::before{content:"\1b2";}
 .icon.circle-info::before,.icon-first.circle-info::before{content:"\1b6";}
 .icon.circle-warning::before,.icon-first.circle-warning::before{content:"\1b5";}
-.icon.circle-leftArrow::before,.icon-first.circle-leftArrow::before{content:"\1b7";}
-.icon.circle-upArrow::before,.icon-first.circle-upArrow::before{content:"\1b8";}
-.icon.circle-rightArrow::before,.icon-first.circle-rightArrow::before{content:"\1b9";}
-.icon.circle-downArrow::before,.icon-first.circle-downArrow::before{content:"\1ba";}
+.icon.circle-arrowLeft::before,.icon-first.circle-arrowLeft::before{content:"\1b7";}
+.icon.circle-arrowUp::before,.icon-first.circle-arrowUp::before{content:"\1b8";}
+.icon.circle-arrowRight::before,.icon-first.circle-arrowRight::before{content:"\1b9";}
+.icon.circle-arrowDown::before,.icon-first.circle-arrowDown::before{content:"\1ba";}
 .icon.circle-play::before,.icon-first.circle-play::before{content:"\1bb";}
 .icon.circle-pause::before,.icon-first.circle-pause::before{content:"\1bc";}
 .icon.circle-download::before,.icon-first.circle-download::before{content:"\1bd";}
@@ -164,12 +164,11 @@ div.icon{display:inline-block}
 .icon.random::before,.icon-first.random::before{content:"\540";}
 
 /* Arrow */
-.icon.arrow-undo::before,.icon-first.arrow-undo::before{content:"\4e1";}
-.icon.arrow-redo::before,.icon-first.arrow-redo::before{content:"\4e2";}
+.icon.undo::before,.icon-first.arrow-undo::before{content:"\4e1";}
+.icon.redo::before,.icon-first.arrow-redo::before{content:"\4e2";}
 .icon.arrow-swap::before,.icon-first.arrow-swap::before{content:"\4e3";}
-.icon.arrow-loop::before,.icon-first.arrow-loop::before{content:"\4f2";}
-.icon.arrow-move::before,.icon-first.arrow-move::before{content:"\4e4";}
-.icon.arrow-move-alt::before,.icon-first.arrow-move-alt::before{content:"\4e5";}
+.icon.move::before,.icon-first.arrow-move::before{content:"\4e4";}
+.icon.move-alt::before,.icon-first.arrow-move-alt::before{content:"\4e5";}
 .icon.arrow-horizontal::before,.icon-first.arrow-horizontal::before{content:"\4e6";}
 .icon.arrow-vertical::before,.icon-first.arrow-vertical::before{content:"\4e7";}
 .icon.arrow-diagonal::before,.icon-first.arrow-diagonal::before{content:"\4e8";}
@@ -239,16 +238,16 @@ div.icon{display:inline-block}
 .icon.plug::before,.icon-first.plug::before{content:"\46e";}
 .icon.plug-off::before,.icon-first.plug-off::before{content:"\46f";}
 .icon.application::before,.icon-first.application::before{content:"\114";}
-.icon.application-right::before,.icon-first.application-right::before{content:"\115";}
-.icon.application-wrong::before,.icon-first.application-wrong::before{content:"\116";}
+.icon.application-ok::before,.icon-first.application-ok::before{content:"\115";}
+.icon.application-ko::before,.icon-first.application-ko::before{content:"\116";}
 .icon.application-warning::before,.icon-first.application-warning::before{content:"\117";}
-.icon.application-wheel::before,.icon-first.application-wheel::before{content:"\118";}
+.icon.application-gear::before,.icon-first.application-gear::before{content:"\118";}
 .icon.application-multiple::before,.icon-first.application-multiple::before{content:"\113";}
 .icon.screen::before,.icon-first.screen::before{content:"\119";}
 .icon.screen-play::before,.icon-first.screen-play::before{content:"\11b";}
-.icon.screen-wheel::before,.icon-first.screen-wheel::before{content:"\11a";}
-.icon.iphone::before,.icon-first.iphone::before{content:"\11e";}
-.icon.ipad::before,.icon-first.ipad::before{content:"\11d";}
+.icon.screen-gear::before,.icon-first.screen-gear::before{content:"\11a";}
+.icon.mobile::before,.icon-first.mobile::before{content:"\11e";}
+.icon.tablet::before,.icon-first.tablet::before{content:"\11d";}
 .icon.keyboard::before,.icon-first.keyboard::before{content:"\11f";}
 .icon.mouse::before,.icon-first.mouse::before{content:"\120";}
 .icon.camera::before,.icon-first.camera::before{content:"\121";}
@@ -263,8 +262,8 @@ div.icon{display:inline-block}
 .icon.cloud-upload::before,.icon-first.cloud-upload::before{content:"\12c";}
 .icon.cloud-swap::before,.icon-first.cloud-swap::before{content:"\12d";}
 .icon.cloud-sync::before,.icon-first.cloud-sync::before{content:"\12e";}
-.icon.cloud-right::before,.icon-first.cloud-right::before{content:"\12f";}
-.icon.cloud-wrong::before,.icon-first.cloud-wrong::before{content:"\130";}
+.icon.cloud-ok::before,.icon-first.cloud-ok::before{content:"\12f";}
+.icon.cloud-ko::before,.icon-first.cloud-ko::before{content:"\130";}
 .icon.cloud-warning::before,.icon-first.cloud-warning::before{content:"\131";}
 .icon.cloud-warning2::before,.icon-first.cloud-warning2::before{content:"\132";}
 .icon.calendar::before,.icon-first.calendar::before{content:"\155";}
@@ -299,10 +298,10 @@ div.icon{display:inline-block}
 .icon.experimental::before,.icon-first.experimental::before{content:"\3e9";}
 .icon.flame::before,.icon-first.flame::before{content:"\42f";}
 .icon.flame2::before,.icon-first.flame2::before{content:"\430";}
-.icon.speechBubble-left::before,.icon-first.speechBubble-left::before{content:"\3cf";}
-.icon.speechBubble-right::before,.icon-first.speechBubble-right::before{content:"\3d0";}
-.icon.speechBubble2-left::before,.icon-first.speechBubble2-left::before{content:"\3d1";}
-.icon.speechBubble2-right::before,.icon-first.speechBubble2-right::before{content:"\3d2";}
+.icon.dialogue::before,.icon-first.dialogue::before{content:"\3cf";}
+.icon.dialogue-right::before,.icon-first.dialogue-right::before{content:"\3d0";}
+.icon.dialogue2::before,.icon-first.dialogue2::before{content:"\3d1";}
+.icon.dialogue2-right::before,.icon-first.dialogue2-right::before{content:"\3d2";}
 .icon.eye::before,.icon-first.eye::before{content:"\238";}
 .icon.eye-closed::before,.icon-first.eye-closed::before{content:"\239";}
 .icon.eye-half::before,.icon-first.eye-half::before{content:"\23a";}
