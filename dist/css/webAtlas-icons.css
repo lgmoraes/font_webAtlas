@@ -1,14 +1,14 @@
 .icon{width:1.8em;text-align:center}
-.icon::first-letter{font-family:"WebAtlas-icons"}
+.icon::before{font-family:"WebAtlas-icons"}
 div.icon{display:inline-block}
 i.icon{font-style:normal;}
 
-.icon-first::first-letter{font-family:"WebAtlas-icons";margin-right:0.3em}
+.icon-first::before{font-family:"WebAtlas-icons";margin-right:0.3em}
 
 /* Multiple sets management */
-.icon.original::first-letter,.icon-first.original::first-letter{font-family:"WebAtlas-icons-original","WebAtlas-icons";}
-.icon.sharp::first-letter,.icon-first.sharp::first-letter{font-family:"WebAtlas-icons-sharp","WebAtlas-icons";}
-.icon.outline::first-letter,.icon-first.outline::first-letter{font-family:"WebAtlas-icons-outline","WebAtlas-icons";}
+.icon.original::before,.icon-first.original::before{font-family:"WebAtlas-icons-original","WebAtlas-icons";}
+.icon.sharp::before,.icon-first.sharp::before{font-family:"WebAtlas-icons-sharp","WebAtlas-icons";}
+.icon.outline::before,.icon-first.outline::before{font-family:"WebAtlas-icons-outline","WebAtlas-icons";}
 
 /* General */
 .icon.newFile::before,.icon-first.newFile::before{content:"\24f";}
