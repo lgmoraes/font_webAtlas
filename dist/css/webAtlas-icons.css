@@ -2,6 +2,7 @@
 .icon::before{font-family:"WebAtlas-icons"}
 div.icon{display:inline-block}
 i.icon{font-style:normal;}
+.icon.combine{margin-left:-1.2em}
 
 .icon-first::before{font-family:"WebAtlas-icons";margin-right:0.3em}
 
