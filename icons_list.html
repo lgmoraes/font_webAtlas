@@ -350,7 +350,7 @@
             if (typeof args === "object") {
                 var str = "";
 
-                for (const arg in args) {
+                for (var arg in args) {
                     str += arg + "=" + args[arg] + "&";
                 }
                 str = str.substring(0, str.length-1);
@@ -369,7 +369,10 @@
                 if (xhr.status == 200) {
                     try {
                         newObj = JSON.parse(xhr.response);
-                        Object.assign(obj, newObj);
+                        if (Object.assign)
+                            Object.assign(obj, newObj)
+                        else
+                            assign(obj, newObj);
                     }
                     catch (error) {
                         func_error ? func_error(error) : console.warn(error);
@@ -391,9 +394,9 @@
         function init() {
             loadList(data.icons);
 
-            for (let i = 0; i < data.styles.length; i++) {
-                const style = data.styles[i];
-                let e = document.createElement('option');
+            for (var i = 0; i < data.styles.length; i++) {
+                var style = data.styles[i];
+                var e = document.createElement('option');
                 e.value = style;
                 e.innerHTML = ucfirst(style);
                 select_style.appendChild(e);
@@ -475,16 +478,16 @@
         }
 
         function search() {
-            const s = search_input.value;
+            var s = search_input.value;
 
             if (s === "") {
                 showAllIcones();
                 return false;
             }
 
-            for (let i = 0; i < iconsElements.length; i++) {
-                const e = iconsElements[i];
-                const iconName = e.childNodes[1].firstChild.nodeValue;
+            for (var i = 0; i < iconsElements.length; i++) {
+                var e = iconsElements[i];
+                var iconName = e.childNodes[1].firstChild.nodeValue;
 
                 if (iconName.indexOf(s) !== -1)
                     e.style.display = "";
@@ -494,7 +497,7 @@
         }
 
         function showAllIcones() {
-            for (let i = 0; i < iconsElements.length; i++) {
+            for (var i = 0; i < iconsElements.length; i++) {
                 iconsElements[i].style.display = "";
             }
         }
@@ -504,8 +507,8 @@
 
             for (category in icons) {
                 var list = icons[category];
-
                 var newH2 = document.createElement('h2');
+
                 newH2.innerHTML = category;
                 divIcons.appendChild(newH2);
                 divIcons.appendChild(getHr());
@@ -562,6 +565,13 @@
             element.className = "hr";
 
             return element;
+        }
+
+        // fallback de Object.assign() pour IE11
+        function assign(target, source) {
+            for (var key in source) {
+                target[key] = source[key];
+            }
         }
 
         function ucfirst(str) {
