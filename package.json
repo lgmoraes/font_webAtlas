@@ -9,9 +9,21 @@
     "url": "https://lmoraes.fr/"
   },
   "repository": "https://github.com/lgmoraes/Font_webatlas.git",
-  "keywords": ["font", "woff", "icon", "interface", "css", "front-end", "vector"],
+  "keywords": [
+    "font",
+    "woff",
+    "icon",
+    "interface",
+    "css",
+    "front-end",
+    "vector"
+  ],
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "optionalDependencies": {
+    "font_logos": "git+https://github.com/lgmoraes/Font_logos.git"
+  },
+  "dependencies": {}
 }
