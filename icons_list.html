@@ -17,7 +17,7 @@
             padding: 0;
             box-sizing: border-box;
             color:rgb(80, 80, 80);
-            background: rgba(222, 222, 222);
+            background: rgb(222, 222, 222);
             font-family: "WebAtlas";
         }
 
@@ -32,12 +32,6 @@
         #sidebar h2 {
             text-align: center;
             color:rgb(111, 186, 255);
-        }
-
-        #content hr {
-            width: 300px;
-            max-width: 100%;
-            margin-left: 0;
         }
 
         select {
@@ -93,7 +87,7 @@
             color:rgb(140, 140, 140);
             font-size: 26px;
             background-color: rgb(240, 240, 240);
-            box-shadow: 0 0 12px inset rgba(150, 150, 150, 0.45);
+            box-shadow: inset 0 0 12px rgba(150, 150, 150, 0.45);
             border-radius: 20px;
             display: inline-block;
             vertical-align: top;
@@ -113,7 +107,7 @@
             width: 250px;
             padding: 1em;
             background: white;
-            box-shadow: 0 0 3em inset rgba(0, 0, 0, .3);
+            box-shadow: inset 0 0 3em rgba(0, 0, 0, .3);
             top: 80px;
             left: 0;
             bottom: 0;
@@ -207,6 +201,14 @@
             right: 0;
             top: 0;
             z-index: 1;
+        }
+
+        .hr {
+            width: 300px;
+            height: 2px;
+            max-width: 100%;
+            margin: 5px 0;
+            background-color: rgb(60, 60, 60);
         }
 
         .btn {
@@ -506,7 +508,7 @@
                 var newH2 = document.createElement('h2');
                 newH2.innerHTML = category;
                 divIcons.appendChild(newH2);
-                divIcons.appendChild(document.createElement('hr'));
+                divIcons.appendChild(getHr());
 
                 for (var i = 0; i < list.length; i++) {
                     var icon = list[i];
@@ -553,6 +555,13 @@
             }
 
             toggleClass("gridMode", content);
+        }
+
+        function getHr() {
+            var element = document.createElement('div');
+            element.className = "hr";
+
+            return element;
         }
 
         function ucfirst(str) {
