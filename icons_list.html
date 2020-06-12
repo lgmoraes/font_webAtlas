@@ -514,8 +514,8 @@
                 divIcons.appendChild(newH2);
                 divIcons.appendChild(getHr());
 
-                for (var i = 0; i < list.length; i++) {
-                    var icon = list[i];
+                for (icon in list) {
+                    var char = list[icon];
                     var newDiv = document.createElement('div');
                     var newDivIcon = document.createElement('div');
                     var newDivWrapper = document.createElement('div');
