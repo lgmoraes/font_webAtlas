@@ -242,6 +242,7 @@ i.icon{font-style:normal;}
 .icon.keyboard::before,.icon-first.keyboard::before{content:"ğ";}
 .icon.mouse::before,.icon-first.mouse::before{content:"Ġ";}
 .icon.camera::before,.icon-first.camera::before{content:"ġ";}
+.icon.camera2::before,.icon-first.camera2::before{content:"Ģ";}
 .icon.webcam::before,.icon-first.webcam::before{content:"ģ";}
 .icon.micro::before,.icon-first.micro::before{content:"Ĥ";}
 .icon.speaker::before,.icon-first.speaker::before{content:"ĥ";}
