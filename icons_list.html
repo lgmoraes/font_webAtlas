@@ -331,14 +331,23 @@
         };
 
         var iconsElements = [];
-
         var data = null;
-
+        var data_logos = null;
+        
+        var loadedData = {data:false,logos:false};
+        var list = "icons";
+        var urlParams = getUrlParams();
+        var initialized = false;
 
         /* INIT */
 
-        data = loadJSON("icons.json", null, init);
-        data_logos = loadJSON("node_modules/font_logos/logos.json");
+        if (urlParams.list) {
+            if (urlParams.list === "icons" || urlParams.list === "logos")   // Liste des valeurs authorisés
+                list = urlParams.list;
+        }
+
+        data = loadJSON("icons.json", null, function(){preinit("data");});
+        data_logos = loadJSON("node_modules/font_logos/logos.json", null, function(){preinit("logos");});
 
         function loadJSON(url, args, func, func_error) {
             var obj = {};
@@ -391,9 +400,22 @@
             return obj;
         }
 
-        function init() {
-            loadList(data.icons);
+        function preinit(id) {
+            loadedData[id] = true;
 
+            if (initialized)
+                return false;
+
+            if (list === "icons" && loadedData.data)
+                init(data.icons);
+            else if (list === "logos" && loadedData.data && loadedData.logos) // Les deux fichiers doivent être chargés
+                init(data_logos.icons);
+        }
+
+        function init(icons) {
+            initialized = true;
+            loadList(icons);
+            
             for (var i = 0; i < data.styles.length; i++) {
                 var style = data.styles[i];
                 var e = document.createElement('option');
@@ -579,6 +601,22 @@
             return str.charAt(0).toUpperCase() + str.slice(1);
         }
 
+        function getUrlParams() {
+            var obj = {};
+            var url = window.location.search;
+
+            if (url) {
+                params = url.substring(1).split("&");
+
+                for (var i = 0; i < params.length; i++) {
+                    var p = params[i];
+                    p = p.split("=");
+                    obj[p[0]] = p[1];
+                }
+            }
+
+            return obj;
+        }
 
         // MANIPULATION DE CLASS
         // Utile pour IE < 10 (classList n'étant pas compatible avant Internet Explorer 10)
