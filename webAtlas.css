@@ -1,16 +1,20 @@
 .icon{width:1.2em;text-align:center}
-.icon::before{font-family:"WebAtlas-icons"}
 div.icon{display:inline-block}
 i.icon{font-style:normal;}
 .icon.combine{margin-left:-1.2em}
 .icon.unconstraint{width:auto}
-
-.icon-first::before{font-family:"WebAtlas-icons";margin-right:0.3em}
+.icon-first::before{margin-right:0.3em}
 
 /* Multiple sets management */
+.icon::before,.icon-first::before{font-family:"WebAtlas-icons"}
 .icon.original::before,.icon-first.original::before{font-family:"WebAtlas-icons-original","WebAtlas-icons";}
 .icon.sharp::before,.icon-first.sharp::before{font-family:"WebAtlas-icons-sharp","WebAtlas-icons";}
 .icon.outline::before,.icon-first.outline::before{font-family:"WebAtlas-icons-outline","WebAtlas-icons";}
+
+.icon.geometrics::before{font-family:"WebAtlas-geometrics"}
+.icon.geometrics.original::before,.icon-first.geometrics.original::before{font-family:"WebAtlas-geometrics-original","WebAtlas-geometrics";}
+.icon.geometrics.sharp::before,.icon-first.geometrics.sharp::before{font-family:"WebAtlas-geometrics-sharp","WebAtlas-geometrics";}
+.icon.geometrics.outline::before,.icon-first.geometrics.outline::before{font-family:"WebAtlas-geometrics-outline","WebAtlas-geometrics";}
 
 @font-face {
     font-family: 'WebAtlas';
@@ -386,3 +390,46 @@ i.icon{font-style:normal;}
 .icon.formRadio::before,.icon-first.formRadio::before{content:"Ҕ";}
 .icon.formCheckbox::before,.icon-first.formCheckbox::before{content:"ҕ";}
 .icon.clickableImage::before,.icon-first.clickableImage::before{content:"Җ";}
+
+
+/** Geometrics **/
+
+/* Forms */
+.icon.circle::before,.icon-first.circle::before{content:"Æ";}
+.icon.circle2::before,.icon-first.circle2::before{content:"Å";}
+.icon.circle3::before,.icon-first.circle3::before{content:"Ä";}
+.icon.circle-filled::before,.icon-first.circle-filled::before{content:"Ã";}
+.icon.circle-dashed::before,.icon-first.circle-dashed::before{content:"Ç";}
+.icon.circle-dashed2::before,.icon-first.circle-dashed2::before{content:"È";}
+.icon.circle-dashed3::before,.icon-first.circle-dashed3::before{content:"É";}
+.icon.circle-hatched::before,.icon-first.circle-hatched::before{content:"Ê";}
+.icon.circle-hatched2::before,.icon-first.circle-hatched2::before{content:"Ë";}
+.icon.square-dashed::before,.icon-first.square-dashed::before{content:"Í";}
+.icon.square-dashed2::before,.icon-first.square-dashed2::before{content:"Î";}
+.icon.square-dashed3::before,.icon-first.square-dashed3:before{content:"Ï";}
+.icon.square-dashed4::before,.icon-first.square-dashed4::before{content:"Ð";}
+.icon.square-dashed5::before,.icon-first.square-dashed5::before{content:"Ì";}
+.icon.square-hatched::before,.icon-first.square-hatched::before{content:"Ñ";}
+.icon.square-hatched2::before,.icon-first.square-hatched2::before{content:"Ò";}
+.icon.triangleUp::before,.icon-first.triangleUp::before{content:"Ó";}
+.icon.triangleUp-stroke::before,.icon-first.triangleUp-stroke::before{content:"Ô";}
+.icon.triangleDown::before,.icon-first.triangleDown::before{content:"Õ";}
+.icon.triangleDown-stroke::before,.icon-first.triangleDown-stroke::before{content:"Ö";}
+.icon.losange::before,.icon-first.losange::before{content:"×";}
+.icon.losange-stroke::before,.icon-first.losange-stroke::before{content:"Ø";}
+.icon.pentagon::before,.icon-first.pentagon::before{content:"Ù";}
+.icon.pentagon-stroke::before,.icon-first.pentagon-stroke::before{content:"Ú";}
+.icon.hexagon::before,.icon-first.hexagon::before{content:"Û";}
+.icon.hexagon-stroke::before,.icon-first.hexagon-stroke::before{content:"Ü";}
+.icon.hexagon2::before,.icon-first.hexagon2::before{content:"Ý";}
+.icon.hexagon2-stroke::before,.icon-first.hexagon2-stroke::before{content:"Þ";}
+.icon.decagon::before,.icon-first.decagon::before{content:"ß";}
+.icon.decagon-stroke::before,.icon-first.decagon-stroke::before{content:"à";}
+
+/* Spinners */
+.icon.spinner-full::before,.icon-first.spinner-full::before{content:"ê";}
+.icon.spinner-quarter::before,.icon-first.spinner-quarter::before{content:"ì";}
+.icon.spinner-third::before,.icon-first.spinner-third::before{content:"í";}
+.icon.spinner-half::before,.icon-first.spinner-half::before{content:"î";}
+.icon.spinner-threeQuarter::before,.icon-first.spinner-threeQuarter::before{content:"ï";}
+.icon.spinner-dual::before,.icon-first.spinner-dual::before{content:"ð";}

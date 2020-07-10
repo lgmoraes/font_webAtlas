@@ -361,5 +361,47 @@
             "arrow4-down-right":"ӗ",
             "arrow4-down-left":"Ә"
         }
+    },
+    "geometrics": {
+        "Forms": {
+            "circle":"Æ",
+            "circle2":"Å",
+            "circle3":"Ä",
+            "circle-filled":"Ã",
+            "circle-dashed":"Ç",
+            "circle-dashed2":"È",
+            "circle-dashed3":"É",
+            "circle-hatched":"Ê",
+            "circle-hatched2":"Ë",
+            "square-dashed":"Í",
+            "square-dashed2":"Î",
+            "square-dashed3":"Ï",
+            "square-dashed4":"Ð",
+            "square-dashed5":"Ì",
+            "square-hatched":"Ñ",
+            "square-hatched2":"Ò",
+            "triangleUp":"Ó",
+            "triangleUp-stroke":"Ô",
+            "triangleDown":"Õ",
+            "triangleDown-stroke":"Ö",
+            "losange":"×",
+            "losange-stroke":"Ø",
+            "pentagon":"Ù",
+            "pentagon-stroke":"Ú",
+            "hexagon":"Û",
+            "hexagon-stroke":"Ü",
+            "hexagon2":"Ý",
+            "hexagon2-stroke":"Þ",
+            "decagon":"ß",
+            "decagon-stroke":"à"
+        },
+        "Spinners": {
+            "spinner-full":"ê",
+            "spinner-quarter":"ì",
+            "spinner-third":"í",
+            "spinner-half":"î",
+            "spinner-threeQuarter":"ï",
+            "spinner-dual":"ð"
+        }
     }
 }

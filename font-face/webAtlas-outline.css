@@ -21,3 +21,27 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'WebAtlas-geometrics';
+    src: url('../font/WebAtlas-geometrics-outline.woff2') format('woff2'),
+         url('../font/WebAtlas-geometrics-outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WebAtlas-geometrics-original';
+    src: url('../font/WebAtlas-geometrics-original.woff2') format('woff2'),
+         url('../font/WebAtlas-geometrics-original.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WebAtlas-geometrics-sharp';
+    src: url('../font/WebAtlas-geometrics-sharp.woff2') format('woff2'),
+         url('../font/WebAtlas-geometrics-sharp.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

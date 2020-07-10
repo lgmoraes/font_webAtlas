@@ -290,6 +290,7 @@
 
         <h2>Packs:</h2>
         <div id="btn_base" class="btn">Base</div>
+        <div id="btn_geometrics" class="btn">Geometrics</div>
 
         <h2>Add on:</h2>
         <div id="btn_logos" class="btn">Logos & Social Medias</div>
@@ -321,6 +322,7 @@
         var messageLine_icon = document.getElementById('messageLine_icon');
         var messageLine_message = document.getElementById('messageLine_message');
         var btn_base = document.getElementById('btn_base');
+        var btn_geometrics = document.getElementById('btn_geometrics');
         var btn_logos = document.getElementById('btn_logos');
 
         var TIME_INTERVAL = 10;
@@ -332,6 +334,7 @@
         var iconsElements = [];
         var data = null;
         var data_logos = null;
+        var lastLoadedList = null;
         
         var loadedData = {data:false,logos:false};
         var list = "icons";
@@ -341,7 +344,7 @@
         /* INIT */
 
         if (urlParams.list) {
-            if (urlParams.list === "icons" || urlParams.list === "logos")   // Liste des valeurs authorisés
+            if (urlParams.list === "icons" || urlParams.list === "geometrics" || urlParams.list === "logos")   // Liste des valeurs authorisés
                 list = urlParams.list;
         }
 
@@ -406,9 +409,9 @@
                 return false;
 
             if (list === "icons" && loadedData.data)
-                init(data.icons);
+                init("icons");
             else if (list === "logos" && loadedData.data && loadedData.logos) // Les deux fichiers doivent être chargés
-                init(data_logos.icons);
+                init("logos");
         }
 
         function init(icons) {
@@ -449,6 +452,8 @@
             if (ele.className === "btn item") {
                 inputClipboard.style.display = 'block';
                 inputClipboard.value = ele.codeIcon;
+                if (lastLoadedList !== "icons" && lastLoadedList !== "logos")
+                    inputClipboard.value += " " + lastLoadedList;
                 inputClipboard.select();
                 document.execCommand('copy');
                 inputClipboard.blur();
@@ -459,7 +464,7 @@
         };
 
         select_style.onchange = function () {
-            loadList(data["icons"], this.value);
+            loadList();
         };
 
         messageLine.onclick = function () {
@@ -467,17 +472,17 @@
         };
 
         btn_base.onclick = function () {
-            loadList(data.icons);
+            loadList("icons");
+        };
 
-            select_style.disabled = false;
+        btn_geometrics.onclick = function () {
+            loadList("geometrics");
         };
 
         btn_logos.onclick = function () {
-            loadList(data_logos.icons);
+            loadList("logos");
 
             showMessage("circle-info outline", TEXTS.trademark);
-
-            select_style.disabled = true;
         };
 
         arrowUp.onclick = function () {
@@ -494,7 +499,7 @@
 
         function showMessage(icon, message) {
             messageLine.style.opacity = 1;
-            messageLine_icon.className = "icon " + select_style.value + " " + icon;
+            messageLine_icon.className = "icon " + select_style.value + " " + lastLoadedList + " " + icon;
             messageLine_message.innerHTML = message;
         }
 
@@ -523,27 +528,45 @@
             }
         }
 
-        function loadList(icons, style) {
+        function loadList(list) {
+            var style = select_style.value || "original";   // "original" si la page n'est pas encore initialisée
+            var categories = null;
+
             divIcons.innerHTML = "";
             iconsElements = [];
 
-            for (category in icons) {
-                var list = icons[category];
+            if(list === undefined)
+                list = lastLoadedList;
+            else
+                lastLoadedList = list;
+
+            if(list === "logos") {
+                categories = data_logos["icons"];
+                select_style.disabled = true;
+            }
+            else {
+                categories = data[list];
+                select_style.disabled = false;
+            }
+
+            for (category in categories) {
+                var icones = categories[category];
                 var newH2 = document.createElement('h2');
 
                 newH2.innerHTML = category;
                 divIcons.appendChild(newH2);
                 divIcons.appendChild(getHr());
 
-                for (icon in list) {
-                    var char = list[icon];
+                for (icon in icones) {
+                    var char = icones[icon];
                     var newDiv = document.createElement('div');
                     var newDivIcon = document.createElement('div');
                     var newDivWrapper = document.createElement('div');
                     var newDivTitle = document.createElement('div');
 
                     newDivIcon.className = "icon " + icon;
-                    if (style) addClass(style, newDivIcon);
+                    addClass(style, newDivIcon);
+                    addClass(list, newDivIcon);
                     newDiv.appendChild(newDivIcon);
                     newDiv.className = "btn item";
                     newDiv.codeIcon = icon;
