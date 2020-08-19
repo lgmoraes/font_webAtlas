@@ -45,3 +45,27 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'WebAtlas-games';
+    src: url('../font/WebAtlas-games-original.woff2') format('woff2'),
+         url('../font/WebAtlas-games-original.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WebAtlas-games-sharp';
+    src: url('../font/WebAtlas-games-sharp.woff2') format('woff2'),
+         url('../font/WebAtlas-games-sharp.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WebAtlas-games-outline';
+    src: url('../font/WebAtlas-games-outline.woff2') format('woff2'),
+         url('../font/WebAtlas-games-outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

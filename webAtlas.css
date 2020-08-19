@@ -16,6 +16,11 @@ i.icon{font-style:normal;}
 .icon.geometrics.sharp::before,.icon-first.geometrics.sharp::before{font-family:"WebAtlas-geometrics-sharp","WebAtlas-geometrics";}
 .icon.geometrics.outline::before,.icon-first.geometrics.outline::before{font-family:"WebAtlas-geometrics-outline","WebAtlas-geometrics";}
 
+.icon.games::before{font-family:"WebAtlas-games"}
+.icon.games.original::before,.icon-first.games.original::before{font-family:"WebAtlas-games-original","WebAtlas-games";}
+.icon.games.sharp::before,.icon-first.games.sharp::before{font-family:"WebAtlas-games-sharp","WebAtlas-games";}
+.icon.games.outline::before,.icon-first.games.outline::before{font-family:"WebAtlas-games-outline","WebAtlas-games";}
+
 @font-face {
     font-family: 'WebAtlas';
     src: url('font/WebAtlas.woff2') format('woff2'),
@@ -360,7 +365,6 @@ i.icon{font-style:normal;}
 .icon.statistics4::before,.icon-first.statistics4::before{content:"ŀ";}
 .icon.padlock::before,.icon-first.padlock::before{content:"ф";}
 .icon.padlock-unlock::before,.icon-first.padlock-unlock::before{content:"х";}
-.icon.shield::before,.icon-first.shield::before{content:"у";}
 .icon.barcode::before,.icon-first.barcode::before{content:"Ũ";}
 .icon.qrcode::before,.icon-first.qrcode::before{content:"ũ";}
 .icon.circlecode::before,.icon-first.circlecode::before{content:"Ŧ";}
@@ -425,3 +429,40 @@ i.icon{font-style:normal;}
 .icon.spinner-half::before,.icon-first.spinner-half::before{content:"î";}
 .icon.spinner-threeQuarter::before,.icon-first.spinner-threeQuarter::before{content:"ï";}
 .icon.spinner-dual::before,.icon-first.spinner-dual::before{content:"ð";}
+
+
+/** Games **/
+
+/* Collectable */
+.icon.candy::before,.icon-first.candy::before{content:"Ã";}
+.icon.candy2::before,.icon-first.candy2::before{content:"Ä";}
+.icon.cake::before,.icon-first.cake::before{content:"Æ";}
+.icon.cake2::before,.icon-first.cake2::before{content:"Ç";}
+.icon.coin::before,.icon-first.coin::before{content:"Ê";}
+.icon.coin2::before,.icon-first.coin2::before{content:"Ë";}
+.icon.coin3::before,.icon-first.coin3::before{content:"Ì";}
+.icon.ruby::before,.icon-first.ruby::before{content:"Î";}
+.icon.diamond::before,.icon-first.diamond::before{content:"Ï";}
+.icon.diamond2::before,.icon-first.diamond2::before{content:"Ð";}
+.icon.diamond3::before,.icon-first.diamond3::before{content:"Ñ";}
+.icon.bag::before,.icon-first.bag::before{content:"Ò";}
+.icon.bomb::before,.icon-first.bomb::before{content:"×";}
+
+/* Stats */
+.icon.accuracy::before,.icon-first.accuracy::before{content:"Ô";}
+.icon.speed::before,.icon-first.speed::before{content:"Õ";}
+.icon.force::before,.icon-first.force::before{content:"Ö";}
+.icon.armor::before,.icon-first.armor::before{content:"û";}
+.icon.skull::before,.icon-first.skull::before{content:"Ø";}
+.icon.grave::before,.icon-first.grave::before{content:"Ù";}
+.icon.sleep::before,.icon-first.sleep::before{content:"Ā";}
+
+/* Players */
+.icon.joystick::before,.icon-first.joystick::before{content:"Ü";}
+.icon.joystick2::before,.icon-first.joystick2::before{content:"Ý";}
+.icon.dice1::before,.icon-first.dice1::before{content:"ë";}
+.icon.dice2::before,.icon-first.dice2::before{content:"ì";}
+.icon.dice3::before,.icon-first.dice3::before{content:"í";}
+.icon.dice4::before,.icon-first.dice4::before{content:"î";}
+.icon.dice5::before,.icon-first.dice5::before{content:"ï";}
+.icon.dice6::before,.icon-first.dice6::before{content:"ð";}

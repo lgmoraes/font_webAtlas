@@ -207,7 +207,6 @@
             "statistics4":"ŀ",
             "padlock":"ф",
             "padlock-unlock":"х",
-            "shield":"у",
             "barcode":"Ũ",
             "qrcode":"ũ",
             "circlecode":"Ŧ",
@@ -402,6 +401,42 @@
             "spinner-half":"î",
             "spinner-threeQuarter":"ï",
             "spinner-dual":"ð"
+        }
+    },
+    "games": {
+        "Collectable": {
+            "candy":"Ã",
+            "candy2":"Ä",
+            "cake":"Æ",
+            "cake2":"Ç",
+            "coin":"Ê",
+            "coin2":"Ë",
+            "coin3":"Ì",
+            "ruby":"Î",
+            "diamond":"Ï",
+            "diamond2":"Ð",
+            "diamond3":"Ñ",
+            "bag":"Ò",
+            "bomb":"×"
+        },
+        "Stats":{
+            "accuracy":"Ô",
+            "speed":"Õ",
+            "force":"Ö",
+            "armor":"û",
+            "skull":"Ø",
+            "grave":"Ù",
+            "sleep":"Ā"
+        },
+        "Players":{
+            "joystick":"Ü",
+            "joystick2":"Ý",
+            "dice1":"ë",
+            "dice2":"ì",
+            "dice3":"í",
+            "dice4":"î",
+            "dice5":"ï",
+            "dice6":"ð"
         }
     }
 }

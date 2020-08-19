@@ -291,6 +291,7 @@
         <h2>Packs:</h2>
         <div id="btn_base" class="btn">Base</div>
         <div id="btn_geometrics" class="btn">Geometrics</div>
+        <div id="btn_games" class="btn">Games</div>
 
         <h2>Add on:</h2>
         <div id="btn_logos" class="btn">Logos & Social Medias</div>
@@ -323,6 +324,7 @@
         var messageLine_message = document.getElementById('messageLine_message');
         var btn_base = document.getElementById('btn_base');
         var btn_geometrics = document.getElementById('btn_geometrics');
+        var btn_games = document.getElementById('btn_games');
         var btn_logos = document.getElementById('btn_logos');
 
         var TIME_INTERVAL = 10;
@@ -344,7 +346,7 @@
         /* INIT */
 
         if (urlParams.list) {
-            if (urlParams.list === "icons" || urlParams.list === "geometrics" || urlParams.list === "logos")   // Liste des valeurs authorisés
+            if (urlParams.list === "icons" || urlParams.list === "geometrics" || urlParams.list === "games" || urlParams.list === "logos")   // Liste des valeurs authorisés
                 list = urlParams.list;
         }
 
@@ -477,6 +479,10 @@
 
         btn_geometrics.onclick = function () {
             loadList("geometrics");
+        };
+
+        btn_games.onclick = function () {
+            loadList("games");
         };
 
         btn_logos.onclick = function () {
