@@ -141,8 +141,8 @@ i.icon{font-style:normal;}
 .icon.circle-ko-handwriting::before,.icon-first.circle-ko-handwriting::before{content:"ư";}
 .icon.circle-plus::before,.icon-first.circle-plus::before{content:"Ʊ";}
 .icon.circle-minus::before,.icon-first.circle-minus::before{content:"Ʋ";}
-.icon.circle-info::before,.icon-first.circle-info::before{content:"Ƶ";}
-.icon.circle-warning::before,.icon-first.circle-warning::before{content:"ƶ";}
+.icon.circle-info::before,.icon-first.circle-info::before{content:"ƶ";}
+.icon.circle-warning::before,.icon-first.circle-warning::before{content:"Ƶ";}
 .icon.circle-arrowLeft::before,.icon-first.circle-arrowLeft::before{content:"Ʒ";}
 .icon.circle-arrowUp::before,.icon-first.circle-arrowUp::before{content:"Ƹ";}
 .icon.circle-arrowRight::before,.icon-first.circle-arrowRight::before{content:"ƹ";}
