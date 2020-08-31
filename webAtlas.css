@@ -47,6 +47,7 @@ i.icon{font-style:normal;}
 .icon.notification::before,.icon-first.notification::before{content:"ñ";}
 .icon.warning::before,.icon-first.warning::before{content:"ǔ";}
 .icon.warning2::before,.icon-first.warning2::before{content:"Ǖ";}
+.icon.file::before,.icon-first.file::before{content:"Ȑ";}
 .icon.uploadFile::before,.icon-first.uploadFile::before{content:"Ȓ";}
 .icon.downloadFile::before,.icon-first.downloadFile::before{content:"ȑ";}
 .icon.downloadData::before,.icon-first.downloadData::before{content:"ȓ";}
