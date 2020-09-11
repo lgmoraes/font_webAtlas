@@ -124,16 +124,22 @@ i.icon{font-style:normal;}
 .icon.ko2::before,.icon-first.ko2::before{content:"ď";}
 
 /* Plus / Minus */
-.icon.plus::before,.icon-first.plus::before{content:"ʗ";}
-.icon.minus::before,.icon-first.minus::before{content:"ʘ";}
-.icon.plus2::before,.icon-first.plus2::before{content:"ʙ";}
-.icon.minus2::before,.icon-first.minus2::before{content:"ʚ";}
-.icon.plus3::before,.icon-first.plus3::before{content:"ʛ";}
-.icon.minus3::before,.icon-first.minus3::before{content:"ʜ";}
-.icon.plus4::before,.icon-first.plus4::before{content:"ʝ";}
-.icon.minus4::before,.icon-first.minus4::before{content:"ʞ";}
-.icon.plus5::before,.icon-first.plus5::before{content:"ʟ";}
-.icon.minus5::before,.icon-first.minus5::before{content:"ʠ";}
+.icon.plus::before,.icon-first.plus::before{content:"ʛ";}
+.icon.minus::before,.icon-first.minus::before{content:"ʜ";}
+.icon.plus-thin::before,.icon-first.plus-thin::before{content:"ʙ";}
+.icon.minus-thin::before,.icon-first.minus-thin::before{content:"ʚ";}
+.icon.plus-thinner::before,.icon-first.plus3::before{content:"ʗ";}
+.icon.minus-thinner::before,.icon-first.minus-thinner::before{content:"ʘ";}
+.icon.plus-large::before,.icon-first.plus-large::before{content:"ʝ";}
+.icon.minus-large::before,.icon-first.minus-large::before{content:"ʞ";}
+.icon.plus-larger::before,.icon-first.plus-larger::before{content:"ʟ";}
+.icon.minus-larger::before,.icon-first.minus-larger::before{content:"ʠ";}
+.icon.plus-double::before,.icon-first.plus-double::before{content:"ʡ";}
+.icon.minus-double::before,.icon-first.minus-double::before{content:"ʢ";}
+.icon.plus-double2::before,.icon-first.plus-double2::before{content:"ʣ";}
+.icon.minus-double2::before,.icon-first.minus-double2::before{content:"ʤ";}
+.icon.plus-mini::before,.icon-first.plus-mini::before{content:"ʥ";}
+.icon.minus-mini::before,.icon-first.minus-mini::before{content:"ʦ";}
 
 /* Circle */
 .icon.circle-ok::before,.icon-first.circle-ok::before{content:"ƭ";}

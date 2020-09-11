@@ -249,16 +249,22 @@
             "ko2":"ď"
         },
         "Plus Minus": {
-            "plus":"ʗ",
-            "minus":"ʘ",
-            "plus2":"ʙ",
-            "minus2":"ʚ",
-            "plus3":"ʛ",
-            "minus3":"ʜ",
-            "plus4":"ʝ",
-            "minus4":"ʞ",
-            "plus5":"ʟ",
-            "minus5":"ʠ"
+            "plus":"ʛ",
+            "minus":"ʜ",
+            "plus-thin":"ʙ",
+            "minus-thin":"ʚ",
+            "plus-thinner":"ʗ",
+            "minus-thinner":"ʘ",
+            "plus-large":"ʝ",
+            "minus-large":"ʞ",
+            "plus-larger":"ʟ",
+            "minus-larger":"ʠ",
+            "plus-double":"ʡ",
+            "minus-double":"ʢ",
+            "plus-double2":"ʣ",
+            "minus-double2":"ʤ",
+            "plus-mini":"ʥ",
+            "minus-mini":"ʦ"
         },
         "Circles": {
             "circle-ok":"ƭ",
