@@ -262,8 +262,8 @@ i.icon{font-style:normal;}
 .icon.application-gear::before,.icon-first.application-gear::before{content:"Ę";}
 .icon.application-multiple::before,.icon-first.application-multiple::before{content:"ē";}
 .icon.screen::before,.icon-first.screen::before{content:"ę";}
-.icon.screen-play::before,.icon-first.screen-play::before{content:"Ě";}
-.icon.screen-gear::before,.icon-first.screen-gear::before{content:"ě";}
+.icon.screen-play::before,.icon-first.screen-play::before{content:"ě";}
+.icon.screen-gear::before,.icon-first.screen-gear::before{content:"Ě";}
 .icon.mobile::before,.icon-first.mobile::before{content:"Ğ";}
 .icon.tablet::before,.icon-first.tablet::before{content:"ĝ";}
 .icon.keyboard::before,.icon-first.keyboard::before{content:"ğ";}
