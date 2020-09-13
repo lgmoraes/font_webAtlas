@@ -327,7 +327,8 @@
         var btn_games = document.getElementById('btn_games');
         var btn_logos = document.getElementById('btn_logos');
 
-        var TIME_INTERVAL = 10;
+        var INTERVAL_SCROLL_RIGHT = 23;
+        var INTERVAL_SCROLL_LEFT = 10;
         var TEXTS = {
             intro: "Clic on an item to copy the className on clipboard.",
             trademark: "This work includes material that may be protected as a trademark in some jurisdictions. If you want to use it, you have to ensure that you have the legal right to do so and that you do not infringe any trademark rights. See the trademark owner for rules about appropriate use of their trademarks."
@@ -431,6 +432,69 @@
             showMessage("circle-info outline", TEXTS.intro);
         }
 
+        var itemsScrolling = [];
+        var itemActual = null;
+
+        setInterval(auto_scrollRight, INTERVAL_SCROLL_RIGHT);
+        setInterval(auto_scrollLeft, INTERVAL_SCROLL_LEFT);
+
+        function auto_scrollRight() {
+            for (var i = 0; i < itemsScrolling.length; i++) {
+                var e = itemsScrolling[i];
+
+                if (e === itemActual) {
+                    e.childNodes[1].scrollLeft++;
+                    return;
+                }
+            }
+        }
+
+        function auto_scrollLeft() {
+            var newTab = [];
+
+            for (var i = 0; i < itemsScrolling.length; i++) {
+                var e = itemsScrolling[i];
+                var t = e.childNodes[1];
+
+                if (e !== itemActual) {
+                    t.scrollLeft--;
+
+                    // On retire les éléments dont le scroll est a 0
+                    if (t.scrollLeft > 0) {
+                        newTab.push(e);
+                    }
+                }
+                else {
+                    // itemActual doit être gardé dans la liste
+                    newTab.push(e);
+                }
+            }
+
+            itemsScrolling = newTab;
+        }
+
+        onload = function() {
+            // On doit attendre que la page soit chargé pour éviter des erreurs d'évènement
+            onmousemove = function (e) {
+                /** Gestion du scroll des noms d'icones **/
+                var ele = e.target;
+                
+                if (hasClass("wrapper", ele) || hasClass("icon", ele)) {
+                    ele = ele.parentElement;
+                }
+                if (hasClass("btn", ele) && hasClass("item", ele)) {
+                    if (ele !== itemActual && ele.childNodes[1].scrollLeft === 0) {   // L'élément ne dois être ajouté qu'une fois
+                        itemsScrolling.push(ele);
+                    }
+
+                    itemActual = ele;
+                }
+                else {
+                    itemActual = null;
+                }
+            };
+        }
+
         content.onscroll = function () {
             messageLine.style.top = this.scrollTop + "px";
 
@@ -442,7 +506,7 @@
                 arrowUp.style.opacity = "1";
                 arrowUp.style.cursor = "pointer";
             }
-        }
+        };
 
         content.onclick = function (e) {
             var ele = e.target;
