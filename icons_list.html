@@ -267,6 +267,77 @@
                 transform: rotateX(0deg);
             }
         }
+
+        @media (max-width: 650px) {
+            #header {
+                height: auto;
+            }
+
+            #header h1 {
+                line-height: 30px;
+                display: block;
+            }
+
+            #header, #sidebar, #content {
+                width: auto;
+                top: 0;
+                left: 0;
+                display: block;
+                position: relative;
+            }
+
+            #sidebar {
+                text-align: center;
+            }
+
+            #sidebar .btn {
+                width: 31%;
+                display: inline-block;
+            }
+            #sidebar #btn_logos {
+                width: 60%;
+            }
+
+
+            #messageLine {
+                position: fixed;
+                top: 70px;
+            }
+
+            #divIcons {
+                text-align: center;
+                position: relative;
+            }
+
+            #switchDisplayMode {
+                top: 15px;
+                right: 15px;
+            }
+
+            #search {
+                color: rgb(80, 80, 80);
+                width: 40px;
+                margin: 0;
+                background: none;
+                box-shadow: inset 0 0 12px rgba(150, 150, 150, 0);
+                z-index: 2;
+                white-space: nowrap;
+                overflow: hidden;
+                transition: .5s;
+                position: fixed;
+                top: 15px;
+                right: 60px;
+            }
+            #search:hover, #search.active {
+                width: 170px;
+                box-shadow: inset 0 0 12px rgba(150, 150, 150, .45);
+                background-color: rgb(255, 255, 255);
+            }
+
+            #arrowUp {
+                z-index: 1;
+            }
+        }
     </style>
 </head>
 
@@ -325,6 +396,7 @@
 
         var INTERVAL_SCROLL_RIGHT = 23;
         var INTERVAL_SCROLL_LEFT = 10;
+        var LARGE_SCREEN = 650;
         var TEXTS = {
             intro: "Clic on an item to copy the className on clipboard.",
             trademark: "This work includes material that may be protected as a trademark in some jurisdictions. If you want to use it, you have to ensure that you have the legal right to do so and that you do not infringe any trademark rights. See the trademark owner for rules about appropriate use of their trademarks."
@@ -491,16 +563,32 @@
             };
         }
 
-        content.onscroll = function () {
-            messageLine.style.top = this.scrollTop + "px";
+        function majInterface() {
+            if(largeScreen()) { 
+                // Desktop
+                messageLine.style.top = content.scrollTop + "px";
 
-            if (this.scrollTop === 0) {
-                arrowUp.style.display = "none";
+                if (content.scrollTop === 0)
+                    arrowUp.style.display = "none";
+                else
+                    arrowUp.style.display = "block";
             }
             else {
-                arrowUp.style.display = "block";
+                // Mobile
+                messageLine.style.top = "70px";
+
+                if (document.documentElement.scrollTop === 0)
+                    arrowUp.style.display = "none";
+                else
+                    arrowUp.style.display = "block";
             }
-        };
+        }
+
+        onresize = majInterface;
+
+        onscroll = majInterface;
+
+        content.onscroll = majInterface;
 
         content.onclick = function (e) {
             var ele = e.target;
@@ -550,15 +638,30 @@
         };
 
         arrowUp.onclick = function () {
-            if (content.scrollTop !== 0) {
+            if (largeScreen()) {
                 content.scrollTop = 0;
             }
-        }
+            else {
+                document.documentElement.scrollTop = 0;
+            }
+        };
+
+        search_input.onfocus = function () {
+            addClass("active", search_input.parentElement);
+        };
+
+        search_input.onblur = function () {
+            removeClass("active", search_input.parentElement);
+        };
 
         search_input.onkeydown = function () {
             setTimeout(function () {
                 search();
             }, 1);
+        }
+
+        function largeScreen() {
+            return getInnerWidth() > LARGE_SCREEN;
         }
 
         function showMessage(icon, message) {
@@ -674,6 +777,10 @@
             element.className = "hr";
 
             return element;
+        }
+
+        function getInnerWidth() {
+            return window.innerWidth || document.body.clientWidth || document.documentElement.clientWidth; // Pour obtenir la largeur disponible, fonctionne toutes correctement.
         }
 
         // fallback de Object.assign() pour IE11
