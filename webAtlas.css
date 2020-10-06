@@ -106,22 +106,22 @@ i.icon{font-style:normal;}
 .icon.magnify::before,.icon-first.magnify::before{content:"є";}
 
 /* Ok / Ko */
-.icon.ok::before,.icon-first.ok::before{content:"Ā";}
-.icon.ko::before,.icon-first.ko::before{content:"ā";}
-.icon.ok-medium::before,.icon-first.ok-medium::before{content:"Ă";}
-.icon.ko-medium::before,.icon-first.ko-medium::before{content:"ă";}
-.icon.ok-bold::before,.icon-first.ok-bold::before{content:"Ą";}
-.icon.ko-bold::before,.icon-first.ko-bold::before{content:"ą";}
-.icon.ok-rounded::before,.icon-first.ok-rounded::before{content:"Ċ";}
-.icon.ko-rounded::before,.icon-first.ko-rounded::before{content:"ċ";}
-.icon.ok-rounded-bold::before,.icon-first.ok-rounded-bold::before{content:"Ć";}
-.icon.ko-rounded-bold::before,.icon-first.ko-rounded-bold::before{content:"ć";}
-.icon.ok-handwriting::before,.icon-first.ok-handwriting::before{content:"Ĉ";}
-.icon.ko-handwriting::before,.icon-first.ko-handwriting::before{content:"ĉ";}
-.icon.ok-handwriting2::before,.icon-first.ok-handwriting2::before{content:"Č";}
-.icon.ko-handwriting2::before,.icon-first.ko-handwriting2::before{content:"č";}
-.icon.ok2::before,.icon-first.ok2::before{content:"Ď";}
-.icon.ko2::before,.icon-first.ko2::before{content:"ď";}
+.icon.ok::before,.icon-first.ok::before{content:"Ą";}
+.icon.ko::before,.icon-first.ko::before{content:"ą";}
+.icon.ok-thin::before,.icon-first.ok-thin::before{content:"Ă";}
+.icon.ko-thin::before,.icon-first.ko-thin::before{content:"ă";}
+.icon.ok-thinner::before,.icon-first.ok-thinner::before{content:"Ā";}
+.icon.ko-thinner::before,.icon-first.ko-thinner::before{content:"ā";}
+.icon.ok-large::before,.icon-first.ok-large::before{content:"Ć";}
+.icon.ko-large::before,.icon-first.ko-large::before{content:"ć";}
+.icon.ok-larger::before,.icon-first.ok-larger::before{content:"Ĉ";}
+.icon.ko-larger::before,.icon-first.ko-larger::before{content:"ĉ";}
+.icon.ok-double::before,.icon-first.ok-double::before{content:"Ċ";}
+.icon.ko-double::before,.icon-first.ko-double::before{content:"ċ";}
+.icon.ok-double2::before,.icon-first.ok-double2::before{content:"Č";}
+.icon.ko-double2::before,.icon-first.ko-double2::before{content:"č";}
+.icon.ok-mini::before,.icon-first.ok-mini::before{content:"Ď";}
+.icon.ko-mini::before,.icon-first.ko-mini::before{content:"ď";}
 
 /* Plus / Minus */
 .icon.plus::before,.icon-first.plus::before{content:"ʛ";}
