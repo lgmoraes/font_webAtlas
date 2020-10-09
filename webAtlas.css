@@ -241,6 +241,11 @@ i.icon{font-style:normal;}
 .icon.arrow4-up-right::before,.icon-first.arrow4-up-right::before{content:"Ӗ";}
 .icon.arrow4-down-right::before,.icon-first.arrow4-down-right::before{content:"ӗ";}
 .icon.arrow4-down-left::before,.icon-first.arrow4-down-left::before{content:"Ә";}
+.icon.arrow4-down-left::before,.icon-first.arrow4-down-left::before{content:"Ә";}
+.icon.arrow-list::before,.icon-first.arrow-list::before{content:"Ӳ";}
+.icon.arrow2-list::before,.icon-first.arrow2-list::before{content:"ӳ";}
+.icon.arrow3-list::before,.icon-first.arrow3-list::before{content:"Ӵ";}
+.icon.arrow4-list::before,.icon-first.arrow4-list::before{content:"ӵ";}
 
 /* Divers */
 .icon.bulb::before,.icon-first.bulb::before{content:"ï";}

@@ -365,7 +365,11 @@
             "arrow4-up-left":"ӕ",
             "arrow4-up-right":"Ӗ",
             "arrow4-down-right":"ӗ",
-            "arrow4-down-left":"Ә"
+            "arrow4-down-left":"Ә",
+            "arrow-list":"Ӳ",
+            "arrow2-list":"ӳ",
+            "arrow3-list":"Ӵ",
+            "arrow4-list":"ӵ"
         }
     },
     "geometrics": {
