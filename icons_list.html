@@ -357,6 +357,7 @@
 
         <h2>Packs:</h2>
         <div id="btn_base" class="btn">Base</div>
+        <div id="btn_editing" class="btn">Editing</div>
         <div id="btn_geometrics" class="btn">Geometrics</div>
         <div id="btn_games" class="btn">Games</div>
 
@@ -390,6 +391,7 @@
         var messageLine_icon = document.getElementById('messageLine_icon');
         var messageLine_message = document.getElementById('messageLine_message');
         var btn_base = document.getElementById('btn_base');
+        var btn_editing = document.getElementById('btn_editing');
         var btn_geometrics = document.getElementById('btn_geometrics');
         var btn_games = document.getElementById('btn_games');
         var btn_logos = document.getElementById('btn_logos');
@@ -415,7 +417,7 @@
         /* INIT */
 
         if (urlParams.list) {
-            if (urlParams.list === "icons" || urlParams.list === "geometrics" || urlParams.list === "games" || urlParams.list === "logos")   // Liste des valeurs authorisés
+            if (urlParams.list === "icons" || urlParams.list === "editing" || urlParams.list === "geometrics" || urlParams.list === "games" || urlParams.list === "logos")   // Liste des valeurs authorisés
                 list = urlParams.list;
         }
 
@@ -621,6 +623,10 @@
 
         btn_base.onclick = function () {
             loadList("icons");
+        };
+
+        btn_editing.onclick = function () {
+            loadList("editing");
         };
 
         btn_geometrics.onclick = function () {

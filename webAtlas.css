@@ -11,6 +11,11 @@ i.icon{font-style:normal;}
 .icon.sharp::before,.icon-first.sharp::before{font-family:"WebAtlas-icons-sharp","WebAtlas-icons";}
 .icon.outline::before,.icon-first.outline::before{font-family:"WebAtlas-icons-outline","WebAtlas-icons";}
 
+.icon.editing::before{font-family:"WebAtlas-editing"}
+.icon.editing.original::before,.icon-first.editing.original::before{font-family:"WebAtlas-editing-original","WebAtlas-editing";}
+.icon.editing.sharp::before,.icon-first.editing.sharp::before{font-family:"WebAtlas-editing-sharp","WebAtlas-editing";}
+.icon.editing.outline::before,.icon-first.editing.outline::before{font-family:"WebAtlas-editing-outline","WebAtlas-editing";}
+
 .icon.geometrics::before{font-family:"WebAtlas-geometrics"}
 .icon.geometrics.original::before,.icon-first.geometrics.original::before{font-family:"WebAtlas-geometrics-original","WebAtlas-geometrics";}
 .icon.geometrics.sharp::before,.icon-first.geometrics.sharp::before{font-family:"WebAtlas-geometrics-sharp","WebAtlas-geometrics";}
@@ -192,8 +197,6 @@ i.icon{font-style:normal;}
 .icon.random::before,.icon-first.random::before{content:"Հ";}
 
 /* Arrow */
-.icon.undo::before,.icon-first.arrow-undo::before{content:"ӡ";}
-.icon.redo::before,.icon-first.arrow-redo::before{content:"Ӣ";}
 .icon.arrow-swap::before,.icon-first.arrow-swap::before{content:"ӣ";}
 .icon.move::before,.icon-first.arrow-move::before{content:"Ӥ";}
 .icon.move-alt::before,.icon-first.arrow-move-alt::before{content:"ӥ";}
@@ -322,23 +325,44 @@ i.icon{font-style:normal;}
 .icon.wifi-off::before,.icon-first.wifi-off::before{content:"Ţ";}
 .icon.signal::before,.icon-first.signal::before{content:"Ť";}
 .icon.rss::before,.icon-first.rss::before{content:"ť";}
-.icon.magnet::before,.icon-first.magnet::before{content:"Ϭ";}
 .icon.flame::before,.icon-first.flame::before{content:"Я";}
 .icon.flame2::before,.icon-first.flame2::before{content:"а";}
 .icon.dialogue::before,.icon-first.dialogue::before{content:"Ϗ";}
 .icon.dialogue-right::before,.icon-first.dialogue-right::before{content:"ϐ";}
 .icon.dialogue2::before,.icon-first.dialogue2::before{content:"ϑ";}
 .icon.dialogue2-right::before,.icon-first.dialogue2-right::before{content:"ϒ";}
-.icon.eye::before,.icon-first.eye::before{content:"ȸ";}
-.icon.eye-closed::before,.icon-first.eye-closed::before{content:"ȹ";}
-.icon.eye-half::before,.icon-first.eye-half::before{content:"Ⱥ";}
-.icon.eye2::before,.icon-first.eye2::before{content:"Ȼ";}
 .icon.time::before,.icon-first.time::before{content:"ō";}
 .icon.time2::before,.icon-first.time2::before{content:"Ŏ";}
 .icon.time3::before,.icon-first.time3::before{content:"ŏ";}
 .icon.timer::before,.icon-first.timer::before{content:"Ő";}
 .icon.cursor::before,.icon-first.cursor::before{content:"Ǫ";}
-.icon.layer::before,.icon-first.layer::before{content:"Ǝ";}
+.icon.statistics::before,.icon-first.statistics::before{content:"ļ";}
+.icon.statistics2::before,.icon-first.statistics2::before{content:"ľ";}
+.icon.statistics3::before,.icon-first.statistics3::before{content:"Ŀ";}
+.icon.statistics4::before,.icon-first.statistics4::before{content:"ŀ";}
+.icon.padlock::before,.icon-first.padlock::before{content:"ф";}
+.icon.padlock-unlock::before,.icon-first.padlock-unlock::before{content:"х";}
+.icon.barcode::before,.icon-first.barcode::before{content:"Ũ";}
+.icon.qrcode::before,.icon-first.qrcode::before{content:"ũ";}
+.icon.circlecode::before,.icon-first.circlecode::before{content:"Ŧ";}
+.icon.box::before,.icon-first.box::before{content:"ϛ";}
+.icon.box2::before,.icon-first.box2::before{content:"Ϝ";}
+.icon.cube::before,.icon-first.cube::before{content:"ϝ";}
+.icon.cube2::before,.icon-first.cube2::before{content:"Ϟ";}
+.icon.cube-stroke::before,.icon-first.cube-stroke::before{content:"ϟ";}
+.icon.forbidden::before,.icon-first.forbidden::before{content:"Э";}
+.icon.forbidden2::before,.icon-first.forbidden2::before{content:"Ю";}
+.icon.sun::before,.icon-first.sun::before{content:"Ѡ";}
+.icon.moon::before,.icon-first.moon::before{content:"ѡ";}
+.icon.pin::before,.icon-first.pin::before{content:"Ѱ";}
+.icon.pin2::before,.icon-first.pin2::before{content:"ѱ";}
+.icon.postIt::before,.icon-first.postIt::before{content:"ғ";}
+.icon.clickableImage::before,.icon-first.clickableImage::before{content:"Җ";}
+
+
+/** Editing **/
+
+/* Text */
 .icon.bold::before,.icon-first.bold::before{content:"Ű";}
 .icon.italic::before,.icon-first.italic::before{content:"ű";}
 .icon.underline::before,.icon-first.underline::before{content:"Ų";}
@@ -346,7 +370,23 @@ i.icon{font-style:normal;}
 .icon.align-center::before,.icon-first.align-center::before{content:"ŵ";}
 .icon.align-right::before,.icon-first.align-right::before{content:"Ŷ";}
 .icon.align-justify::before,.icon-first.align-justify::before{content:"ŷ";}
+.icon.text::before,.icon-first.text::before{content:"Ғ";}
 .icon.textHeight::before,.icon-first.textHeight::before{content:"Ÿ";}
+.icon.formRadio::before,.icon-first.formRadio::before{content:"Ҕ";}
+.icon.formCheckbox::before,.icon-first.formCheckbox::before{content:"ҕ";}
+
+/* Tools */
+.icon.undo::before,.icon-first.arrow-undo::before{content:"ӡ";}
+.icon.redo::before,.icon-first.arrow-redo::before{content:"Ӣ";}
+.icon.link::before,.icon-first.link::before{content:"Ŭ";}
+.icon.magnet::before,.icon-first.magnet::before{content:"Ϭ";}
+.icon.eye::before,.icon-first.eye::before{content:"ȸ";}
+.icon.eye-closed::before,.icon-first.eye-closed::before{content:"ȹ";}
+.icon.eye-half::before,.icon-first.eye-half::before{content:"Ⱥ";}
+.icon.eye2::before,.icon-first.eye2::before{content:"Ȼ";}
+
+/* Elements */
+.icon.layer::before,.icon-first.layer::before{content:"Ǝ";}
 .icon.element::before,.icon-first.element::before{content:"Ɔ";}
 .icon.element-add::before,.icon-first.element-add::before{content:"Ƈ";}
 .icon.element-add2::before,.icon-first.element-add2::before{content:"ƈ";}
@@ -371,33 +411,6 @@ i.icon{font-style:normal;}
 .icon.displace-right::before,.icon-first.displace-right::before{content:"ȅ";}
 .icon.displace2-left::before,.icon-first.displace2-left::before{content:"Ȇ";}
 .icon.displace2-right::before,.icon-first.displace2-right::before{content:"ȇ";}
-.icon.statistics::before,.icon-first.statistics::before{content:"ļ";}
-.icon.statistics2::before,.icon-first.statistics2::before{content:"ľ";}
-.icon.statistics3::before,.icon-first.statistics3::before{content:"Ŀ";}
-.icon.statistics4::before,.icon-first.statistics4::before{content:"ŀ";}
-.icon.padlock::before,.icon-first.padlock::before{content:"ф";}
-.icon.padlock-unlock::before,.icon-first.padlock-unlock::before{content:"х";}
-.icon.barcode::before,.icon-first.barcode::before{content:"Ũ";}
-.icon.qrcode::before,.icon-first.qrcode::before{content:"ũ";}
-.icon.circlecode::before,.icon-first.circlecode::before{content:"Ŧ";}
-.icon.link::before,.icon-first.link::before{content:"ū";}
-.icon.link2::before,.icon-first.link2::before{content:"Ŭ";}
-.icon.box::before,.icon-first.box::before{content:"ϛ";}
-.icon.box2::before,.icon-first.box2::before{content:"Ϝ";}
-.icon.cube::before,.icon-first.cube::before{content:"ϝ";}
-.icon.cube2::before,.icon-first.cube2::before{content:"Ϟ";}
-.icon.cube-stroke::before,.icon-first.cube-stroke::before{content:"ϟ";}
-.icon.forbidden::before,.icon-first.forbidden::before{content:"Э";}
-.icon.forbidden2::before,.icon-first.forbidden2::before{content:"Ю";}
-.icon.sun::before,.icon-first.sun::before{content:"Ѡ";}
-.icon.moon::before,.icon-first.moon::before{content:"ѡ";}
-.icon.pin::before,.icon-first.pin::before{content:"Ѱ";}
-.icon.pin2::before,.icon-first.pin2::before{content:"ѱ";}
-.icon.text::before,.icon-first.text::before{content:"Ғ";}
-.icon.postIt::before,.icon-first.postIt::before{content:"ғ";}
-.icon.formRadio::before,.icon-first.formRadio::before{content:"Ҕ";}
-.icon.formCheckbox::before,.icon-first.formCheckbox::before{content:"ҕ";}
-.icon.clickableImage::before,.icon-first.clickableImage::before{content:"Җ";}
 
 
 /** Geometrics **/

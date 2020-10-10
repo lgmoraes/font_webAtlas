@@ -23,6 +23,30 @@
 }
 
 @font-face {
+    font-family: 'WebAtlas-editing';
+    src: url('../font/WebAtlas-editing-sharp.woff2') format('woff2'),
+         url('../font/WebAtlas-editing-sharp.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WebAtlas-editing-original';
+    src: url('../font/WebAtlas-editing-original.woff2') format('woff2'),
+         url('../font/WebAtlas-editing-original.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WebAtlas-editing-outline';
+    src: url('../font/WebAtlas-editing-outline.woff2') format('woff2'),
+         url('../font/WebAtlas-editing-outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'WebAtlas-geometrics';
     src: url('../font/WebAtlas-geometrics-sharp.woff2') format('woff2'),
          url('../font/WebAtlas-geometrics-sharp.woff') format('woff');
