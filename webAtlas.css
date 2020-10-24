@@ -366,24 +366,30 @@ i.icon{font-style:normal;}
 .icon.bold::before,.icon-first.bold::before{content:"Ű";}
 .icon.italic::before,.icon-first.italic::before{content:"ű";}
 .icon.underline::before,.icon-first.underline::before{content:"Ų";}
+.icon.bold-fr::before,.icon-first.bold-fr::before{content:"Ů";}
+.icon.underline-fr::before,.icon-first.underline-fr::before{content:"ů";}
 .icon.align-left::before,.icon-first.align-left::before{content:"Ŵ";}
 .icon.align-center::before,.icon-first.align-center::before{content:"ŵ";}
 .icon.align-right::before,.icon-first.align-right::before{content:"Ŷ";}
 .icon.align-justify::before,.icon-first.align-justify::before{content:"ŷ";}
-.icon.text::before,.icon-first.text::before{content:"Ғ";}
+.icon.abc::before,.icon-first.abc::before{content:"Ғ";}
 .icon.textHeight::before,.icon-first.textHeight::before{content:"Ÿ";}
 .icon.formRadio::before,.icon-first.formRadio::before{content:"Ҕ";}
 .icon.formCheckbox::before,.icon-first.formCheckbox::before{content:"ҕ";}
 
 /* Tools */
-.icon.undo::before,.icon-first.arrow-undo::before{content:"ӡ";}
-.icon.redo::before,.icon-first.arrow-redo::before{content:"Ӣ";}
-.icon.link::before,.icon-first.link::before{content:"Ŭ";}
+.icon.color::before,.icon-first.color::before{content:"ŧ";}
+.icon.undo::before,.icon-first.undo::before{content:"ӡ";}
+.icon.redo::before,.icon-first.redo::before{content:"Ӣ";}
+.icon.link::before,.icon-first.link::before{content:"Ū";}
+.icon.link-broken::before,.icon-first.link-broken::before{content:"ū";}
+.icon.link2::before,.icon-first.link2::before{content:"Ŭ";}
 .icon.magnet::before,.icon-first.magnet::before{content:"Ϭ";}
 .icon.eye::before,.icon-first.eye::before{content:"ȸ";}
 .icon.eye-closed::before,.icon-first.eye-closed::before{content:"ȹ";}
 .icon.eye-half::before,.icon-first.eye-half::before{content:"Ⱥ";}
-.icon.eye2::before,.icon-first.eye2::before{content:"Ȼ";}
+.icon.splitHorizontal::before,.icon-first.splitHorizontal::before{content:"Ʈ";}
+.icon.splitVertical::before,.icon-first.splitVertical::before{content:"Ư";}
 
 /* Elements */
 .icon.layer::before,.icon-first.layer::before{content:"Ǝ";}

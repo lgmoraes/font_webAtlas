@@ -332,11 +332,13 @@
             "bold":"Ű",
             "italic":"ű",
             "underline":"Ų",
+            "bold-fr":"Ů",
+            "underline-fr":"ů",
             "align-left":"Ŵ",
             "align-center":"ŵ",
             "align-right":"Ŷ",
             "align-justify":"ŷ",
-            "text":"Ғ",
+            "abc":"Ғ",
             "textHeight":"Ÿ",
             "formRadio":"Ҕ",
             "formCheckbox":"ҕ"
@@ -344,12 +346,16 @@
         "tools": {
             "undo":"ӡ",
             "redo":"Ӣ",
-            "link":"Ŭ",
+            "color":"ŧ",
+            "link":"Ū",
+            "link-broken":"ū",
+            "link2":"Ŭ",
             "magnet":"Ϭ",
             "eye":"ȸ",
             "eye-closed":"ȹ",
             "eye-half":"Ⱥ",
-            "eye2":"Ȼ"
+            "splitHorizontal":"Ʈ",
+            "splitVertical":"Ư"
         },
         "elements": {
             "layer":"Ǝ",
