@@ -71,12 +71,11 @@ i.icon{font-style:normal;}
 .icon.userGroup2::before,.icon-first.userGroup2::before{content:"γ";}
 .icon.login::before,.icon-first.login::before{content:"А";}
 .icon.logout::before,.icon-first.logout::before{content:"Б";}
-.icon.connexion::before,.icon-first.connexion::before{content:"В";}
-.icon.connexion2::before,.icon-first.connexion2::before{content:"Г";}
-.icon.spreadsheet::before,.icon-first.spreadsheet::before{content:"ɡ";}
-.icon.spreadsheet2::before,.icon-first.spreadsheet2::before{content:"ɢ";}
-.icon.spreadsheet3::before,.icon-first.spreadsheet3::before{content:"ɣ";}
-.icon.spreadsheet4::before,.icon-first.spreadsheet4::before{content:"ɤ";}
+.icon.power::before,.icon-first.power::before{content:"В";}
+.icon.power2::before,.icon-first.power2::before{content:"Г";}
+.icon.spreadsheet::before,.icon-first.spreadsheet::before{content:"ɢ";}
+.icon.spreadsheet2::before,.icon-first.spreadsheet2::before{content:"ɣ";}
+.icon.spreadsheet3::before,.icon-first.spreadsheet3::before{content:"ɤ";}
 .icon.gear::before,.icon-first.gear::before{content:"Ȣ";}
 .icon.gear2::before,.icon-first.gear2::before{content:"ȣ";}
 .icon.gear3::before,.icon-first.gear3::before{content:"Ȥ";}
@@ -104,8 +103,7 @@ i.icon{font-style:normal;}
 .icon.menu::before,.icon-first.menu::before{content:"ɭ";}
 .icon.menu2::before,.icon-first.menu2::before{content:"ɮ";}
 .icon.menu2-vertical::before,.icon-first.menu2-vertical::before{content:"ɯ";}
-.icon.image::before,.icon-first.image::before{content:"ɟ";}
-.icon.image2::before,.icon-first.image2::before{content:"ɠ";}
+.icon.image::before,.icon-first.image::before{content:"ɠ";}
 .icon.home::before,.icon-first.home::before{content:"ˌ";}
 .icon.home2::before,.icon-first.home2::before{content:"ˍ";}
 .icon.magnify::before,.icon-first.magnify::before{content:"є";}
@@ -304,8 +302,8 @@ i.icon{font-style:normal;}
 .icon.calendar-valide::before,.icon-first.calendar-valide::before{content:"Ŝ";}
 .icon.calendar-warning::before,.icon-first.calendar-warning::before{content:"ŝ";}
 .icon.calendar-lock::before,.icon-first.calendar-lock::before{content:"Ş";}
-.icon.planete::before,.icon-first.planete::before{content:"ѫ";}
-.icon.planete2::before,.icon-first.planete2::before{content:"Ѭ";}
+.icon.planet::before,.icon-first.planete::before{content:"ѫ";}
+.icon.planet2::before,.icon-first.planete2::before{content:"Ѭ";}
 .icon.network::before,.icon-first.network::before{content:"ѭ";}
 .icon.plug::before,.icon-first.plug::before{content:"Ѯ";}
 .icon.plug-off::before,.icon-first.plug-off::before{content:"ѯ";}
@@ -349,7 +347,6 @@ i.icon{font-style:normal;}
 .icon.box2::before,.icon-first.box2::before{content:"Ϝ";}
 .icon.cube::before,.icon-first.cube::before{content:"ϝ";}
 .icon.cube2::before,.icon-first.cube2::before{content:"Ϟ";}
-.icon.cube-stroke::before,.icon-first.cube-stroke::before{content:"ϟ";}
 .icon.forbidden::before,.icon-first.forbidden::before{content:"Э";}
 .icon.forbidden2::before,.icon-first.forbidden2::before{content:"Ю";}
 .icon.sun::before,.icon-first.sun::before{content:"Ѡ";}
