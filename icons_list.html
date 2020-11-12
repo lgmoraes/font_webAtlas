@@ -270,16 +270,23 @@
             display: none;
         }
 
-        @keyframes flipInX {
-            0% {
-                transform: rotateX(90deg);
-            }
-
-            100% {
-                transform: rotateX(0deg);
-            }
-        }
         
+        /*** ANIMATIONS ***/
+
+        .fadeIn {
+            animation: fadeIn .5s;
+        }
+
+        @keyframes fadeIn {
+            0%   {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @keyframes flipInX {
+            0%   {transform: rotateX(90deg);}
+            100% {transform: rotateX(0deg);}
+        }
+
 
         /*** THEME SOMBRE ***/
 
@@ -490,7 +497,7 @@
     </div>
 
     <div id="content">
-        <div id="messageLine">
+        <div id="messageLine" class="fadeIn">
             <span id="messageLine_icon" class="icon"></span>
             <span id="messageLine_message" class="message"></span>
         </div>
@@ -502,7 +509,7 @@
         <div id="switchTheme" class="btn icon moon"></div><div id="switchDisplayMode" class="btn icon apps"></div>
     </div>
     
-    <div id="arrowUp" class="btn icon arrow2-up"></div>
+    <div id="arrowUp" class="btn icon arrow2-up fadeIn"></div>
 
     <script>
         var content = document.getElementById('content');
