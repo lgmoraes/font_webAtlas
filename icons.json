@@ -356,7 +356,7 @@
         }
     },
     "editing": {
-        "text": {
+        "Text": {
             "bold":"Ű",
             "italic":"ű",
             "underline":"Ų",
@@ -371,7 +371,7 @@
             "formRadio":"Ҕ",
             "formCheckbox":"ҕ"
         },
-        "tools": {
+        "Tools": {
             "undo":"ӡ",
             "redo":"Ӣ",
             "color":"ŧ",
@@ -385,7 +385,7 @@
             "splitHorizontal":"Ʈ",
             "splitVertical":"Ư"
         },
-        "elements": {
+        "Elements": {
             "layer":"Ǝ",
             "element":"Ɔ",
             "element-add":"Ƈ",
