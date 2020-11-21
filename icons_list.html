@@ -211,11 +211,41 @@
         }
 
         .hr {
-            width: 300px;
             height: 2px;
-            max-width: 100%;
-            margin: 5px 0;
+            margin-bottom: 5px;
             background-color: rgb(60, 60, 60);
+        }
+
+        .accordion h2 {
+            color: inherit;
+            display: inline-block;
+        }
+
+        .hr, .accordion h2 {
+            width: 300px;
+            max-width: 100%;
+        }
+
+        .accordion .btnDeploy {
+            font-size: 25px;
+            margin-left: -50px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btnDeploy {
+            transform: rotate(0deg);
+            transition: .3s;
+        }.btnDeploy.active {
+            transform: rotate(-180deg);
+        }
+
+        .accordion .list {
+            overflow: hidden;
+            transition: .3s;
+        }
+        .accordion .list.hide {
+            display: none;
         }
 
         .btn {
@@ -300,8 +330,11 @@
             background: linear-gradient(#646464, #333);
         }
 
-        body.darkMode h1, body.darkMode h2, body.darkMode .hr {
+        body.darkMode h1, body.darkMode h2, body.darkMode .btnDeploy {
             color:rgb(210, 167, 23);
+        }
+        body.darkMode .btnDeploy {
+            text-shadow: none;
         }
         body.darkMode .hr {
             background-color: rgb(210, 167, 23);
@@ -423,7 +456,6 @@
             }
 
             #divIcons {
-                text-align: center;
                 position: relative;
             }
 
@@ -455,6 +487,10 @@
             body.darkMode #sidebar {
                 border-right: none;
                 border-bottom: 1px solid #313131;
+            }
+
+            .accordion .list {
+                text-align: center;
             }
         }
         @media (max-width: 460px) {
@@ -536,6 +572,7 @@
         var LARGE_SCREEN = 650;
         var TEXTS = {
             intro: "Clic on an item to copy the className on clipboard.",
+            copied: "has been copied to the clipboard!",
             trademark: "This work includes material that may be protected as a trademark in some jurisdictions. If you want to use it, you have to ensure that you have the legal right to do so and that you do not infringe any trademark rights. See the trademark owner for rules about appropriate use of their trademarks."
         };
 
@@ -730,6 +767,12 @@
         content.onclick = function (e) {
             var ele = e.target;
 
+            if(hasClass("btnDeploy", ele)) {
+                toggleClass("active", ele);
+                toggleClass("hide", ele.parentElement.lastChild);
+                return;
+            }
+
             if (hasClass("icon", ele)) {
                 ele = ele.parentElement;
             }
@@ -744,7 +787,7 @@
                 inputClipboard.blur();
                 inputClipboard.style.display = 'none';
 
-                showMessage(ele.codeIcon, "has been copied to the clipboard!");
+                showMessage(ele.codeIcon, TEXTS.copied);
             }
         };
 
@@ -860,10 +903,20 @@
             for (category in categories) {
                 var icones = categories[category];
                 var newH2 = document.createElement('h2');
+                var newAccordion = document.createElement('div');
+                var newBtnDeplay = document.createElement('div');
+                var newList = document.createElement('div');
 
                 newH2.innerHTML = category;
-                divIcons.appendChild(newH2);
-                divIcons.appendChild(getHr());
+                addClass("accordion", newAccordion);
+                addClass("btnDeploy icon arrow3-down active", newBtnDeplay);
+                addClass("list", newList);
+
+                newAccordion.appendChild(newH2);
+                newAccordion.appendChild(newBtnDeplay);
+                newAccordion.appendChild(getHr());
+                newAccordion.appendChild(newList);
+                divIcons.appendChild(newAccordion);
 
                 for (icon in icones) {
                     var char = icones[icon];
@@ -887,7 +940,7 @@
                     newDiv.appendChild(newDivWrapper);
 
                     iconsElements.push(newDiv);
-                    divIcons.appendChild(newDiv);
+                    newList.appendChild(newDiv);
 
                     if (newDivTitle.scrollWidth > newDivTitle.offsetWidth) {
                         var empty = document.createElement("span");
