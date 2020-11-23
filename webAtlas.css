@@ -3,6 +3,25 @@
 .icon.unconstraint{width:auto}
 .icon-first::before{margin-right:0.3em}
 
+/* Overlapping icons */
+.icon:not(:empty){position:relative}
+.icon>*{transform:scale(.6);width:1.2em;font-style:normal;position:absolute;top:0;left:0}
+
+.icon.mobile>*{transform:scale(.3);top:-.03em}
+.icon.magnify>*{transform:scale(.35);top:-.115em;left:-.115em;}
+.icon.cloud>*{transform:scale(.35);top:.08em}
+.icon.screen>*{transform:scale(.4);top:-.095em}
+.icon.dialogue2>*,.icon.dialogue2-left>*,.icon.dialogue2-right>*{transform:scale(.4);border-top-left-radius:-.07em}
+.icon.tablet>*,.icon.dialogue>*,.icon.dialogue-left>*,.icon.dialogue-right>*{transform:scale(.4);top:-.03em}
+.icon.chip>*,.icon.losange-stroke>*{transform:scale(.4)}
+.icon.reload4>*{transform:scale(.4);top:.03em}
+.icon.folder>*{transform:scale(.4);top:.05em}
+.icon.file>*,.icon.window>*,.icon.application>*{transform:scale(.4);top:.06em}
+.icon.paste>*,.icon.dustbin2>*{transform:scale(.4);top:.09em}
+.icon.calendar>*{transform:scale(.4);top:.13em}
+.icon.armor>*{transform:scale(.5);top:-.05em}
+.icon.circle2>*,.icon.circle3>*,.icon.circle-dashed>*,.icon.square-dashed>*,.icon.hexagon2-stroke>*{transform:scale(.5)}
+
 /* Multiple sets management */
 .icon::before,.icon-first::before{font-family:"WebAtlas-icons"}
 .icon.original::before,.icon-first.original::before{font-family:"WebAtlas-icons-original","WebAtlas-icons";}
