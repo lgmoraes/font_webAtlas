@@ -1,6 +1,4 @@
-.icon{width:1.2em;text-align:center}
-div.icon{display:inline-block}
-i.icon{font-style:normal;}
+.icon{width:1.2em;text-align:center;font-style:normal;display:inline-block}
 .icon.combine{margin-left:-1.2em}
 .icon.unconstraint{width:auto}
 .icon-first::before{margin-right:0.3em}
