@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Atlas</title>
+    <link rel="stylesheet" type="text/css" href="webAtlas.css" />
+    <link rel="stylesheet" type="text/css" href="font-face/webAtlas-original.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/font_logos/logos.css" />
+</head>
+
+<body>
+    <input type="text" id="inputClipboard" style="display:none" />
+
+    <div id="header">
+        <h1>Font WebAtlas</h1>
+        <label id="search" class="icon-first magnify">
+            <input id="search_input" type="text">
+        </label>
+    </div>
+
+    <div id="sidebar">
+        <h2>Style:</h2>
+        <select id="select_style" autocomplete="off"></select>
+
+        <h2>Packs:</h2>
+        <div id="btn_base" class="btn">Base</div>
+        <div id="btn_editing" class="btn">Editing</div>
+        <div id="btn_geometrics" class="btn">Geometrics</div>
+        <div id="btn_games" class="btn">Games</div>
+
+        <h2>Add on:</h2>
+        <div id="btn_logos" class="btn">Logos & Social Medias</div>
+
+    </div>
+
+    <div id="content">
+        <div id="messageLine" class="fadeIn">
+            <span id="messageLine_icon" class="icon"></span>
+            <span id="messageLine_message" class="message"></span>
+        </div>
+
+        <div id="divIcons"></div>
+    </div>
+    
+    <div id="menuTopRight">
+        <div id="switchTheme" class="btn icon moon"></div><div id="switchDisplayMode" class="btn icon apps"></div>
+    </div>
+    
+    <div id="arrowUp" class="btn icon arrow2-up fadeIn"></div>
+</body>
+</html>

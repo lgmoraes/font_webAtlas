@@ -1,0 +1,494 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:rgb(80, 80, 80);
+    background: rgb(222, 222, 222);
+    font-family: "WebAtlas";
+}
+
+h2 {
+    text-align: left;
+    font-family: 'WebAtlas';
+    font-size: 25px;
+    margin: 8px;
+    margin-top: 30px;
+}
+
+#sidebar h2 {
+    text-align: center;
+    color:rgb(111, 186, 255);
+}
+
+select {
+    width: 180px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color:rgb(53, 55, 57);
+    font-family: webAtlas;
+    font-size: 1.2em;
+    background: none;
+    border: 2px solid rgb(53, 55, 57);
+    margin: 20px auto;
+    display: block;
+    outline: none;
+}
+select:disabled {
+    opacity: .5;
+}
+
+select option {
+    color: white;
+    background-color: rgb(60, 60, 60);
+}
+
+#header, #sidebar {
+    box-sizing: border-box;
+    position: fixed;
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+    padding: 0 .5em;
+    font-size: 40px;
+    line-height: 40px;
+    background-color: white;
+}
+
+h1 {
+    line-height: 80px;
+    vertical-align: top;
+    font-weight: normal;
+    margin: 0;
+    font-size: 40px;
+    display: inline-block;
+}
+
+#search {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: .5em;
+    color:rgb(140, 140, 140);
+    font-size: 26px;
+    background-color: rgb(250, 250, 250);
+    box-shadow:
+        inset 0 0 12px rgba(150, 150, 150, .45),
+        inset 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 -1px 3px rgba(0, 0, 0, 0.3),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 1px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    vertical-align: top;
+    position: fixed;
+    top: 20px;
+    left: 300px;
+}
+#search input {
+    width: 120px;
+    color:rgb(140, 140, 140);
+    line-height: 40px;
+    font-size: 25px;
+    font-family: WebAtlas;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#sidebar {
+    width: 250px;
+    padding: 1em;
+    background: white;
+    box-shadow: inset 0 0 3em rgba(0, 0, 0, .3);
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+#sidebar .btn {
+    background-color: white;
+    line-height: 1.7em;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#content {
+    overflow: auto;
+    top: 80px;
+    left: 250px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+#content.gridMode .item  {
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    margin: 0;
+}
+#content.gridMode .item .title, #content.gridMode .item .wrapper {
+    display: none;
+}
+
+#divIcons {
+    padding: 1em;
+}
+
+#arrowUp {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: white;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+#arrowUp:active {
+    box-shadow: inset 0 -1px 18px rgba(78, 82, 87, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent 50%, rgba(255, 255, 255, 0.07));
+}
+
+#menuTopRight {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#menuTopRight .btn {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+#menuTopRight .btn:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+#menuTopRight .btn:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#messageLine {
+    font-family: 'WebAtlas';
+    line-height: 28px;
+    font-size: 20px;
+    padding: .3em .5em;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: rgb(111, 186, 255);
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.hr {
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: rgb(60, 60, 60);
+}
+
+.accordion h2 {
+    color: inherit;
+    display: inline-block;
+}
+
+.hr, .accordion h2 {
+    width: 300px;
+    max-width: 100%;
+}
+
+.accordion .btnDeploy {
+    font-size: 25px;
+    margin-left: -50px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btnDeploy {
+    transform: rotate(0deg);
+    transition: .3s;
+}.btnDeploy.active {
+    transform: rotate(-180deg);
+}
+
+.accordion .list {
+    overflow: hidden;
+    transition: .3s;
+}
+.accordion .list.hide {
+    display: none;
+}
+
+.btn {
+    background: rgb(240, 240, 240);
+    border-radius: 3px;
+    box-shadow:
+        inset 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 -1px 3px rgba(0, 0, 0, 0.3),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 1px 2px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+.btn:active {
+    box-shadow: inset 0 -1px 18px rgba(78, 82, 87, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent 50%, rgba(255, 255, 255, 0.07));
+}
+
+.item {
+    width: 100px;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 4px;
+    font-size: 30px;
+    text-align: center;
+    background-clip: border-box;
+    vertical-align: top;
+    animation: flipInX .5s;
+    display: inline-block;
+    position: relative;
+}
+.item .wrapper {
+    position: absolute;
+    height: 22px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: linear-gradient(to right,
+        rgba(240,240,240,1) 0%,
+        rgba(240,240,240,0) 5%,
+        rgba(240,240,240,0) 95%,
+        rgba(240,240,240,1) 100%
+    );
+}
+.item .title {
+    overflow: hidden;
+    padding: 0 10px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.item:active .wrapper {
+    display: none;
+}
+
+
+/*** ANIMATIONS ***/
+
+.fadeIn {
+    animation: fadeIn .5s;
+}
+
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes flipInX {
+    0%   {transform: rotateX(90deg);}
+    100% {transform: rotateX(0deg);}
+}
+
+
+/*** THEME SOMBRE ***/
+
+body.darkMode {
+    color: #ddd;
+    text-shadow: 1px 1px 0 black;
+    background: #373738;
+}
+body.darkMode #header {
+    border-bottom: 1px solid #26272b;
+    background: linear-gradient(#646464, #333);
+}
+
+body.darkMode h1, body.darkMode h2, body.darkMode .btnDeploy {
+    color:rgb(210, 167, 23);
+}
+body.darkMode .btnDeploy {
+    text-shadow: none;
+}
+body.darkMode .hr {
+    background-color: rgb(210, 167, 23);
+}
+
+body.darkMode #sidebar h2 {
+    color: rgb(53, 55, 57);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+}
+
+body.darkMode .btn, body.darkMode #arrowUp {
+    background-color: rgba(27, 27, 29, .9);
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-bottom-color: rgb(17, 17, 17);
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.1),
+        inset 0 -1px 3px rgba(0,0,0,0.3),
+        inset 0 0 0 1px rgba(255,255,255,0.1),
+        0 1px 2px rgba(0,0,0,0.15);
+}
+
+body.darkMode #arrowUp {
+    background: rgba(27, 27, 29, .9);
+}
+
+body.darkMode .wrapper {
+    background: linear-gradient(to right,
+        rgba(27, 27, 29,1) 0%,
+        rgba(27, 27, 29,0) 5%,
+        rgba(27, 27, 29,0) 95%,
+        rgba(27, 27, 29,1) 100%
+    );
+}
+
+body.darkMode #sidebar {
+    border-right: 1px solid #313131;
+    background: #737373;
+    box-shadow: inset 0 0 5em rgba(0, 0, 0, 0.6);
+}
+
+body.darkMode #sidebar .btn {
+    text-shadow: 0 1px rgba(0,0,0,0.8);
+    background: #46494d;
+    line-height: 1.5em;
+    background-clip: border-box;
+    border: 1px solid #111;
+    border-bottom-color: rgb(17, 17, 17);
+    border-radius: 3px;
+    box-shadow: 
+        inset 0 1px rgba(255,255,255,0.1),
+        inset 0 -1px 3px rgba(0,0,0,0.3),
+        inset 0 0 0 1px rgba(255,255,255,0.1),
+        0 1px 2px rgba(0,0,0,0.15);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.08),rgba(255,255,255,0) 50%,rgba(0,0,0,0) 51%,rgba(0,0,0,0.25));
+}
+body.darkMode #sidebar .btn:active {
+    background: #393d40;
+    box-shadow: inset 0 -1px 18px rgba(0,0,0,0.8),inset 0 0 0 1px rgba(255,255,255,0.1);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1),transparent 50%,rgba(255,255,255,0.07));
+}
+
+body.darkMode #messageLine {
+    color: rgb(80, 80, 80);
+    background-color: rgb(210, 167, 23);
+    text-shadow: none;
+}
+
+body.darkMode #search {
+    color: #ddd;
+    background: rgba(27, 27, 29, .9);
+    border: 1px solid rgba(0, 0, 0, .4);
+    box-shadow:
+        inset 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 -1px 3px rgba(0, 0, 0, 0.3),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 1px 2px rgba(0, 0, 0, 0.15);
+    margin-top: -1px;
+}
+body.darkMode #search input {
+    color: #ddd;
+}
+
+
+/*** MEDIAS QUERIES ***/
+
+@media (max-width: 650px) {
+    #header {
+        height: 70px;
+    }
+
+    h1 {
+        line-height: 70px;
+    }
+
+    #header, #sidebar, #content {
+        width: auto;
+        top: 0;
+        left: 0;
+        display: block;
+        position: relative;
+    }
+
+    #sidebar {
+        text-align: center;
+    }
+
+    #sidebar .btn {
+        width: 31%;
+        display: inline-block;
+    }
+    #sidebar #btn_logos {
+        width: 60%;
+    }
+
+
+    #messageLine {
+        position: fixed;
+        top: 70px;
+    }
+
+    #divIcons {
+        position: relative;
+    }
+
+    #menuTopRight {
+        top: 15px;
+        right: 15px;
+    }
+
+    #search {
+        width: 45px;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: width .5s;
+        z-index: 2;
+        position: fixed;
+        top: 15px;
+        right: 120px;
+        left: unset;
+    }
+    #search:hover, #search.active {
+        width: 170px;
+    }
+
+    #arrowUp {
+        z-index: 1;
+    }
+
+    body.darkMode #sidebar {
+        border-right: none;
+        border-bottom: 1px solid #313131;
+    }
+
+    .accordion .list {
+        text-align: center;
+    }
+}
+@media (max-width: 460px) {
+    #header {
+        padding: 0 .3em;
+    }
+
+    h1 {
+        width: 150px;
+        line-height: 33px;
+        font-size: 36px;
+    }
+}
