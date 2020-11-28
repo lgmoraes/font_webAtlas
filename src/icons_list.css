@@ -109,7 +109,8 @@ h1 {
 }
 #sidebar .btn {
     background-color: white;
-    line-height: 1.7em;
+    line-height: 1.5em;
+    padding: .1em 0;
     margin-bottom: 5px;
     font-size: 1.2em;
     text-align: center;
@@ -366,7 +367,7 @@ body.darkMode #sidebar {
 body.darkMode #sidebar .btn {
     text-shadow: 0 1px rgba(0,0,0,0.8);
     background: #46494d;
-    line-height: 1.5em;
+    line-height: 1.3em;
     background-clip: border-box;
     border: 1px solid #111;
     border-bottom-color: rgb(17, 17, 17);
@@ -430,7 +431,8 @@ body.darkMode #search input {
     }
 
     #sidebar .btn {
-        width: 31%;
+        width: 48%;
+        margin: 2px;
         display: inline-block;
     }
     #sidebar #btn_logos {
