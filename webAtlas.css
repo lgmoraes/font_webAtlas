@@ -318,18 +318,18 @@
 .icon.circle-upload::before,.icon-first.circle-upload::before{content:"ƾ";}
 
 /* FORM */
-.icon.radio::before,.icon-first.radio::before{content:"ɰ";}
-.icon.radio-checked::before,.icon-first.radio-checked::before{content:"ɱ";}
-.icon.checkbox::before,.icon-first.checkbox::before{content:"ɲ";}
-.icon.checkbox-checked::before,.icon-first.checkbox-checked::before{content:"ɳ";}
-.icon.radio2::before,.icon-first.radio2::before{content:"ɴ";}
-.icon.radio2-checked::before,.icon-first.radio2-checked::before{content:"ɵ";}
-.icon.checkbox2::before,.icon-first.checkbox2::before{content:"ɶ";}
-.icon.checkbox2-checked::before,.icon-first.checkbox2-checked::before{content:"ɷ";}
-.icon.radio3::before,.icon-first.radio3::before{content:"ɸ";}
-.icon.radio3-checked::before,.icon-first.radio3-checked::before{content:"ɹ";}
-.icon.checkbox3::before,.icon-first.checkbox3::before{content:"ɺ";}
-.icon.checkbox3-checked::before,.icon-first.checkbox3-checked::before{content:"ɻ";}
+.icon.radio::before,.icon-first.radio::before{content:"ɱ";}
+.icon.radio-checked::before,.icon-first.radio-checked::before{content:"ɰ";}
+.icon.checkbox::before,.icon-first.checkbox::before{content:"ɳ";}
+.icon.checkbox-checked::before,.icon-first.checkbox-checked::before{content:"ɲ";}
+.icon.radio2::before,.icon-first.radio2::before{content:"ɵ";}
+.icon.radio2-checked::before,.icon-first.radio2-checked::before{content:"ɴ";}
+.icon.checkbox2::before,.icon-first.checkbox2::before{content:"ɷ";}
+.icon.checkbox2-checked::before,.icon-first.checkbox2-checked::before{content:"ɶ";}
+.icon.radio3::before,.icon-first.radio3::before{content:"ɹ";}
+.icon.radio3-checked::before,.icon-first.radio3-checked::before{content:"ɸ";}
+.icon.checkbox3::before,.icon-first.checkbox3::before{content:"ɻ";}
+.icon.checkbox3-checked::before,.icon-first.checkbox3-checked::before{content:"ɺ";}
 
 /* Player */
 .icon.play::before,.icon-first.play::before{content:"Ա";}

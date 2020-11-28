@@ -269,18 +269,18 @@
             "circle-upload":"ƾ"
         },
         "Formular": {
-            "radio":"ɰ",
-            "radio-checked":"ɱ",
-            "checkbox":"ɲ",
-            "checkbox-checked":"ɳ",
-            "radio2":"ɴ",
-            "radio2-checked":"ɵ",
-            "checkbox2":"ɶ",
-            "checkbox2-checked":"ɷ",
-            "radio3":"ɸ",
-            "radio3-checked":"ɹ",
-            "checkbox3":"ɺ",
-            "checkbox3-checked":"ɻ"
+            "radio":"ɱ",
+            "radio-checked":"ɰ",
+            "checkbox":"ɳ",
+            "checkbox-checked":"ɲ",
+            "radio2":"ɵ",
+            "radio2-checked":"ɴ",
+            "checkbox2":"ɷ",
+            "checkbox2-checked":"ɶ",
+            "radio3":"ɹ",
+            "radio3-checked":"ɸ",
+            "checkbox3":"ɻ",
+            "checkbox3-checked":"ɺ"
         },
         "Player": {
             "play":"Ա",
