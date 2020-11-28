@@ -1,23 +1,23 @@
 @font-face {
-    font-family: 'WebAtlas-icons';
-    src: url('../font/WebAtlas-icons-sharp.woff2') format('woff2'),
-         url('../font/WebAtlas-icons-sharp.woff') format('woff');
+    font-family: 'WebAtlas-base';
+    src: url('../font/WebAtlas-base-sharp.woff2') format('woff2'),
+         url('../font/WebAtlas-base-sharp.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'WebAtlas-icons-original';
-    src: url('../font/WebAtlas-icons-original.woff2') format('woff2'),
-         url('../font/WebAtlas-icons-original.woff') format('woff');
+    font-family: 'WebAtlas-base-original';
+    src: url('../font/WebAtlas-base-original.woff2') format('woff2'),
+         url('../font/WebAtlas-base-original.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'WebAtlas-icons-outline';
-    src: url('../font/WebAtlas-icons-outline.woff2') format('woff2'),
-         url('../font/WebAtlas-icons-outline.woff') format('woff');
+    font-family: 'WebAtlas-base-outline';
+    src: url('../font/WebAtlas-base-outline.woff2') format('woff2'),
+         url('../font/WebAtlas-base-outline.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

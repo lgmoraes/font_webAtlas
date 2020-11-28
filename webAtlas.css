@@ -23,10 +23,10 @@
 .icon.circle2>*,.icon.circle3>*,.icon.circle-dashed>*,.icon.square-dashed>*,.icon.hexagon2-stroke>*{transform:scale(.5)}
 
 /* Multiple sets management */
-.icon::before,.icon-first::before{font-family:"WebAtlas-icons"}
-.icon.original::before,.icon-first.original::before{font-family:"WebAtlas-icons-original","WebAtlas-icons";}
-.icon.sharp::before,.icon-first.sharp::before{font-family:"WebAtlas-icons-sharp","WebAtlas-icons";}
-.icon.outline::before,.icon-first.outline::before{font-family:"WebAtlas-icons-outline","WebAtlas-icons";}
+.icon::before,.icon-first::before{font-family:"WebAtlas-base"}
+.icon.original::before,.icon-first.original::before{font-family:"WebAtlas-base-original","WebAtlas-base";}
+.icon.sharp::before,.icon-first.sharp::before{font-family:"WebAtlas-base-sharp","WebAtlas-base";}
+.icon.outline::before,.icon-first.outline::before{font-family:"WebAtlas-base-outline","WebAtlas-base";}
 
 .icon.editing::before{font-family:"WebAtlas-editing"}
 .icon.editing.original::before,.icon-first.editing.original::before{font-family:"WebAtlas-editing-original","WebAtlas-editing";}

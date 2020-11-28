@@ -36,7 +36,7 @@ var lastLoadedList = null;
 
 function init() {
     var urlParams = getUrlParams();
-    var list = urlParams.list ? urlParams.list : 'icons';
+    var list = urlParams.list ? urlParams.list : 'base';
 
     loadList(list);
 
@@ -159,7 +159,7 @@ content.onclick = function (e) {
     if (ele.className === "btn item") {
         inputClipboard.style.display = 'block';
         inputClipboard.value = ele.codeIcon;
-        if (lastLoadedList !== "icons" && lastLoadedList !== "logos")
+        if (lastLoadedList !== "base" && lastLoadedList !== "logos")
             inputClipboard.value += " " + lastLoadedList;
         inputClipboard.select();
         document.execCommand('copy');
@@ -179,7 +179,7 @@ messageLine.onclick = function () {
 };
 
 btn_base.onclick = function () {
-    loadList("icons");
+    loadList("base");
 };
 
 btn_editing.onclick = function () {
