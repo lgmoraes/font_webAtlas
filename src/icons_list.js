@@ -30,7 +30,7 @@ var TEXTS = {
 
 var iconsElements = [];
 var lastLoadedList = null;
-
+var activeBtn = null;
 
 /* INIT */
 
@@ -265,13 +265,21 @@ function loadList(list) {
     var category = null;
     var categories = null;
 
-    divIcons.innerHTML = "";
-    iconsElements = [];
-
     if(list === undefined)
         list = lastLoadedList;
     else
         lastLoadedList = list;
+
+    /* Sidebar buttons */
+    if(activeBtn)
+        removeClass('active', activeBtn);
+
+    activeBtn = document.getElementById('btn_' + list);
+    addClass('active', activeBtn);
+
+    /* Icons list */
+    divIcons.innerHTML = "";
+    iconsElements = [];
 
     if(list === "logos") {
         categories = data_logos["icons"];
