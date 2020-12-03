@@ -110,10 +110,6 @@
 .icon.settings3::before,.icon-first.settings3::before{content:"ȱ";}
 .icon.resize::before,.icon-first.resize::before{content:"ņ";}
 .icon.fullscreen::before,.icon-first.fullscreen::before{content:"Ň";}
-.icon.pen::before,.icon-first.pen::before{content:"Ѓ";}
-.icon.pen2::before,.icon-first.pen2::before{content:"Є";}
-.icon.pen3::before,.icon-first.pen3::before{content:"Ѕ";}
-.icon.pen4::before,.icon-first.pen4::before{content:"І";}
 .icon.dustbin::before,.icon-first.dustbin::before{content:"Ϸ";}
 .icon.dustbin2::before,.icon-first.dustbin2::before{content:"ϸ";}
 .icon.reload::before,.icon-first.reload::before{content:"Ǻ";}
@@ -121,9 +117,11 @@
 .icon.reload2::before,.icon-first.reload2::before{content:"Ǽ";}
 .icon.reload3::before,.icon-first.reload3::before{content:"ǽ";}
 .icon.reload4::before,.icon-first.reload4::before{content:"ǹ";}
-.icon.dialogue::before,.icon-first.dialogue::before{content:"Ϗ";}
+.icon.dialogue-left::before,.icon-first.dialogue-left::before{content:"Ϗ";}
+.icon.dialogue::before,.icon-first.dialogue::before{content:"ύ";}
 .icon.dialogue-right::before,.icon-first.dialogue-right::before{content:"ϐ";}
-.icon.dialogue2::before,.icon-first.dialogue2::before{content:"ϑ";}
+.icon.dialogue2-left::before,.icon-first.dialogue2-left::before{content:"ϑ";}
+.icon.dialogue2::before,.icon-first.dialogue2::before{content:"ώ";}
 .icon.dialogue2-right::before,.icon-first.dialogue2-right::before{content:"ϒ";}
 .icon.time::before,.icon-first.time::before{content:"Ŏ";}
 .icon.time-rewind::before,.icon-first.time-rewind::before{content:"Ő";}
@@ -217,8 +215,8 @@
 .icon.archive::before,.icon-first.archive::before{content:"õ";}
 .icon.bug::before,.icon-first.bug::before{content:"ö";}
 .icon.weight::before,.icon-first.weight::before{content:"ù";}
-.icon.planet::before,.icon-first.planete::before{content:"ѫ";}
-.icon.planet2-invert::before,.icon-first.planet2-invert::before{content:"Ѭ";}
+.icon.planet::before,.icon-first.planet::before{content:"ѫ";}
+.icon.planet-invert::before,.icon-first.planet-invert::before{content:"Ѭ";}
 .icon.plug::before,.icon-first.plug::before{content:"Ѯ";}
 .icon.plug-off::before,.icon-first.plug-off::before{content:"ѯ";}
 .icon.share::before,.icon-first.share::before{content:"Ͻ";}
@@ -330,6 +328,10 @@
 .icon.radio3-checked::before,.icon-first.radio3-checked::before{content:"ɸ";}
 .icon.checkbox3::before,.icon-first.checkbox3::before{content:"ɻ";}
 .icon.checkbox3-checked::before,.icon-first.checkbox3-checked::before{content:"ɺ";}
+.icon.slider::before,.icon-first.slider::before{content:"ʃ";}
+.icon.slider-on::before,.icon-first.slider-on::before{content:"ʄ";}
+.icon.slider-vertical::before,.icon-first.slider-vertical::before{content:"ʅ";}
+.icon.slider-vertical-on::before,.icon-first.slider-vertical-on::before{content:"ʆ";}
 
 /* Player */
 .icon.play::before,.icon-first.play::before{content:"Ա";}
@@ -349,6 +351,7 @@
 .icon.loop::before,.icon-first.loop::before{content:"Ծ";}
 .icon.loopUnique::before,.icon-first.loopUnique::before{content:"Կ";}
 .icon.random::before,.icon-first.random::before{content:"Հ";}
+.icon.addToList::before,.icon-first.addToList::before{content:"Ձ";}
 
 /* Arrow */
 .icon.arrow-swap::before,.icon-first.arrow-swap::before{content:"ӣ";}
@@ -423,9 +426,17 @@
 .icon.formCheckbox::before,.icon-first.formCheckbox::before{content:"ҕ";}
 
 /* Tools */
-.icon.color::before,.icon-first.color::before{content:"ŧ";}
 .icon.undo::before,.icon-first.undo::before{content:"ӡ";}
 .icon.redo::before,.icon-first.redo::before{content:"Ӣ";}
+.icon.pen::before,.icon-first.pen::before{content:"ş";}
+.icon.pen-detailed::before,.icon-first.pen-detailed::before{content:"Š";}
+.icon.pen2::before,.icon-first.pen2::before{content:"š";}
+.icon.pen2-detailed::before,.icon-first.pen2-detailed::before{content:"Ţ";}
+.icon.color::before,.icon-first.color::before{content:"ŧ";}
+.icon.fill::before,.icon-first.fill::before{content:"Ŧ";}
+.icon.line-width::before,.icon-first.line-width::before{content:"ź";}
+.icon.line-style::before,.icon-first.line-style::before{content:"Ż";}
+.icon.borderRadius::before,.icon-first.borderRadius::before{content:"ż";}
 .icon.link::before,.icon-first.link::before{content:"Ū";}
 .icon.link-broken::before,.icon-first.link-broken::before{content:"ū";}
 .icon.link2::before,.icon-first.link2::before{content:"Ŭ";}
@@ -514,9 +525,12 @@
 .icon.candy2::before,.icon-first.candy2::before{content:"Ä";}
 .icon.cake::before,.icon-first.cake::before{content:"Æ";}
 .icon.cake2::before,.icon-first.cake2::before{content:"Ç";}
-.icon.coin::before,.icon-first.coin::before{content:"Ê";}
-.icon.coin2::before,.icon-first.coin2::before{content:"Ë";}
+.icon.coin::before,.icon-first.coin::before{content:"È";}
+.icon.coin-c::before,.icon-first.coin-c::before{content:"É";}
+.icon.coin2::before,.icon-first.coin2::before{content:"Ê";}
+.icon.coin2-star::before,.icon-first.coin2-star::before{content:"Ë";}
 .icon.coin3::before,.icon-first.coin3::before{content:"Ì";}
+.icon.coin3-c::before,.icon-first.coin3-c::before{content:"Í";}
 .icon.ruby::before,.icon-first.ruby::before{content:"Î";}
 .icon.diamond::before,.icon-first.diamond::before{content:"Ï";}
 .icon.diamond2::before,.icon-first.diamond2::before{content:"Ð";}

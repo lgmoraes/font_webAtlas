@@ -29,17 +29,18 @@
   ],
   "scripts": {
     "build": "webpack",
-    "dev": "webpack --mode development"
+    "prod": "webpack --watch",
+    "dev": "webpack --watch --mode development"
   },
   "optionalDependencies": {
     "font_logos": "git+https://github.com/lgmoraes/Font_logos.git"
   },
   "dependencies": {},
   "devDependencies": {
-    "webpack": "^5.7.0",
-    "webpack-cli": "^4.2.0",
-    "style-loader": "^2.0.0",
     "css-loader": "^5.0.1",
-    "html-webpack-plugin": "^4.5.0"
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.7.0",
+    "webpack-cli": "^4.2.0"
   }
 }
