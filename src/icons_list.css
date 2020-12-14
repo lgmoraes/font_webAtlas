@@ -186,7 +186,6 @@ h1 {
 
 #messageLine {
     font-family: 'WebAtlas';
-    line-height: 28px;
     font-size: 20px;
     padding: .3em .5em;
     box-sizing: border-box;
@@ -491,7 +490,8 @@ body.darkMode #search input {
 
     h1 {
         width: 150px;
-        line-height: 33px;
-        font-size: 36px;
+        line-height: 31px;
+        font-size: 35px;
+        padding: 4px 0;
     }
 }
