@@ -1,6 +1,7 @@
 .icon{width:1.2em;text-align:center;font-style:normal;display:inline-block}
 .icon.combine{margin-left:-1.2em}
 .icon.unconstraint{width:auto}
+.icon-first{font-style:normal}
 .icon-first::before{margin-right:0.3em}
 
 /* Overlapping icons */
