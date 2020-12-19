@@ -10,27 +10,40 @@ var switchDisplayMode = document.getElementById('switchDisplayMode');
 var inputClipboard = document.getElementById('inputClipboard');
 var select_style = document.getElementById('select_style');
 var search_input = document.getElementById('search_input');
-var messageLine = document.getElementById('messageLine');
-var messageLine_icon = document.getElementById('messageLine_icon');
-var messageLine_message = document.getElementById('messageLine_message');
+var messageBox = document.getElementById('messageBox');
 var btn_base = document.getElementById('btn_base');
 var btn_editing = document.getElementById('btn_editing');
 var btn_geometrics = document.getElementById('btn_geometrics');
 var btn_games = document.getElementById('btn_games');
 var btn_logos = document.getElementById('btn_logos');
+var btn_copyClass = document.getElementById('btn_copyClass');
+var btn_copyHTML = document.getElementById('btn_copyHTML');
+var copyPanel = document.getElementById('copyPanel');
+var copyPanel_btnClose = document.getElementById('copyPanel_btnClose');
+var sliderIcon = document.getElementById('sliderIcon');
+var sliderDiv = document.getElementById('sliderDiv');
+var checkbox_addIcon = document.getElementById('checkbox_addIcon');
+var icon_original = document.getElementById('icon_original');
+var icon_sharp = document.getElementById('icon_sharp');
+var icon_outline = document.getElementById('icon_outline');
+var icon_selected = document.getElementById('icon_selected');
+var voile = document.getElementById('voile');
 
 var INTERVAL_SCROLL_RIGHT = 23;
 var INTERVAL_SCROLL_LEFT = 10;
 var LARGE_SCREEN = 650;
 var TEXTS = {
-    intro: "Clic on an item to copy the className on clipboard.",
-    copied: "has been copied to the clipboard!",
+    intro: "Click on the icon you want to copy",
+    copyClass: "has been copied to the clipboard!",
+    copyHTML: "HTML code has been copied!",
     trademark: "This work includes material that may be protected as a trademark in some jurisdictions. If you want to use it, you have to ensure that you have the legal right to do so and that you do not infringe any trademark rights. See the trademark owner for rules about appropriate use of their trademarks."
 };
 
 var iconsElements = [];
 var lastLoadedList = null;
 var activeBtn = null;
+var selectedIcon = null;
+
 
 /* INIT */
 
@@ -117,10 +130,10 @@ onload = function() {
 }
 
 function majInterface() {
+    centerCopyPanel();
+
     if(largeScreen()) { 
         // Desktop
-        messageLine.style.top = content.scrollTop + "px";
-
         if (content.scrollTop === 0)
             arrowUp.style.display = "none";
         else
@@ -128,8 +141,6 @@ function majInterface() {
     }
     else {
         // Mobile
-        messageLine.style.top = "70px";
-
         if (document.documentElement.scrollTop === 0)
             arrowUp.style.display = "none";
         else
@@ -143,7 +154,7 @@ onscroll = majInterface;
 
 content.onscroll = majInterface;
 
-content.onclick = function (e) {
+content.onclick = function(e) {
     var ele = e.target;
 
     if(hasClass("btnDeploy", ele)) {
@@ -157,24 +168,65 @@ content.onclick = function (e) {
     }
 
     if (ele.className === "btn item") {
-        inputClipboard.style.display = 'block';
-        inputClipboard.value = ele.codeIcon;
-        if (lastLoadedList !== "base" && lastLoadedList !== "logos")
-            inputClipboard.value += " " + lastLoadedList;
-        inputClipboard.select();
-        document.execCommand('copy');
-        inputClipboard.blur();
-        inputClipboard.style.display = 'none';
-
-        showMessage(ele.codeIcon, TEXTS.copied);
+        openCopyPanel({
+            name: ele.codeIcon,
+            list: lastLoadedList,
+            style: select_style.value
+        });
     }
 };
+
+btn_copyClass.onclick = function() {
+    copyClass();
+}
+
+btn_copyHTML.onclick = function() {
+    copyHTML();
+}
+
+function copyClass() {
+    var i = selectedIcon;
+    var classes = getClasses();
+
+    copyToClipboard(classes);
+    showMessage([i.name, i.list, i.style].join(' '), TEXTS.copyClass);
+}
+
+function copyHTML() {
+    var i = selectedIcon;
+    var classes = getClasses();
+
+    copyToClipboard(['<', i.div, ' class="', classes, '"></', i.div, '>'].join(""));
+    showMessage([i.name, i.list, i.style].join(' '), TEXTS.copyHTML);
+}
+
+function copyToClipboard(txt) {
+    inputClipboard.style.display = 'block';
+    inputClipboard.value = txt;
+    inputClipboard.select();
+    document.execCommand('copy');
+    inputClipboard.blur();
+    inputClipboard.style.display = 'none';
+}
+
+function getClasses() {
+    var i = selectedIcon;
+    var classes = [];
+
+    classes.push(i.name, i.style);
+    if(i.list !== "base")
+        classes.splice(1, 0, i.list);
+    if(i.iconClass)
+        classes.unshift(i.iconClass);
+    
+    return classes.join(" ");
+}
 
 select_style.onchange = function () {
     loadList();
 };
 
-messageLine.onclick = function () {
+messageBox.onclick = function () {
     this.style.display = "none";
 };
 
@@ -197,7 +249,7 @@ btn_games.onclick = function () {
 btn_logos.onclick = function () {
     loadList("logos");
 
-    showMessage("circle-info outline", TEXTS.trademark);
+    showMessage("warning-triangle outline", TEXTS.trademark);
 };
 
 arrowUp.onclick = function () {
@@ -221,16 +273,111 @@ search_input.onkeydown = function () {
     setTimeout(function () {
         search();
     }, 1);
+};
+
+sliderIcon.children[0].onclick = function () {
+    sliderVerticalActivation(this);
+};
+
+sliderDiv.children[0].onclick = function () {
+    sliderVerticalActivation(this);
+};
+
+function sliderVerticalActivation (icon) {
+    toggleClass("slider-vertical", icon);
+    toggleClass("slider-vertical-on", icon);
+    majSelectedIcon();
+}
+
+sliderIcon_icon.onclick = function() {
+    sliderIcon.children[0].className = "icon slider-vertical-on";
+    majSelectedIcon();
+};
+sliderIcon_icon_first.onclick = function() {
+    sliderIcon.children[0].className = "icon slider-vertical";
+    majSelectedIcon();
+};
+sliderDiv_i.onclick = function() {
+    sliderDiv.children[0].className = "icon slider-vertical-on";
+    majSelectedIcon();
+};
+sliderDiv_div.onclick = function() {
+    sliderDiv.children[0].className = "icon slider-vertical";
+    majSelectedIcon();
+};
+
+checkbox_addIcon.onclick = function() {
+    toggleClass("checkbox3", this);
+    toggleClass("checkbox3-checked", this);
+    majSelectedIcon();
+};
+
+icon_original.onclick = function() {
+    var i = selectedIcon;
+
+    i.style = "original";
+    icon_selected.className = "frame icon " + i.name + " " + i.list + " " + i.style;
+};
+icon_sharp.onclick = function() {
+    var i = selectedIcon;
+
+    i.style = "sharp";
+    icon_selected.className = "frame icon " + i.name + " " + i.list + " " + i.style;
+};
+icon_outline.onclick = function() {
+    var i = selectedIcon;
+
+    i.style = "outline";
+    icon_selected.className = "frame icon " + i.name + " " + i.list + " " + i.style;
+};
+
+copyPanel_btnClose.onmousedown = function () {
+    closeCopyPanel();
+};
+voile.onmousedown = function () {
+    closeCopyPanel();
+};
+
+function majSelectedIcon() {
+    var i = selectedIcon;
+
+    if(hasClass("checkbox3-checked", checkbox_addIcon))
+        i.iconClass = hasClass("slider-vertical-on", sliderIcon.children[0]) ? "icon" : "icon-first";
+    else
+        i.iconClass = false;
+    i.div = hasClass("slider-vertical-on", sliderDiv.children[0]) ? "i" : "div";
+}
+
+function openCopyPanel(icon) {
+    selectedIcon = icon;
+    majSelectedIcon();
+
+    icon_original.className = "frame icon " + icon.name + " " + icon.list + " original";
+    icon_sharp.className = "frame icon " + icon.name + " " + icon.list + " sharp";
+    icon_outline.className = "frame icon " + icon.name + " " + icon.list + " outline";
+    icon_selected.className = "frame icon " + icon.name + " " + icon.list + " " + icon.style;
+
+    copyPanel.style.display = "block";
+    voile.style.display = "block";
+
+    majInterface();
+}
+
+function closeCopyPanel() {
+    copyPanel.style.display = "none";
+    voile.style.display = "none";
+
+    document.documentElement.style.overflowY = "";
 }
 
 function largeScreen() {
     return getInnerWidth() > LARGE_SCREEN;
 }
 
-function showMessage(icon, message) {
-    messageLine.style.display = "block";
-    messageLine_icon.className = "icon " + select_style.value + " " + lastLoadedList + " " + icon;
-    messageLine_message.innerHTML = message;
+function showMessage(iconClasses, message) {
+    messageBox.style.display = "block";
+    messageBox.className = "icon-first " + iconClasses;
+    messageBox.innerHTML = message;
 }
 
 function search() {
@@ -367,11 +514,8 @@ function getInnerWidth() {
     return window.innerWidth || document.body.clientWidth || document.documentElement.clientWidth; // Pour obtenir la largeur disponible, fonctionne toutes correctement.
 }
 
-// fallback de Object.assign() pour IE11
-function assign(target, source) {
-    for (var key in source) {
-        target[key] = source[key];
-    }
+function getInnerHeight() {
+	return window.innerHeight || document.body.clientHeight || document.documentElement.clientHeight; // innerHeight MultiSupport.
 }
 
 function ucfirst(str) {
@@ -393,6 +537,39 @@ function getUrlParams() {
     }
 
     return obj;
+}
+
+function centerOnScreen(element) {
+	element.style.top = (getInnerHeight()/2) - (element.offsetHeight/2) + "px";
+    element.style.left = (getInnerWidth()/2) - (element.offsetWidth/2) + "px";
+}
+
+function centerCopyPanel() {
+    if (copyPanel.style.display !== "block")
+        return false;
+
+    /* Reset*/
+    copyPanel.style.height = "";
+    copyPanel.style.top = "";
+    copyPanel.style.bottom = "";
+
+	centerOnScreen(copyPanel);
+    
+    if(copyPanel.style.top < "0") {
+        copyPanel.style.height = "auto";
+        copyPanel.style.top = "0";
+        copyPanel.style.bottom = "0";
+    }
+
+    if(!largeScreen()) {
+        copyPanel.style.left = "0";
+        copyPanel.style.right = "0";
+
+        document.documentElement.style.overflowY = "hidden";    // Evite un bug de scrolling
+    }
+    else {
+        document.documentElement.style.overflowY = "";
+    }
 }
 
 // MANIPULATION DE CLASS
