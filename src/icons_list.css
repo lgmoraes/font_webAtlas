@@ -238,7 +238,6 @@ h1 {
 
 .accordion .list {
     overflow: hidden;
-    transition: .3s;
 }
 .accordion .list.hide {
     display: none;
