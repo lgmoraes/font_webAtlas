@@ -1,6 +1,5 @@
 import './icons_list.css';
 import data from '../icons.json';
-import data_logos from '../node_modules/font_logos/logos.json';
 
 var content = document.getElementById('content');
 var divIcons = document.getElementById('divIcons');
@@ -429,7 +428,7 @@ function loadList(list) {
     iconsElements = [];
 
     if(list === "logos") {
-        categories = data_logos["icons"];
+        categories = data.addons.logos.icons;
         select_style.disabled = true;
     }
     else {

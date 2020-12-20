@@ -506,5 +506,62 @@
                 "dice6":"ð"
             }
         }
+    },
+    "addons": {
+        "logos": {
+            "icons":{
+                "Social Media":{
+                    "facebook":"f",
+                    "facebook2":"ë",
+                    "messenger":"e",
+                    "linkedIn":"i",
+                    "linkedIn2":"î",
+                    "twitter":"t",
+                    "google":"g",
+                    "google2":"ì",
+                    "youtube":"y",
+                    "youtube2":"ô",
+                    "instagram":"o",
+                    "instagram2":"ï",
+                    "pinterest":"p",
+                    "pinterest2":"ð",
+                    "snapshat":"s",
+                    "snapshat2":"ñ",
+                    "discord":"d",
+                    "discord2":"ê",
+                    "github":"h",
+                    "github2":"í",
+                    "npm":"n",
+                    "telegram":"v",
+                    "telegram2":"ò",
+                    "whatsapp":"w",
+                    "whatsapp2":"ó"
+                },
+                "OS":{
+                    "apple":"a",
+                    "windows":"m",
+                    "linux":"l",
+                    "android":"b"
+                }
+            },
+            "colorReferences":{
+                "android": "#A4C639",
+                "discord": "#7388DB",
+                "facebook": "#4267B2",
+                "github": "#1B1F23",
+                "google": "#E4E4E4",
+                "instagram": "#E43E66",
+                "linkedIn": "#0077B5",
+                "messenger": "#0084FF",
+                "npm": "#CC0000",
+                "pinterest": "#E60023",
+                "snapshat": "#FFFC00",
+                "telegram": "#30A3E6",
+                "twitter": "#1DA1F2",
+                "whatsapp": "#00E676",
+                "windows": "#00AEF0",
+                "youtube": "red"
+            }
+        }
     }
 }
