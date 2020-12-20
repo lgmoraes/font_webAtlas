@@ -433,7 +433,7 @@ function loadList(list) {
         select_style.disabled = true;
     }
     else {
-        categories = data[list];
+        categories = data.icons[list];
         select_style.disabled = false;
     }
 
