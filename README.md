@@ -1,14 +1,12 @@
 # README
 
 <p align="center">
-    <img alt="font webatlas" src="https://lmoraes.fr/assets/git/font_webatlas.png" width="600">
+    <img alt="font webatlas" src="https://lmoraes.fr/assets/git/font_webatlas.png">
 </p>
 
 ## Introduction
 
-Font_WebAtlas is fonts of icons designed especially for the creation of interfaces/web applications.
-
-They contain the most common icons for quick and easy creation of menus, administration spaces, players...
+Font WebAtlas is an icon module designed for the creation of interfaces and web applications.
 
 ## Package managers
 
@@ -18,42 +16,29 @@ npm install font_webatlas
 
 ## Quick Start
 
-Import the css files as shown below:
+Import the css files as shown below :
 ```html
-<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/webAtlas-icons.css">
-<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons.css">
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/webAtlas.css">
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/font-face/webAtlas-original.css">
 ```
 
-In this example, the icons are displayed in the theme named original. See the "Choice of theme" section to change the theme.
+In this example, the default theme is `original`.
+See the "Choice of theme" section to change the theme.
 
 ## Use
 
-Add "icon icon_name" in the class attribute of an element.
+Add `icon icon_name` in the class attribute of an element.
 ```html
-<!-- Displays the icon to the left of the element -->
-<div class="icon login"> Sign in</div>
+<!-- Displays the icon as a block -->
+<i class="icon login"></i> Sign in
 ```
 
-You can adjust the rendering by adding one of the following class :
-* div
-* div-indent
-* div-indent-center
+`<div>` tags are also usable.
 
+Or add `icon-first icon_name` in the class attribute of an element.
 ```html
-<!-- Display the icon as a block -->
-<div class="example_button">
-    <div class="icon div login"></div> Sign in
-</div>
-
-<!-- Displays the icon as a block with a margin to the right -->
-<div class="example_button">
-    <div class="icon div-indent login"></div>Sign in
-</div>
-
-<!-- Displays the icon as a block with left and right margins -->
-<div class="example_button">
-    <div class="icon div-indent-center login"></div>Sign in
-</div>
+<!-- Displays the icon as the first letter of your block -->
+<i class="icon-first login">Sign in</i>
 ```
 
 ## List of icons
@@ -61,7 +46,7 @@ You can adjust the rendering by adding one of the following class :
 See the list on this link :
 <a href="https://lmoraes.fr/font_webatlas/">lmoraes.fr/font_webatlas</a>
 
-You can click on the icon you want to import, the css code will be copied to the clipboard.
+Click on the icon you want to import, then click on `Copy class` or ` Copy HTML` button to copy the code to the clipboard
 
 ## Choice of theme
 
@@ -70,47 +55,61 @@ You can click on the icon you want to import, the css code will be copied to the
 - Sharp
 - Outline
 
-Incorporate the link corresponding to the desired style :
+Copy the link corresponding to the desired style :
 
 ```html
 <!-- Theme Original -->
-<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons.css">
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/font-face/webAtlas-original.css">
 
 <!-- Theme Sharp -->
-<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons-sharp.css">
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/font-face/webAtlas-sharp.css">
 
 <!-- Theme Outline -->
-<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/dist/css/font-face/webAtlas-icons-outline.css">
+<link rel="stylesheet" type="text/css" href="node_modules/font_webatlas/font-face/webAtlas-outline.css">
 ```
 
 This allows you to propose several themes in your page or application, simply by interchanging these links.
 
 ## Use multiple themes at the same time
 
-The chosen theme defines the "default" style, but you can "force" a different style on a particular icon by adding `original`,` sharp` or `outline` class :
+The chosen theme defines the "default" theme, but you can "force" a different theme on a particular icon by adding `original`,`sharp` or `outline` class :
 
 ```html
-<!-- Displays the login icon in the default style -->
-<div class="icon login"> Login </div>
+<!-- Displays the login icon in the default theme -->
+<i class="icon login"> Login</i>
 
 <!-- The icon is displayed in original -->
-<div class="icon login original"> Login</div>
+<i class="icon login original"> Login</i>
 
 <!-- The icon is displayed in sharp -->
-<div class="icon login sharp"> Login</div>
+<i class="icon login sharp"> Login</i>
 
 <!-- The icon is displayed in outline -->
-<div class="icon login outline"> Login</div>
+<i class="icon login outline"> Login</i>
 ```
 
-## Optional Content
+## Combination of icons
 
-Add these optional links for more content :
+### By interlocking :
+
+When possible, the child icon is repositioned so as to integrate with the parent icon :
 ```html
-<!-- Adds the fonts WebAtlas and WebAtlas-Light (letters and numbers) -->
-<link rel="stylesheet" type="text/css" href="dist/css/font-face/webAtlas-alphanumeric.css" />
+<i class="icon magnify">
+    <i class="icon plus"></i>
+</i>
+```
 
-<!-- Adds geometric icons -->
-<link rel="stylesheet" type="text/css" href="dist/css/webAtlas-geometric.css" />
-<link rel="stylesheet" type="text/css" href="dist/css/font-face/webAtlas-geometric.css" />
+It is also possible to nest text :
+```html
+<i class="icon calendar">
+    <i>7</i>
+</i>
+```
+
+### By overlapping :
+
+The `combine` class allows more possibilities of animation (with the use of CSS rules such as transform).
+```html
+<i class="icon losange"></i>
+<i class="icon combine warning"></i>  <!-- warning icon will be placed over losange icon -->
 ```
