@@ -558,3 +558,47 @@
 .icon.dice4::before,.icon-first.dice4::before{content:"î";}
 .icon.dice5::before,.icon-first.dice5::before{content:"ï";}
 .icon.dice6::before,.icon-first.dice6::before{content:"ð";}
+
+
+/*** LOGOS ***/
+
+@font-face {
+    font-family: 'logos';
+    src: url('node_modules/font_logos/logos.woff2') format('woff2'),
+         url('node_modules/font_logos/logos.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Social Media */
+.icon.facebook::before,.icon-first.facebook::before{content:"f";}.icon.facebook::before,.icon-first.facebook::before{font-family:"logos";}
+.icon.facebook2::before,.icon-first.facebook2::before{content:"ë";}.icon.facebook2::before,.icon-first.facebook2::before{font-family:"logos";}
+.icon.messenger::before,.icon-first.messenger::before{content:"e";}.icon.messenger::before,.icon-first.messenger::before{font-family:"logos";}
+.icon.linkedIn::before,.icon-first.linkedIn::before{content:"i";}.icon.linkedIn::before,.icon-first.linkedIn::before{font-family:"logos";}
+.icon.linkedIn2::before,.icon-first.linkedIn2::before{content:"î";}.icon.linkedIn2::before,.icon-first.linkedIn2::before{font-family:"logos";}
+.icon.twitter::before,.icon-first.twitter::before{content:"t";}.icon.twitter::before,.icon-first.twitter::before{font-family:"logos";}
+.icon.google::before,.icon-first.google::before{content:"g";}.icon.google::before,.icon-first.google::before{font-family:"logos";}
+.icon.google2::before,.icon-first.google2::before{content:"ì";}.icon.google2::before,.icon-first.google2::before{font-family:"logos";}
+.icon.youtube::before,.icon-first.youtube::before{content:"y";}.icon.youtube::before,.icon-first.youtube::before{font-family:"logos";}
+.icon.youtube2::before,.icon-first.youtube2::before{content:"ô";}.icon.youtube2::before,.icon-first.youtube2::before{font-family:"logos";}
+.icon.instagram::before,.icon-first.instagram::before{content:"o";}.icon.instagram::before,.icon-first.instagram::before{font-family:"logos";}
+.icon.instagram2::before,.icon-first.instagram2::before{content:"ï";}.icon.instagram2::before,.icon-first.instagram2::before{font-family:"logos";}
+.icon.pinterest::before,.icon-first.pinterest::before{content:"p";}.icon.pinterest::before,.icon-first.pinterest::before{font-family:"logos";}
+.icon.pinterest2::before,.icon-first.pinterest2::before{content:"ð";}.icon.pinterest2::before,.icon-first.pinterest2::before{font-family:"logos";}
+.icon.snapshat::before,.icon-first.snapshat::before{content:"s";}.icon.snapshat::before,.icon-first.snapshat::before{font-family:"logos";}
+.icon.snapshat2::before,.icon-first.snapshat2::before{content:"ñ";}.icon.snapshat2::before,.icon-first.snapshat2::before{font-family:"logos";}
+.icon.discord::before,.icon-first.discord::before{content:"d";}.icon.discord::before,.icon-first.discord::before{font-family:"logos";}
+.icon.discord2::before,.icon-first.discord2::before{content:"ê";}.icon.discord2::before,.icon-first.discord2::before{font-family:"logos";}
+.icon.github::before,.icon-first.github::before{content:"h";}.icon.github::before,.icon-first.github::before{font-family:"logos";}
+.icon.github2::before,.icon-first.github2::before{content:"í";}.icon.github2::before,.icon-first.github2::before{font-family:"logos";}
+.icon.npm::before,.icon-first.npm::before{content:"n";}.icon.npm::before,.icon-first.npm::before{font-family:"logos";}
+.icon.telegram::before,.icon-first.telegram::before{content:"v";}.icon.telegram::before,.icon-first.telegram::before{font-family:"logos";}
+.icon.telegram2::before,.icon-first.telegram2::before{content:"ò";}.icon.telegram2::before,.icon-first.telegram2::before{font-family:"logos";}
+.icon.whatsapp::before,.icon-first.whatsapp::before{content:"w";}.icon.whatsapp::before,.icon-first.whatsapp::before{font-family:"logos";}
+.icon.whatsapp2::before,.icon-first.whatsapp2::before{content:"ó";}.icon.whatsapp2::before,.icon-first.whatsapp2::before{font-family:"logos";}
+
+/* OS */
+.icon.apple::before,.icon-first.apple::before{content:"a";}.icon.apple::before,.icon-first.apple::before{font-family:"logos";}
+.icon.windows::before,.icon-first.windows::before{content:"m";}.icon.windows::before,.icon-first.windows::before{font-family:"logos";}
+.icon.linux::before,.icon-first.linux::before{content:"l";}.icon.linux::before,.icon-first.linux::before{font-family:"logos";}
+.icon.android::before,.icon-first.android::before{content:"b";}.icon.android::before,.icon-first.android::before{font-family:"logos";}
