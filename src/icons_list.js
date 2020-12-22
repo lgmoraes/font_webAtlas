@@ -212,9 +212,11 @@ function getClasses() {
     var i = selectedIcon;
     var classes = [];
 
-    classes.push(i.name, i.style);
+    classes.push(i.name);
     if(i.list !== "base")
-        classes.splice(1, 0, i.list);
+        classes.push(i.list);
+    if(i.list !== "logos")
+        classes.push(i.style);
     if(i.iconClass)
         classes.unshift(i.iconClass);
     
