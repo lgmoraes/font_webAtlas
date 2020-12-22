@@ -1,8 +1,7 @@
 {
   "name": "font_webatlas",
-  "version": "1.0.1",
-  "description": "Font specially designed for the creation of interfaces / web applications.",
-  "main": "dist/css/webAtlas-icons.css",
+  "version": "2.0.0",
+  "description": "Font WebAtlas is an icon module designed for the creation of interfaces and web applications.",
   "homepage": "https://lmoraes.fr/font_webatlas/",
   "author": {
     "name": "Louis Moraes",
