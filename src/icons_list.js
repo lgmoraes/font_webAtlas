@@ -388,7 +388,7 @@ function showMessage(iconClasses, message) {
 }
 
 function search() {
-    var s = search_input.value;
+    var s = search_input.value.toLowerCase();
 
     if (s === "") {
         showAllIcones();
@@ -399,7 +399,7 @@ function search() {
         var e = iconsElements[i];
         var iconName = e.childNodes[1].firstChild.nodeValue;
 
-        if (iconName.indexOf(s) !== -1)
+        if (iconName.toLowerCase().indexOf(s) !== -1)
             e.style.display = "";
         else
             e.style.display = "none";
