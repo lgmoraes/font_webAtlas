@@ -418,6 +418,10 @@ h1 {
     display: inline-block;
     position: absolute;
 }
+#copyPanel .frame.disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
 #icon_original {
     left: 0;
 }

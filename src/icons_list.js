@@ -356,6 +356,12 @@ function openCopyPanel(icon) {
     icon_outline.className = "frame icon " + icon.name + " " + icon.list + " outline";
     icon_selected.className = "frame icon " + icon.name + " " + icon.list + " " + icon.style;
 
+    if (icon.list === "logos") {
+        addClass("disabled", icon_original);
+        addClass("disabled", icon_sharp);
+        addClass("disabled", icon_outline);
+    }
+
     copyPanel.style.display = "block";
     voile.style.display = "block";
 
