@@ -1,5 +1,16 @@
 # CHANGELOG #
 
+Version 2.0.0
+
+* Nouvelles icones
+* Révision de certaines icones
+* Add-on pour les icones de réseaux sociaux et de marques
+* Nouveau système de fonctionnement
+* Possibilitée de combiner plusieurs icones
+* Refonte des caractères alphanumériques
+* Refonte de l'application Icons_list
+* Ajout d'options de copie dans l'application Icons_list
+
 Version 1.0.1
 
 * Amélioration de certaines icones
