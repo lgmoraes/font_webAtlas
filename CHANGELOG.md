@@ -1,5 +1,10 @@
 # CHANGELOG #
 
+Version 2.0.1
+
+* Correction de l'importation de la dépendance font_logos
+* Correction des icones arrow-resize
+
 Version 2.0.0
 
 * Nouvelles icones
