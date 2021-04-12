@@ -564,8 +564,8 @@
 
 @font-face {
     font-family: 'logos';
-    src: url('node_modules/font_logos/logos.woff2') format('woff2'),
-         url('node_modules/font_logos/logos.woff') format('woff');
+    src: url('../font_logos/logos.woff2') format('woff2'),
+         url('../font_logos/font_logos/logos.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
