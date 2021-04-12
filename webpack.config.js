@@ -20,5 +20,6 @@ module.exports = {
             filename: 'icons_list.html',
             template: './src/icons_list.html'
         })
-    ]
+    ],
+    mode: "production"
 }
